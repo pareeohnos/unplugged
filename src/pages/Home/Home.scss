@@ -1,0 +1,17 @@
+@use "../../styles/globals.scss" as *;
+
+.hero {
+  min-height: calc(100vh - 78px);
+  width: 100vw;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+.hero__container {
+  width: 50%;
+  min-width: 50rem;
+  margin-top: 7rem;
+}
+.hero__buttons {
+  margin-top: 1.5rem;
+}

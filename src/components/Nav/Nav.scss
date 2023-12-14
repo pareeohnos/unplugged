@@ -1,0 +1,27 @@
+@use "../../styles/globals.scss" as *;
+
+.nav {
+  width: 100%;
+}
+.nav__container {
+  display: flex;
+  width: $desktopContainerWidth;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.nav__logo-container {
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  text-decoration: none;
+  color: $infoColor;
+  display: flex;
+
+  align-items: center;
+}
