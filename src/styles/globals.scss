@@ -1,6 +1,8 @@
-$desktopContainerWidth: 95%;
-
+// $desktopContainerWidth: 95%;
+$destopContainerMargin: 5rem;
 // C O L O R S
+
+$desktopTotalMargin: $destopContainerMargin * 2;
 
 $primaryColor: #ff6d6d;
 $secondaryColor: #77d7d3;
@@ -10,3 +12,7 @@ $cremita: #f1eeec;
 $lightBlue: #ecf1f0;
 $lightGray: #f2f2f2;
 $lightBlack: #727272;
+
+$font-main: "Shippori Mincho";
+$font-primary: "Work Sans Variable";
+$font-secondary: "Sue Ellen Francisco";

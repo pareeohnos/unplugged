@@ -1,17 +1,131 @@
 @use "../../styles/globals.scss" as *;
 
 .hero {
-  min-height: calc(100vh - 78px);
+  min-height: 100vh; //calc(100vh - 78px);
   width: 100vw;
-  background-color: red;
   display: flex;
   justify-content: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../assets/images/pexels-thirdman-8926648.jpg");
+
+  background-size: cover;
+  background-position: center;
+  &__container {
+    width: 50%;
+    min-width: 50rem;
+    margin-top: 7rem;
+  }
+  &__buttons {
+    margin-top: 1.5rem;
+  }
+
+  &__text {
+    color: white;
+  }
 }
-.hero__container {
-  width: 50%;
-  min-width: 50rem;
-  margin-top: 7rem;
+
+.info-boxes {
+  display: flex;
+  margin: -3rem $destopContainerMargin 0 $destopContainerMargin;
+  //   justify-content: center;
 }
-.hero__buttons {
-  margin-top: 1.5rem;
+.info-box {
+  width: 33.333%;
+  // height: 18rem;
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: center;
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 1rem !important;
+  }
+  &__copy {
+    margin-bottom: 1rem !important;
+  }
+  &__button {
+  }
+  &__link {
+    color: $lightGray;
+  }
+}
+.box-wrapper {
+}
+
+.info-box--1 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: $secondaryColor;
+  color: $infoColor;
+}
+
+.info-box--2 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: $infoColor;
+  color: $lightGray;
+}
+.info-box--3 {
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 107, 107, 0.6),
+      rgba(255, 107, 107, 0.6)
+    ),
+    url("../../assets/images/pexels-cottonbro-studio-6593913.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+// about-us
+
+$totalMargin: $destopContainerMargin * 2;
+.about-us {
+  //   background-color: red;
+  &__container {
+    margin: 0 $destopContainerMargin;
+    display: flex;
+    width: calc(100% - $totalMargin);
+    padding: 3.5rem 0;
+  }
+  &__people {
+    width: 50%;
+    padding-right: 1rem;
+    // background-color: blue;
+  }
+  &__goals {
+    width: 50%;
+    background-color: $lightBlue;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+  }
+}
+
+.people__poster {
+  font-size: 32px;
+  font-family: $font-secondary;
+  color: $primaryColor;
+}
+.people__title {
+  font-family: $font-main;
+  color: $infoColor;
+  margin-bottom: 1rem;
+}
+.people__copy {
+  font-family: $font-primary;
+  margin-bottom: 1rem;
+}
+.goals__title {
+  color: $infoColor;
+  font-family: $font-main;
+  margin-bottom: 1rem;
+}
+.goals__list {
+  color: $lightBlack;
+}
+.goals__goal {
+  font-family: $font-primary;
+  margin-bottom: 1rem;
 }
