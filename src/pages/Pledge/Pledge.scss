@@ -1,0 +1,75 @@
+@use "../../styles/globals.scss" as *;
+
+.form {
+  //   border: 1px solid red;
+  width: 30rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  font-family: $font-main;
+
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    width: 100%;
+    border-top: 1px solid $infoColor;
+    border-bottom: 1px solid $infoColor;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: $infoColor;
+  }
+  &__fields {
+    width: inherit;
+    // justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+  &__stepper {
+    width: 3.25rem;
+    height: 1rem;
+    padding: 0 5px;
+    background-color: $primaryColor;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  &__step-orb {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+  &__step-orb--SELECTED {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  &__subtitle {
+    font-family: $font-main;
+    color: $infoColor;
+    margin-bottom: 1.5rem;
+  }
+  &__input-label {
+    display: inline-block;
+    font-family: $font-main;
+    width: 100%;
+    margin-bottom: 0.75rem;
+    font-size: 18px;
+    color: $infoColor;
+  }
+  &__input-field {
+    font-family: $font-primary;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgba(117, 215, 210, 0.33);
+    font-size: 1rem;
+    border-radius: 10px;
+    color: black;
+    margin-top: 0.25rem;
+  }
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
