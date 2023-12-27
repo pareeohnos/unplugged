@@ -4,9 +4,12 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import React from "react";
 import Nav from "../../components/Nav/Nav.tsx";
 import "./Home.scss";
+import { useNavigate } from "react-router-dom";
+
 import Footer from "../../components/Footer/Footer.tsx";
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div>
       <Nav />
@@ -31,7 +34,12 @@ export default function Home() {
             </Typography>
           </div>
           <div className="hero__buttons">
-            <Fab color="primary" variant="extended" style={{ color: "white" }}>
+            <Fab
+              color="primary"
+              variant="extended"
+              style={{ color: "white" }}
+              onClick={() => navigate("/pledge")}
+            >
               SIGN THE PLEDGE
             </Fab>
             <Fab variant="extended" sx={{ ml: "1rem" }}>

@@ -2,137 +2,73 @@ import React, { useState } from "react";
 import Footer from "../../components/Footer/Footer.tsx";
 import Nav from "../../components/Nav/Nav.tsx";
 import "./Pledge.scss";
-import { Fab } from "@mui/material";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import ChildForm from "../../components/ChildForm/ChildForm.tsx";
+import GuardianForm from "../../components/GuardianForm/GuardianForm.tsx";
 
 export default function Pledge() {
+  const navigate = useNavigate();
   const [isGuardian, setIsGuardian] = useState(true);
+  const [parentData, setParentData] = useState({
+    id: null,
+    first_name: "",
+    last_name: "",
+    province: "",
+    city: "",
+    email: "",
+  });
+  const [childData, setChildData] = useState({
+    first_name: "",
+    last_name: "",
+    current_school_id: "",
+    guardian_id: "",
+    grade: "",
+    next_school_id: "",
+  });
+  async function postGuardian() {
+    try {
+      const response = await axios.post(
+        "http://127.0.0.1:8000/guardians/",
+        parentData
+      );
+      if (response.data) {
+        setParentData(response.data);
+      }
+    } catch (error) {
+      return;
+    }
 
-  const GuardianForm = (
-    <div className="form__fields">
-      <h2 className="form__subtitle">Primary Guardian</h2>
+    setIsGuardian(false);
+  }
 
-      <label className="form__input-label">
-        First Name
-        <input
-          className="form__input-field"
-          type="text"
-          placeholder="First Name"
-        />
-      </label>
+  async function submitPledge() {
+    try {
+      console.log(childData);
+      const child = await axios.post(
+        `http://127.0.0.1:8000/guardians/${parentData.id}/children/`,
+        childData
+      );
 
-      <label className="form__input-label">
-        Last Name
-        <input
-          className="form__input-field"
-          type="text"
-          placeholder="Last Name"
-        />
-      </label>
-      <label className="form__input-label">
-        Email
-        <input
-          className="form__input-field"
-          type="text"
-          placeholder="Email Name"
-        />
-      </label>
-      <label className="form__input-label">
-        Province
-        <input
-          className="form__input-field"
-          type="text"
-          placeholder="Province Name"
-        />
-      </label>
-      <label className="form__input-label">
-        City
-        <input
-          className="form__input-field"
-          type="text"
-          placeholder="City Name"
-        />
-      </label>
-      <label className="form__input-label">
-        Postal Code
-        <input
-          className="form__input-field"
-          type="text"
-          placeholder="Postal Code"
-        />
-      </label>
-      <div className="form__button">
-        <Fab
-          style={{ color: "white", width: "10rem" }}
-          color="primary"
-          variant="extended"
-          onClick={() => setIsGuardian(false)}
-        >
-          NEXT
-        </Fab>
-      </div>
-    </div>
-  );
-  const ChildForm = (
-    <div className="form__fields">
-      <h2 className="form__subtitle">Student Pledging To Wait</h2>
-      <label className="form__input-label">
-        Date
-        <input
-          className="form__input-field"
-          type="text"
-          readOnly
-          value={new Date(Date.now()).toLocaleString().split(",")[0]}
-        />
-      </label>
-      <label className="form__input-label">
-        Student First Name
-        <input
-          className="form__input-field"
-          type="text"
-          placeholder="First Name"
-        />
-      </label>
+      const pledge = await axios.post(
+        `http://127.0.0.1:8000/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
+      );
 
-      <label className="form__input-label">
-        Student Last Name
-        <input
-          className="form__input-field"
-          type="text"
-          placeholder="Last Name"
-        />
-      </label>
-      <label className="form__input-label">
-        Grade in 2023-24 School Year
-        <input className="form__input-field" type="text" placeholder="Grade" />
-      </label>
-      <label className="form__input-label">
-        Your Child's Current School
-        <input
-          className="form__input-field"
-          type="text"
-          placeholder="Search school here..."
-        />
-      </label>
-      <label className="form__input-label">
-        Your Child's Next School
-        <input
-          className="form__input-field"
-          type="text"
-          placeholder="Search for your Child's next school here"
-        />
-      </label>
+      const signature = await axios.post(
+        `http://127.0.0.1:8000/guardians/${parentData.id}/signatures/`,
+        {
+          child_id: child.data.id,
+          pledge_id: pledge.data.id,
+        }
+      );
+      console.log(signature);
 
-      <div className="form__button">
-        <Fab
-          style={{ color: "white", width: "10rem" }}
-          color="primary"
-          variant="extended"
-        >
-          Submit
-        </Fab>
-      </div>
-    </div>
-  );
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div>
       <Nav />
@@ -151,8 +87,19 @@ export default function Pledge() {
             }
           ></div>
         </div>
-        {isGuardian == true ? GuardianForm : null}
-        {!isGuardian && ChildForm}
+        {isGuardian === true ? (
+          <GuardianForm
+            parentData={parentData}
+            setParentData={setParentData}
+            postGuardian={postGuardian}
+          />
+        ) : (
+          <ChildForm
+            childData={childData}
+            setChildData={setChildData}
+            submitPledge={submitPledge}
+          />
+        )}
       </form>
       <Footer />
     </div>
