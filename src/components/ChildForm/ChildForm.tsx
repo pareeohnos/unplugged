@@ -4,7 +4,14 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import axios from "axios";
 
-export default function ChildForm({ childData, setChildData, submitPledge }) {
+export default function ChildForm({
+  childrenData,
+  setChildrenData,
+  submitPledge,
+  addNewChild,
+}) {
+  const [currentSchoolKey, setCurrentSchoolKey] = useState("1");
+  const [nextSchoolKey, setNextSchoolKey] = useState("2");
   const [matchingSchools, setMatchingSchools] = useState([]);
 
   async function fetchSchools(event: any) {
@@ -32,10 +39,12 @@ export default function ChildForm({ childData, setChildData, submitPledge }) {
           className="form__input-field"
           type="text"
           placeholder="First Name"
-          value={childData.first_name}
-          onChange={(e) =>
-            setChildData({ ...childData, first_name: e.target.value })
-          }
+          value={childrenData[0].first_name}
+          onChange={(e) => {
+            let childObj = childrenData[0];
+            childObj = { ...childObj, first_name: e.target.value };
+            setChildrenData([childObj].concat(childrenData.slice(1)));
+          }}
         />
       </label>
 
@@ -45,10 +54,12 @@ export default function ChildForm({ childData, setChildData, submitPledge }) {
           className="form__input-field"
           type="text"
           placeholder="Last Name"
-          value={childData.last_name}
-          onChange={(e) =>
-            setChildData({ ...childData, last_name: e.target.value })
-          }
+          value={childrenData[0].last_name}
+          onChange={(e) => {
+            let childObj = childrenData[0];
+            childObj = { ...childObj, last_name: e.target.value };
+            setChildrenData([childObj].concat(childrenData.slice(1)));
+          }}
         />
       </label>
       <label className="form__input-label">
@@ -58,14 +69,17 @@ export default function ChildForm({ childData, setChildData, submitPledge }) {
           type="text"
           placeholder="Grade"
           maxLength={2}
-          value={childData.grade}
-          onChange={(e) =>
-            setChildData({ ...childData, grade: e.target.value })
-          }
+          value={childrenData[0].grade}
+          onChange={(e) => {
+            let childObj = childrenData[0];
+            childObj = { ...childObj, grade: e.target.value };
+            setChildrenData([childObj].concat(childrenData.slice(1)));
+          }}
         />
       </label>
 
       <Autocomplete
+        key={currentSchoolKey}
         disablePortal
         id="combo-box-demo"
         options={matchingSchools}
@@ -78,10 +92,9 @@ export default function ChildForm({ childData, setChildData, submitPledge }) {
           )[0];
 
           if (school) {
-            setChildData({
-              ...childData,
-              current_school_id: school["id"],
-            });
+            let childObj = childrenData[0];
+            childObj = { ...childObj, current_school_id: e.target["value"] };
+            setChildrenData([childObj].concat(childrenData.slice(1)));
           }
         }}
         sx={{ marginBottom: 2 }}
@@ -96,6 +109,7 @@ export default function ChildForm({ childData, setChildData, submitPledge }) {
         )}
       />
       <Autocomplete
+        key={nextSchoolKey}
         disablePortal
         id="combo-box-demo"
         options={matchingSchools}
@@ -108,10 +122,9 @@ export default function ChildForm({ childData, setChildData, submitPledge }) {
           )[0];
 
           if (school) {
-            setChildData({
-              ...childData,
-              next_school_id: school["id"],
-            });
+            let childObj = childrenData[0];
+            childObj = { ...childObj, next_school_id: e.target["value"] };
+            setChildrenData([childObj].concat(childrenData.slice(1)));
           }
         }}
         sx={{ marginBottom: 3 }}
@@ -127,6 +140,17 @@ export default function ChildForm({ childData, setChildData, submitPledge }) {
       />
 
       <div className="form__button">
+        <Fab
+          variant="extended"
+          onClick={() => {
+            addNewChild();
+            setMatchingSchools([]);
+            setCurrentSchoolKey(currentSchoolKey + "1");
+            setNextSchoolKey(nextSchoolKey + "2");
+          }}
+        >
+          Add Another Child
+        </Fab>
         <Fab
           style={{ color: "white", width: "10rem" }}
           color="primary"

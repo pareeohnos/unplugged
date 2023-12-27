@@ -9,6 +9,7 @@ import GuardianForm from "../../components/GuardianForm/GuardianForm.tsx";
 
 export default function Pledge() {
   const navigate = useNavigate();
+
   const [isGuardian, setIsGuardian] = useState(true);
   const [parentData, setParentData] = useState({
     id: null,
@@ -18,14 +19,31 @@ export default function Pledge() {
     city: "",
     email: "",
   });
-  const [childData, setChildData] = useState({
-    first_name: "",
-    last_name: "",
-    current_school_id: "",
-    guardian_id: "",
-    grade: "",
-    next_school_id: "",
-  });
+
+  const [childrenData, setChildrenData] = useState([
+    {
+      first_name: "",
+      last_name: "",
+      current_school_id: "",
+      guardian_id: "",
+      grade: "",
+      next_school_id: "",
+    },
+  ]);
+
+  function addNewChild() {
+    setChildrenData([
+      {
+        first_name: "",
+        last_name: "",
+        current_school_id: "",
+        guardian_id: "",
+        grade: "",
+        next_school_id: "",
+      },
+      ...childrenData,
+    ]);
+  }
   async function postGuardian() {
     try {
       const response = await axios.post(
@@ -44,28 +62,30 @@ export default function Pledge() {
 
   async function submitPledge() {
     try {
-      console.log(childData);
-      const child = await axios.post(
-        `http://127.0.0.1:8000/guardians/${parentData.id}/children/`,
-        childData
-      );
+      childrenData.map(async (ChildData) => {
+        const child = await axios.post(
+          `http://127.0.0.1:8000/guardians/${parentData.id}/children/`,
+          ChildData
+        );
 
-      const pledge = await axios.post(
-        `http://127.0.0.1:8000/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
-      );
+        const pledge = await axios.post(
+          `http://127.0.0.1:8000/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
+        );
 
-      const signature = await axios.post(
-        `http://127.0.0.1:8000/guardians/${parentData.id}/signatures/`,
-        {
-          child_id: child.data.id,
-          pledge_id: pledge.data.id,
-        }
-      );
-      console.log(signature);
+        const signature = await axios.post(
+          `http://127.0.0.1:8000/guardians/${parentData.id}/signatures/`,
+          {
+            child_id: child.data.id,
+            pledge_id: pledge.data.id,
+          }
+        );
+        console.log(signature);
+      });
 
       navigate("/");
     } catch (error) {
       console.log(error);
+      axios.delete("http://127.0.0.1:8000/guardians/" + parentData.id);
     }
   }
 
@@ -95,9 +115,10 @@ export default function Pledge() {
           />
         ) : (
           <ChildForm
-            childData={childData}
-            setChildData={setChildData}
+            childrenData={childrenData}
+            setChildrenData={setChildrenData}
             submitPledge={submitPledge}
+            addNewChild={addNewChild}
           />
         )}
       </form>
