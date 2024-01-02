@@ -81,7 +81,11 @@ export default function Pledge() {
         );
         console.log(signature);
       });
-
+      axios.post(
+        `http://127.0.0.1:8000/email_confirmation?name=${
+          parentData.first_name + " " + parentData.last_name
+        }&email=${parentData.email}`
+      );
       navigate("/");
     } catch (error) {
       console.log(error);
