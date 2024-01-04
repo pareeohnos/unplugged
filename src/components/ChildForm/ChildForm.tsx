@@ -93,7 +93,7 @@ export default function ChildForm({
 
           if (school) {
             let childObj = childrenData[0];
-            childObj = { ...childObj, current_school_id: e.target["value"] };
+            childObj = { ...childObj, current_school_id: school["id"] };
             setChildrenData([childObj].concat(childrenData.slice(1)));
           }
         }}
