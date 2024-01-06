@@ -15,9 +15,12 @@ export default function ChildForm({
   const [matchingSchools, setMatchingSchools] = useState([]);
 
   async function fetchSchools(event: any) {
-    const response = await axios.get("http://127.0.0.1:8000/schools/search/", {
-      params: { partial_name: event.target.value },
-    });
+    const response = await axios.get(
+      "https://api.unpluggedcanada.org/schools/search/",
+      {
+        params: { partial_name: event.target.value },
+      }
+    );
     setMatchingSchools(response.data);
   }
 

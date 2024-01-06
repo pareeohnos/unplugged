@@ -47,7 +47,7 @@ export default function Pledge() {
   async function postGuardian() {
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/guardians/",
+        "https://api.unpluggedcanada.org/guardians/",
         parentData
       );
       if (response.data) {
@@ -64,16 +64,16 @@ export default function Pledge() {
     try {
       childrenData.map(async (ChildData) => {
         const child = await axios.post(
-          `http://127.0.0.1:8000/guardians/${parentData.id}/children/`,
+          `https://api.unpluggedcanada.org/guardians/${parentData.id}/children/`,
           ChildData
         );
 
         const pledge = await axios.post(
-          `http://127.0.0.1:8000/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
+          `https://api.unpluggedcanada.org/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
         );
 
         const signature = await axios.post(
-          `http://127.0.0.1:8000/guardians/${parentData.id}/signatures/`,
+          `https://api.unpluggedcanada.org/guardians/${parentData.id}/signatures/`,
           {
             child_id: child.data.id,
             pledge_id: pledge.data.id,
@@ -82,14 +82,16 @@ export default function Pledge() {
         console.log(signature);
       });
       axios.post(
-        `http://127.0.0.1:8000/email_confirmation?name=${
+        `https://api.unpluggedcanada.org/email_confirmation?name=${
           parentData.first_name + " " + parentData.last_name
         }&email=${parentData.email}`
       );
       navigate("/");
     } catch (error) {
       console.log(error);
-      axios.delete("http://127.0.0.1:8000/guardians/" + parentData.id);
+      axios.delete(
+        "https://api.unpluggedcanada.org/guardians/" + parentData.id
+      );
     }
   }
 
