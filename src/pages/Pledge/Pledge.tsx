@@ -81,7 +81,7 @@ export default function Pledge() {
         );
         console.log(signature);
       });
-      axios.post(
+      await axios.post(
         `https://api.unpluggedcanada.org/email_confirmation?name=${
           parentData.first_name + " " + parentData.last_name
         }&email=${parentData.email}`
