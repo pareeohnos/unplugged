@@ -60,7 +60,7 @@ export default function Pledge() {
 
   async function submitPledge() {
     try {
-      postGuardian();
+      await postGuardian();
 
       childrenData.map(async (ChildData) => {
         const child = await axios.post(
