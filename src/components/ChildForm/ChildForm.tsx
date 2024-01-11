@@ -15,14 +15,41 @@ export default function ChildForm({
   const [matchingSchools, setMatchingSchools] = useState([]);
 
   async function fetchSchools(event: any) {
-    const response = await axios.get(
-      "https://api.unpluggedcanada.org/schools/search/",
-      {
-        params: { partial_name: event.target.value },
-      }
-    );
+    const response = await axios.get("http://127.0.0.1:8000/schools/search/", {
+      params: { partial_name: event.target.value },
+    });
     setMatchingSchools(response.data);
   }
+  function validateName(name) {
+    if (!(name.length > 1 && /^[A-Za-z ]+$/.test(name))) {
+      return false;
+    }
+    return true;
+  }
+
+  function validateChildInput(childObj) {
+    if (
+      !(validateName(childObj.first_name) && validateName(childObj.last_name))
+    )
+      return false;
+
+    if (
+      !(
+        childObj.grade.length > 0 &&
+        !isNaN(childObj.grade) &&
+        0 < parseInt(childObj.grade) &&
+        parseInt(childObj.grade) <= 12
+      )
+    )
+      return false;
+
+    if (childObj.current_school_id.length === 0) return false;
+
+    return true;
+  }
+  const [isValidInput, setIsValidInput] = useState(
+    validateChildInput(childrenData[0])
+  );
 
   return (
     <div className="form__fields">
@@ -41,12 +68,14 @@ export default function ChildForm({
         <input
           className="form__input-field"
           type="text"
-          placeholder="First Name"
+          placeholder="First Name (required)"
           value={childrenData[0].first_name}
           onChange={(e) => {
             let childObj = childrenData[0];
             childObj = { ...childObj, first_name: e.target.value };
             setChildrenData([childObj].concat(childrenData.slice(1)));
+            let result = validateChildInput(childObj);
+            if (result !== isValidInput) setIsValidInput(result);
           }}
         />
       </label>
@@ -56,12 +85,14 @@ export default function ChildForm({
         <input
           className="form__input-field"
           type="text"
-          placeholder="Last Name"
+          placeholder="Last Name (required)"
           value={childrenData[0].last_name}
           onChange={(e) => {
             let childObj = childrenData[0];
             childObj = { ...childObj, last_name: e.target.value };
             setChildrenData([childObj].concat(childrenData.slice(1)));
+            let result = validateChildInput(childObj);
+            if (result !== isValidInput) setIsValidInput(result);
           }}
         />
       </label>
@@ -70,13 +101,15 @@ export default function ChildForm({
         <input
           className="form__input-field"
           type="text"
-          placeholder="Grade"
+          placeholder="Grade (required)"
           maxLength={2}
           value={childrenData[0].grade}
           onChange={(e) => {
             let childObj = childrenData[0];
             childObj = { ...childObj, grade: e.target.value };
             setChildrenData([childObj].concat(childrenData.slice(1)));
+            let result = validateChildInput(childObj);
+            if (result !== isValidInput) setIsValidInput(result);
           }}
         />
       </label>
@@ -98,13 +131,15 @@ export default function ChildForm({
             let childObj = childrenData[0];
             childObj = { ...childObj, current_school_id: school["id"] };
             setChildrenData([childObj].concat(childrenData.slice(1)));
+            let result = validateChildInput(childObj);
+            if (result !== isValidInput) setIsValidInput(result);
           }
         }}
         sx={{ marginBottom: 2 }}
         renderInput={(params) => (
           <TextField
             {...params}
-            label="Your Child's Current School"
+            label="Your Child's Current School *"
             onChange={(e) => {
               fetchSchools(e);
             }}
@@ -148,14 +183,16 @@ export default function ChildForm({
           onClick={() => {
             addNewChild();
             setMatchingSchools([]);
+            setIsValidInput(false);
             setCurrentSchoolKey(currentSchoolKey + "1");
             setNextSchoolKey(nextSchoolKey + "2");
           }}
         >
-          Add Another Child
+          Add Other Child
         </Fab>
         <Fab
-          style={{ color: "white", width: "10rem" }}
+          disabled={!isValidInput}
+          style={{ color: "white", width: "10rem", marginLeft: "1rem" }}
           color="primary"
           variant="extended"
           onClick={submitPledge}

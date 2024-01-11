@@ -10,7 +10,7 @@ import GuardianForm from "../../components/GuardianForm/GuardianForm.tsx";
 export default function Pledge() {
   const navigate = useNavigate();
 
-  const [isGuardian, setIsGuardian] = useState(true);
+  const [isGuardian, setIsGuardian] = useState(false);
   const [guardianData, setGuardianData] = useState({
     id: null,
     first_name: "",
