@@ -69,6 +69,7 @@ export default function Pledge() {
           `https://api.unpluggedcanada.org/guardians/${GuardianID}/children/`,
           ChildData
         );
+        console.log("x: ", child.data);
 
         const pledge = await axios.post(
           `https://api.unpluggedcanada.org/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
@@ -91,7 +92,9 @@ export default function Pledge() {
       navigate("/");
     } catch (error) {
       console.log(error);
-      // axios.delete("https://api.unpluggedcanada.org/guardians/" + guardianData.id);
+      axios.delete(
+        "https://api.unpluggedcanada.org/guardians/" + guardianData.id
+      );
     }
   }
 
