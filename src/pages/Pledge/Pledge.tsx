@@ -52,6 +52,8 @@ export default function Pledge() {
       );
       if (response.data) {
         setGuardianData(response.data);
+
+        return response.data.id;
       }
     } catch (error) {
       return;
@@ -60,11 +62,11 @@ export default function Pledge() {
 
   async function submitPledge() {
     try {
-      await postGuardian();
+      const GuardianID = await postGuardian();
 
       childrenData.map(async (ChildData) => {
         const child = await axios.post(
-          `https://api.unpluggedcanada.org/guardians/${guardianData.id}/children/`,
+          `https://api.unpluggedcanada.org/guardians/${GuardianID}/children/`,
           ChildData
         );
 
@@ -73,7 +75,7 @@ export default function Pledge() {
         );
 
         const signature = await axios.post(
-          `https://api.unpluggedcanada.org/guardians/${guardianData.id}/signatures/`,
+          `https://api.unpluggedcanada.org/guardians/${GuardianID}/signatures/`,
           {
             child_id: child.data.id,
             pledge_id: pledge.data.id,
