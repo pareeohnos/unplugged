@@ -117,19 +117,7 @@ export default function GuardianForm({
           }}
         />
       </label>
-      {/* <label className="form__input-label">
-        Province
-        <input
-          className="form__input-field"
-          type="text"
-          placeholder="Province Name (Required)"
-          value={guardianData.province}
-          maxLength={2}
-          onChange={(e) =>
-            setGuardianData({ ...guardianData, province: e.target.value })
-          }
-        />
-      </label> */}
+
       <label className="form__input-label">
         City
         <input
@@ -166,7 +154,11 @@ export default function GuardianForm({
             }}
           >
             {Provinces.map((province) => {
-              return <MenuItem value={province.code}>{province.name}</MenuItem>;
+              return (
+                <MenuItem key={province.code} value={province.code}>
+                  {province.name}
+                </MenuItem>
+              );
             })}
           </Select>
         </FormControl>
