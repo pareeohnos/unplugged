@@ -44,6 +44,9 @@ export default function Pledge() {
       ...childrenData,
     ]);
   }
+
+  window.scrollTo(0, 0);
+
   async function postGuardian() {
     try {
       const response = await axios.post(

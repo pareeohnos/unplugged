@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
+    "@dannymichel/proxima-nova": "^4.5.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource-variable/work-sans": "^5.0.17",
@@ -53,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
   }
 }
