@@ -63,7 +63,9 @@ export default function GuardianForm({
 
   return (
     <div className="form__fields">
-      <h2 className="form__subtitle">Primary Guardian</h2>
+      <h2 className="form__subtitle  text-[24px]  font-bold text-[#2e4049]">
+        Primary Guardian
+      </h2>
 
       <label className="form__input-label">
         First Name

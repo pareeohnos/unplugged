@@ -11,8 +11,6 @@ export default function Pledge() {
   const navigate = useNavigate();
 
   const [isGuardian, setIsGuardian] = useState(true);
-  const [isSchoolForm, setIsSchoolForm] = useState(false);
-
   const [guardianData, setGuardianData] = useState({
     id: null,
     first_name: "",
@@ -107,9 +105,7 @@ export default function Pledge() {
     <div>
       <Nav />
       <form className="form">
-        <h1 className="form__title text-[32px] text-[#2e4049]">
-          Unplugged Canada Pledge
-        </h1>
+        <h1 className="form__title">Wait until 8th grade Pledge</h1>
         <div className="form__stepper">
           <div
             className={

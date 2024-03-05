@@ -4,6 +4,8 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import axios from "axios";
 
+import NewSchoolForm from "../NewSchoolForm/NewSchoolForm";
+
 export default function ChildForm({
   childrenData,
   setChildrenData,
@@ -56,7 +58,9 @@ export default function ChildForm({
 
   return (
     <div className="form__fields">
-      <h2 className="form__subtitle">Student Pledging To Wait</h2>
+      <h2 className="form__subtitle text-[24px]  font-bold text-[#2e4049]">
+        Student Pledging To Wait
+      </h2>
       <label className="form__input-label">
         Date
         <input
@@ -117,9 +121,12 @@ export default function ChildForm({
         />
       </label>
 
+      <NewSchoolForm />
+
       <Autocomplete
         key={currentSchoolKey}
         disablePortal
+        loading
         id="combo-box-demo"
         options={matchingSchools}
         getOptionLabel={(option) => {
