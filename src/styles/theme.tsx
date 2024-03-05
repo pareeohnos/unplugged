@@ -4,7 +4,7 @@ import "@fontsource/shippori-mincho/500.css";
 import "@fontsource/shippori-mincho/600.css";
 import "@fontsource/shippori-mincho/700.css";
 import "@fontsource/shippori-mincho/800.css";
-
+import "@dannymichel/proxima-nova";
 import "@fontsource-variable/work-sans";
 import "@fontsource/sue-ellen-francisco";
 
@@ -58,7 +58,7 @@ const theme = createTheme(responsiveFontSizes(baseTheme), {
     button: { fontFamily: "Work Sans Variable", color: "#FFFFFF" },
     poster: {
       fontSize: 50,
-      fontFamily: "Sue Ellen Francisco",
+      fontFamily: "Proxima Nova",
     },
   },
 });

@@ -15,49 +15,49 @@ export default function Nav() {
           </Typography>
         </div>
 
-        <ul className="nav__list">
-          <li>
-            <a className="nav__link" href="/">
-              <Typography sx={{ fontSize: 14, mr: "1rem" }}>Home</Typography>
-            </a>
-          </li>
-          <li>
-            <a className="nav__link" href="/">
-              <Typography sx={{ fontSize: 14, mr: "1rem" }}>
-                Our Team
-              </Typography>
-            </a>
-          </li>
-          <li>
-            <a className="nav__link" href="/">
-              <Typography sx={{ fontSize: 14, mr: "1rem" }}>
-                Case Studies
-              </Typography>
-            </a>
-          </li>
-          <li>
-            <a className="nav__link" href="/">
-              <Typography sx={{ fontSize: 14, mr: "1rem" }}>
-                Resources
-              </Typography>
-            </a>
-          </li>
-          <li>
-            <a className="nav__link" href="/">
-              <Typography sx={{ fontSize: 14, mr: "1rem" }}>Contact</Typography>
-            </a>
-          </li>
-          <li>
-            <Fab
-              color="primary"
-              variant="extended"
-              style={{ color: "white" }}
-              onClick={() => navigate("/pledge")}
-            >
-              SIGN THE PLEDGE
-            </Fab>
-          </li>
-        </ul>
+        {/* <ul className="nav__list">
+            <li>
+              <a className="nav__link" href="/">
+                <Typography sx={{ fontSize: 14, mr: "1rem" }}>Home</Typography>
+              </a>
+            </li>
+            <li>
+              <a className="nav__link" href="/">
+                <Typography sx={{ fontSize: 14, mr: "1rem" }}>
+                  Our Team
+                </Typography>
+              </a>
+            </li>
+            <li>
+              <a className="nav__link" href="/">
+                <Typography sx={{ fontSize: 14, mr: "1rem" }}>
+                  Case Studies
+                </Typography>
+              </a>
+            </li>
+            <li>
+              <a className="nav__link" href="/">
+                <Typography sx={{ fontSize: 14, mr: "1rem" }}>
+                  Resources
+                </Typography>
+              </a>
+            </li>
+            <li>
+              <a className="nav__link" href="/">
+                <Typography sx={{ fontSize: 14, mr: "1rem" }}>Contact</Typography>
+              </a>
+            </li>
+            <li>
+              <Fab
+                color="primary"
+                variant="extended"
+                style={{ color: "white" }}
+                onClick={() => navigate("/pledge")}
+              >
+                SIGN THE PLEDGE
+              </Fab>
+            </li>
+          </ul> */}
       </div>
     </div>
   );

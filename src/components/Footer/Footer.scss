@@ -8,11 +8,11 @@
   &__container {
     margin: 0 auto;
     width: calc(100% - $desktopTotalMargin);
-    display: flex;
+    // display: flex;
     padding: 4rem 0;
   }
   &__left-col {
-    width: 30%;
+    // width: 30%;
   }
   &__logo {
     margin-bottom: 1rem;
@@ -26,7 +26,6 @@
   }
   &__social-links {
     list-style: none;
-    display: flex;
   }
   &__social-link {
     background-color: rgba(255, 255, 255, 0.1);
@@ -34,7 +33,6 @@
 }
 
 .footer__right-col {
-  width: 70%;
   background-color: #384c56;
   padding: 2rem 1rem;
   display: flex;

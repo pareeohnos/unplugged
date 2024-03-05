@@ -1,20 +1,11 @@
 @use "../../styles/globals.scss" as *;
 
 .hero {
-  min-height: 100vh; //calc(100vh - 78px);
+  min-height: 80vh; //calc(100vh - 78px);
   width: 100vw;
   display: flex;
   justify-content: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../../assets/images/pexels-thirdman-8926648.jpg");
 
-  background-size: cover;
-  background-position: center;
-  &__container {
-    width: 50%;
-    min-width: 50rem;
-    margin-top: 7rem;
-  }
   &__buttons {
     margin-top: 1.5rem;
   }
@@ -83,21 +74,9 @@ $totalMargin: $destopContainerMargin * 2;
   //   background-color: red;
   &__container {
     margin: 0 $destopContainerMargin;
-    display: flex;
+
     width: calc(100% - $totalMargin);
     padding: 3.5rem 0;
-  }
-  &__people {
-    width: 50%;
-    padding-right: 1rem;
-    // background-color: blue;
-  }
-  &__goals {
-    width: 50%;
-    background-color: $lightBlue;
-    padding-left: 3rem;
-    padding-right: 2rem;
-    padding-top: 1.5rem;
   }
 }
 
@@ -114,6 +93,7 @@ $totalMargin: $destopContainerMargin * 2;
 .people__copy {
   font-family: $font-primary;
   margin-bottom: 1rem;
+  line-height: 1.75;
 }
 .goals__title {
   color: $infoColor;
