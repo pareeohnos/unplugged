@@ -1,30 +1,51 @@
 // import Fab from "@mui/material/Fab/Fab";
+
 import { Fab, Typography } from "@mui/material";
 // import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "../../components/Nav/Nav.tsx";
 import "./Home.scss";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
+import photo1 from "../../assets/images/pexels-thirdman-8926648.jpg";
+import photo2 from "../../assets/images/teens_1.jpeg";
+import photo3 from "../../assets/images/teens_2.jpeg";
+import photo4 from "../../assets/images/teens_3.jpeg";
 
 import Footer from "../../components/Footer/Footer.tsx";
 
 export default function Home() {
   const navigate = useNavigate();
+  const photos = [photo1, photo2, photo3, photo4];
+
+  const [background, setBackground] = useState(photo1);
+
+  useEffect(() => {
+    //Implementing the setInterval method
+    const interval = setInterval(() => {
+      setBackground(photos[0]);
+
+      photos.unshift(photos.pop());
+    }, 5000);
+
+    //Clearing the interval
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="font-sans">
-      {/* <Nav /> */}
-      <header className="hero relative">
+      <header
+        className="hero relative transition-all duration-300 ease-in-out"
+        style={{
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${background}")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="absolute right-8 top-4">
           <img className="w-16 h-16" src={logo} alt="" />
         </div>
         <div className="p-8 flex flex items-center justify-center flex-col">
-          {/* <div>
-            <p className="hero__text" style={{ fontSize: "2.5rem" }}>
-              Protect our children
-            </p>
-          </div> */}
           <div>
             <h1 className="text-white text-[40px] font-mincho md:px-[80px] md:text-[80px] ">
               Say Yes To Waiting For Smartphones
@@ -50,7 +71,7 @@ export default function Home() {
 
       <section className="about-us">
         <div className="about-us__container  flex  flex-col md:flex-row">
-          <div className="about-us__people w-3/5 leading-7 mr-12">
+          <div className="about-us__people w-full md:w-3/5 leading-7 mr-12">
             <p>
               <span
                 id="about"

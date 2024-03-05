@@ -9,15 +9,15 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer__container">
-        <div className="footer__left-col">
+      <div className="footer__container flex flex-col justify-between md:flex-row ">
+        <div className="w-full md:max-w-72 ">
           <h2 className="footer__logo">Unplugged</h2>
           <p className="footer__copy">
             Lorem ipsum dolor sit amet. Iusto perspiciatis omnis nisi placeat.
             Minima tempore ullam ut ratione? Ullam, recusandae. Hic, natus
             deserunt.
           </p>
-          <ul className="footer__social-links">
+          <ul className="footer__social-links flex justify-center">
             <li>
               <Fab
                 className="footer__social-link"
@@ -60,7 +60,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="footer__right-col">
+        <div className="footer__right-col w-full mt-4 max-w-[860px]">
           <div className="footer__content-col">
             <h3 className="footer__subtitle">Get Involved</h3>
             <ul className="footer__list">
