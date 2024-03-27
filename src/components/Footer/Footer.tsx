@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import { Fab } from "@mui/material";
+import logoHorizontal from "../../assets/images/logoHorizontal.png";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -10,12 +11,15 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container flex flex-col justify-between md:flex-row ">
-        <div className="w-full md:max-w-72 ">
-          <h2 className="footer__logo">Unplugged</h2>
+        <div className="w-full md:max-w-72 mr-4 ">
+          {/* <h2 className="footer__logo">Unplugged</h2> */}
+          <div className="-ml-2">
+            <img src={logoHorizontal} alt="logo" className="max-h-[75px]" />
+          </div>
           <p className="footer__copy">
-            Lorem ipsum dolor sit amet. Iusto perspiciatis omnis nisi placeat.
-            Minima tempore ullam ut ratione? Ullam, recusandae. Hic, natus
-            deserunt.
+            Uplugged is a volunteer run organization dedicated to the growth and
+            wellbeing of the youth in Canada. If you want to know more about our
+            mission, follow us on social media, or contact us for a quick chat.
           </p>
           <ul className="footer__social-links flex justify-center">
             <li>
@@ -94,7 +98,7 @@ export default function Footer() {
               support@unplugged.com
             </a>
             <a className="footer__contact-link" href="tel:+4733378901">
-              +47 333 78 901
+              +1 (800)-UNPLUGGED
             </a>
           </div>
         </div>

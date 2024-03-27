@@ -3,6 +3,7 @@ import React from "react";
 import "./Nav.scss";
 import { Fab, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import logoHorizontal_black from "../../assets/images/logoHorizontal_black.png";
 
 export default function Nav() {
   const navigate = useNavigate();
@@ -10,9 +11,12 @@ export default function Nav() {
     <div className="nav">
       <div className="nav__container">
         <div className="nav__logo-container">
-          <Typography variant="poster" sx={{ fontSize: 32 }}>
+          {/* <Typography variant="poster" sx={{ fontSize: 32 }}>
             Unplugged
-          </Typography>
+          </Typography> */}
+          <div>
+            <img src={logoHorizontal_black} className="h-[90px]" alt="logo" />
+          </div>
         </div>
 
         {/* <ul className="nav__list">

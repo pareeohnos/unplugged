@@ -43,7 +43,7 @@ export default function Home() {
         }}
       >
         <div className="absolute right-8 top-4">
-          <img className="w-16 h-16" src={logo} alt="" />
+          <img className="h-20 " src={logo} alt="" />
         </div>
         <div className="p-8 flex flex items-center justify-center flex-col">
           <div>
