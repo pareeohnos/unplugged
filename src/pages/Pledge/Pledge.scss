@@ -2,12 +2,13 @@
 
 .form {
   //   border: 1px solid red;
-  width: 30rem;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
   display: flex;
   font-family: $font-main;
-
+  padding: 25px;
+  max-width: 35rem;
   flex-direction: column;
   align-items: center;
   &__title {

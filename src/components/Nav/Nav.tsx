@@ -8,14 +8,18 @@ import logoHorizontal_black from "../../assets/images/logoHorizontal_black.png";
 export default function Nav() {
   const navigate = useNavigate();
   return (
-    <div className="nav">
-      <div className="nav__container">
+    <div className="w-full">
+      <div className="px-[25px] flex justify-center">
         <div className="nav__logo-container">
           {/* <Typography variant="poster" sx={{ fontSize: 32 }}>
             Unplugged
           </Typography> */}
           <div>
-            <img src={logoHorizontal_black} className="h-[90px]" alt="logo" />
+            <img
+              src={logoHorizontal_black}
+              className="max-h-[90px]"
+              alt="logo"
+            />
           </div>
         </div>
 

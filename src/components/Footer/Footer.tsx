@@ -21,7 +21,7 @@ export default function Footer() {
             wellbeing of the youth in Canada. If you want to know more about our
             mission, follow us on social media, or contact us for a quick chat.
           </p>
-          <ul className="footer__social-links flex justify-center">
+          <ul className="footer__social-links flex justify-center mb-8 ">
             <li>
               <Fab
                 className="footer__social-link"
@@ -64,8 +64,8 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="footer__right-col w-full mt-4 max-w-[860px]">
-          <div className="footer__content-col">
+        <div className="flex flex md:justify-between w-full mt-4 max-w-[860px]">
+          <div className="footer__content-col mr-7">
             <h3 className="footer__subtitle">Get Involved</h3>
             <ul className="footer__list">
               <li>About Us</li>
@@ -75,7 +75,7 @@ export default function Footer() {
               <li>Team</li>
             </ul>
           </div>
-          <div className="footer__content-col">
+          <div className="hidden min-[450px]:block footer__content-col mr-7">
             <h3 className="footer__subtitle">Utility</h3>
             <ul className="footer__list">
               <li>Resources</li>

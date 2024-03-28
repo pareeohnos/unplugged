@@ -7,9 +7,10 @@
 
   &__container {
     margin: 0 auto;
-    width: calc(100% - $desktopTotalMargin);
+    width: 100%;
     // display: flex;
-    padding: 4rem 0;
+    max-width: 750px;
+    padding: 4rem 25px;
   }
   &__left-col {
     // width: 30%;
