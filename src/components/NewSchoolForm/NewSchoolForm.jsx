@@ -42,8 +42,8 @@ export default function NewSchool() {
 
     setAddingNewSchool(false);
     try {
-      await axios.post(`https://api.unpluggedcanada.org/schools/`, {
-        id: uuidv4(),
+      await axios.post(`http://127.0.0.1:8000/schools/`, {
+        id: uuidv4().substring(0,20),
         name: nameValue,
         name_original: nameValue,
         address: addressValue,
