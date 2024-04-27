@@ -6,7 +6,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 
-export default function NewSchool() {
+export default function NewSchool({addNewSchoolToChild, whichSchool}) {
   const nameRef = useRef();
   const addressRef = useRef();
   const cityRef = useRef();
@@ -42,7 +42,7 @@ export default function NewSchool() {
 
     setAddingNewSchool(false);
     try {
-      await axios.post(`https://api.unpluggedcanada.org/schools/`, {
+      const response = await axios.post(`https://api.unpluggedcanada.org/schools/`, {
         id: uuidv4().substring(0,20),
         name: nameValue,
         name_original: nameValue,
@@ -50,6 +50,7 @@ export default function NewSchool() {
         city: cityValue,
         province: provinceValue,
       });
+      addNewSchoolToChild(response.data, whichSchool);
     } catch (error) {
       console.log(error.message);
     }
@@ -58,7 +59,7 @@ export default function NewSchool() {
   if (addingNewSchool === false) {
     return (
       <p className="mb-4 ">
-        Can't find your Child's School? Add it here{" "}
+        Can't find your Child's {whichSchool == 'current' ? "Current": "Next"} School? Add it here{" "}
         <Fab
           style={{ width: "36px", height: "30px", marginLeft: "1rem" }}
           color="primary"
@@ -72,31 +73,10 @@ export default function NewSchool() {
   }
   return (
     <div>
-      <p className="mb-4 ">
+      {/* <p className="mb-4 ">
         Can't find your Child's School? Add it here{" "}
-        <Fab
-          style={{
-            width: "36px",
-            height: "30px",
-            marginLeft: "1rem",
-            backgroundColor: "rgb(100,100,100)",
-          }}
-          aria-label="cancel"
-          // size="small"
-          onClick={() => setAddingNewSchool(false)}
-        >
-          <CloseIcon style={{ color: "white" }} />
-        </Fab>{" "}
-        <Fab
-          style={{ width: "36px", height: "30px", marginLeft: ".25rem" }}
-          color="primary"
-          aria-label="confirm"
-          // size="small"
-          onClick={() => postSchoolData()}
-        >
-          <CheckIcon style={{ color: "white" }} />
-        </Fab>{" "}
-      </p>
+       
+      </p> */}
       <div className="transition-all duration-300 ease-in-out">
         <div className="w-full rounded-lg p-4 shadow-xl mb-6 bg-[rgba(235,235,235,.5)]">
           <label className="flex flex-col font-mincho text-[#2e4049] text-[16px]">
@@ -120,7 +100,7 @@ export default function NewSchool() {
           </label>
 
           <label className="flex flex-col font-mincho text-[#2e4049] text-[16px]  mt-2">
-            City
+          City
             <input
               ref={cityRef}
               className="bg-[rgba(117,215,210,0.33)] p-2 font-sans rounded-xl mt-2"
@@ -139,6 +119,30 @@ export default function NewSchool() {
               placeholder="The province Identifier, BC, ON ..."
             />
           </label>
+
+          <div className="mt-4">
+            <Fab
+            style={{
+              width: "36px",
+              height: "30px",
+              marginLeft: "1rem",
+              backgroundColor: "rgb(100,100,100)",
+            }}
+            aria-label="cancel"
+            // size="small"
+            onClick={() => setAddingNewSchool(false)}>
+            <CloseIcon style={{ color: "white" }} />
+            </Fab>{" "}
+            <Fab
+              style={{ width: "36px", height: "30px", marginLeft: ".25rem" }}
+              color="primary"
+              aria-label="confirm"
+              // size="small"
+              onClick={() => postSchoolData()}
+            >
+              <CheckIcon style={{ color: "white" }} />
+            </Fab>{" "}
+          </div>
         </div>
       </div>
     </div>

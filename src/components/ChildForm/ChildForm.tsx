@@ -15,6 +15,8 @@ export default function ChildForm({
   const [currentSchoolKey, setCurrentSchoolKey] = useState("1");
   const [nextSchoolKey, setNextSchoolKey] = useState("2");
   const [matchingSchools, setMatchingSchools] = useState([]);
+  const [currentSchoolTmpLabel, setCurrentSchoolTmpLabel] = useState("");
+  const [nextSchoolTmpLabel, setNextSchoolTmpLabel] = useState("");
 
   async function fetchSchools(event: any) {
     const response = await axios.get(
@@ -56,6 +58,20 @@ export default function ChildForm({
     validateChildInput(childrenData[0])
   );
 
+  function addNewSchoolToChild(addedSchool, whichSchool) {
+    let childObj = childrenData[0];
+    if (whichSchool === "current"){
+      childObj = { ...childObj, current_school_id: addedSchool.id };
+      setCurrentSchoolTmpLabel(`${addedSchool.name}, ${addedSchool.city}, ${addedSchool.province}`);
+    }
+    else {
+      childObj = { ...childObj, next_school_id: addedSchool.id };
+      setNextSchoolTmpLabel(`${addedSchool.name}, ${addedSchool.city}, ${addedSchool.province}`);
+
+    }
+    setChildrenData([childObj].concat(childrenData.slice(1)));
+
+  }
   return (
     <div className="form__fields">
       <h2 className="form__subtitle text-[24px]  font-bold text-[#2e4049]">
@@ -121,7 +137,7 @@ export default function ChildForm({
         />
       </label>
 
-      <NewSchoolForm />
+      <NewSchoolForm addNewSchoolToChild={addNewSchoolToChild} whichSchool={"current"}/>
 
       <Autocomplete
         key={currentSchoolKey}
@@ -149,13 +165,17 @@ export default function ChildForm({
         renderInput={(params) => (
           <TextField
             {...params}
-            label="Your Child's Current School *"
+            label={currentSchoolTmpLabel ? currentSchoolTmpLabel : "Your Child's Current School"}
             onChange={(e) => {
+              setCurrentSchoolTmpLabel("");
               fetchSchools(e);
             }}
           />
         )}
       />
+      
+      <NewSchoolForm addNewSchoolToChild={addNewSchoolToChild} whichSchool={"next"}/>
+
       <Autocomplete
         key={nextSchoolKey}
         disablePortal
@@ -179,9 +199,11 @@ export default function ChildForm({
         renderInput={(params) => (
           <TextField
             {...params}
-            label="Your Child's Next School"
+            label={nextSchoolTmpLabel ? nextSchoolTmpLabel : "Your Child's Next School"}
             onChange={(e) => {
+              setNextSchoolTmpLabel("");
               fetchSchools(e);
+
             }}
           />
         )}

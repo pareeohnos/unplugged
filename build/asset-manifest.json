@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7d187515.css",
-    "main.js": "/static/js/main.49b733f3.js",
+    "main.js": "/static/js/main.84e5d09e.js",
     "static/media/pexels-thirdman-8926648.jpg": "/static/media/pexels-thirdman-8926648.2197569896f933960414.jpg",
     "static/media/teens_2.jpeg": "/static/media/teens_2.3d5f529eead07aefb52a.jpeg",
     "static/media/teens_1.jpeg": "/static/media/teens_1.f29e5a17904e32c4a6d5.jpeg",
@@ -1236,10 +1236,10 @@
     "static/media/shippori-mincho-55-400-normal.woff2": "/static/media/shippori-mincho-55-400-normal.ea7ba4861a2d644315b6.woff2",
     "static/media/shippori-mincho-55-600-normal.woff2": "/static/media/shippori-mincho-55-600-normal.005378fcc7b95801b6e8.woff2",
     "main.7d187515.css.map": "/static/css/main.7d187515.css.map",
-    "main.49b733f3.js.map": "/static/js/main.49b733f3.js.map"
+    "main.84e5d09e.js.map": "/static/js/main.84e5d09e.js.map"
   },
   "entrypoints": [
     "static/css/main.7d187515.css",
-    "static/js/main.49b733f3.js"
+    "static/js/main.84e5d09e.js"
   ]
 }
