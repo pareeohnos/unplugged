@@ -6,7 +6,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 
-export default function NewSchool({addNewSchoolToChild, whichSchool}) {
+export default function NewSchool({addNewSchoolToChild, whichSchool, hideAddNewSchool}) {
   const nameRef = useRef();
   const addressRef = useRef();
   const cityRef = useRef();
@@ -56,7 +56,11 @@ export default function NewSchool({addNewSchoolToChild, whichSchool}) {
     }
   }
 
-  if (addingNewSchool === false) {
+  if (hideAddNewSchool) {
+    return  <></>;
+  }
+  
+  if (addingNewSchool === false ) {
     return (
       <p className="mb-4 ">
         Can't find your Child's {whichSchool == 'current' ? "Current": "Next"} School? Add it here{" "}

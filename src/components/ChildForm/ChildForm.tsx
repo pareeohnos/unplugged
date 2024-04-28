@@ -137,7 +137,7 @@ export default function ChildForm({
         />
       </label>
 
-      <NewSchoolForm addNewSchoolToChild={addNewSchoolToChild} whichSchool={"current"}/>
+      <NewSchoolForm addNewSchoolToChild={addNewSchoolToChild} whichSchool={"current"} hideAddNewSchool={currentSchoolTmpLabel != ""}/>
 
       <Autocomplete
         key={currentSchoolKey}
@@ -174,7 +174,7 @@ export default function ChildForm({
         )}
       />
       
-      <NewSchoolForm addNewSchoolToChild={addNewSchoolToChild} whichSchool={"next"}/>
+      <NewSchoolForm addNewSchoolToChild={addNewSchoolToChild} whichSchool={"next"} hideAddNewSchool={nextSchoolTmpLabel != ""}/>
 
       <Autocomplete
         key={nextSchoolKey}
