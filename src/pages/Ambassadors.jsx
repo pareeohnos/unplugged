@@ -25,8 +25,8 @@ export default function Ambassadors() {
                     <Nav />
                 </div>
             </div>
-            <main className="w-full px-12 pt-12 pb-12">
-                <h2 className="font-proxima text-[36px] text-[#FF6D6D] mb-16">
+            <main className="w-full px-12 pt-12 pb-12 max-w-[956px] mx-auto">
+                <h2 className="font-proxima text-[36px] text-[#FF6D6D] mb-8">
                     Ambassadors
                 </h2>
 

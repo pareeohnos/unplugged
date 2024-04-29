@@ -13,7 +13,7 @@ import logoBlack from '../../assets/images/Unplugged-Logo-Stacked.svg'
 export default function Nav({ logoColor = 'white' }) {
     const navigate = useNavigate()
     return (
-        <div className="w-full">
+        <div className="w-full max-w-[956px] mx-auto">
             <div className="flex flex-col md:flex-row px-12 items-center md:justify-between">
                 <div className="">
                     {/* <Typography variant="poster" sx={{ fontSize: 32 }}>

@@ -1,11 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7d187515.css",
-    "main.js": "/static/js/main.84e5d09e.js",
+    "main.css": "/static/css/main.0c98067d.css",
+    "main.js": "/static/js/main.24a93767.js",
+    "static/media/josette_calleja.jpg": "/static/media/josette_calleja.a886cf2157e8821b8d3d.jpg",
     "static/media/pexels-thirdman-8926648.jpg": "/static/media/pexels-thirdman-8926648.2197569896f933960414.jpg",
     "static/media/teens_2.jpeg": "/static/media/teens_2.3d5f529eead07aefb52a.jpeg",
     "static/media/teens_1.jpeg": "/static/media/teens_1.f29e5a17904e32c4a6d5.jpeg",
+    "static/media/4.png": "/static/media/4.a984b7ba217b339748b6.png",
+    "static/media/5.png": "/static/media/5.82cd75676d8c88897267.png",
     "static/media/teens_3.jpeg": "/static/media/teens_3.e0ec16752c8dfb410bdd.jpeg",
+    "static/media/grace.JPG": "/static/media/grace.ca11110f7045d54b5152.JPG",
     "static/media/shippori-mincho-5-700-normal.woff": "/static/media/shippori-mincho-5-700-normal.df5fc98f6a47575eb13c.woff",
     "static/media/shippori-mincho-5-800-normal.woff": "/static/media/shippori-mincho-5-800-normal.1df7768f4c76eb1feaab.woff",
     "static/media/shippori-mincho-5-500-normal.woff": "/static/media/shippori-mincho-5-500-normal.fcd99ac03a3471dad04c.woff",
@@ -541,6 +545,7 @@
     "static/media/shippori-mincho-latin-800-normal.woff2": "/static/media/shippori-mincho-latin-800-normal.1cabd20b67725f5116e7.woff2",
     "static/media/shippori-mincho-3-400-normal.woff2": "/static/media/shippori-mincho-3-400-normal.25d0319b2205d2c6852a.woff2",
     "static/media/shippori-mincho-latin-400-normal.woff2": "/static/media/shippori-mincho-latin-400-normal.5cdc034ccc04040ac9f9.woff2",
+    "static/media/Unplugged-Logo-Stacked-W.svg": "/static/media/Unplugged-Logo-Stacked-W.e9937f49147e8136e3357dd41e7ef402.svg",
     "static/media/shippori-mincho-118-700-normal.woff": "/static/media/shippori-mincho-118-700-normal.b8b57be4ba97f6302c0e.woff",
     "static/media/shippori-mincho-118-600-normal.woff": "/static/media/shippori-mincho-118-600-normal.190b238e0cf1d80f4f27.woff",
     "static/media/shippori-mincho-118-500-normal.woff": "/static/media/shippori-mincho-118-500-normal.dd776ce776dd20e93195.woff",
@@ -550,6 +555,7 @@
     "static/media/shippori-mincho-118-600-normal.woff2": "/static/media/shippori-mincho-118-600-normal.1cc06a8f877afac4ada5.woff2",
     "static/media/shippori-mincho-118-700-normal.woff2": "/static/media/shippori-mincho-118-700-normal.99d57c3d55de757f28f5.woff2",
     "static/media/shippori-mincho-118-800-normal.woff2": "/static/media/shippori-mincho-118-800-normal.1119e62f06ab10316275.woff2",
+    "static/media/Unplugged-Logo-Stacked.svg": "/static/media/Unplugged-Logo-Stacked.c42636aa414e05e151366c14fd27c358.svg",
     "static/media/shippori-mincho-118-400-normal.woff2": "/static/media/shippori-mincho-118-400-normal.9cc9c7b71cbadf46fb4b.woff2",
     "static/media/shippori-mincho-64-600-normal.woff": "/static/media/shippori-mincho-64-600-normal.4d698826bb18737938b1.woff",
     "static/media/shippori-mincho-64-700-normal.woff": "/static/media/shippori-mincho-64-700-normal.628b4dbd9ba0fca23eb9.woff",
@@ -1179,6 +1185,7 @@
     "static/media/shippori-mincho-52-600-normal.woff": "/static/media/shippori-mincho-52-600-normal.d703c6320d273996327a.woff",
     "static/media/shippori-mincho-52-500-normal.woff": "/static/media/shippori-mincho-52-500-normal.7def6e31b005b2c5a744.woff",
     "static/media/shippori-mincho-52-400-normal.woff": "/static/media/shippori-mincho-52-400-normal.d8d30a4fe0d8821bb07d.woff",
+    "index.html": "/index.html",
     "static/media/shippori-mincho-2-700-normal.woff": "/static/media/shippori-mincho-2-700-normal.663574d5fbb627fac7bb.woff",
     "static/media/shippori-mincho-2-600-normal.woff": "/static/media/shippori-mincho-2-600-normal.d5d7b953c7a01ec2ce94.woff",
     "static/media/shippori-mincho-2-800-normal.woff": "/static/media/shippori-mincho-2-800-normal.0d34047605da4fd89b02.woff",
@@ -1222,7 +1229,6 @@
     "static/media/shippori-mincho-latin-ext-500-normal.woff2": "/static/media/shippori-mincho-latin-ext-500-normal.a9972d1538b89f33b8f7.woff2",
     "static/media/shippori-mincho-latin-ext-800-normal.woff2": "/static/media/shippori-mincho-latin-ext-800-normal.9ae9f77bbc7ca53c97fb.woff2",
     "static/media/shippori-mincho-latin-ext-600-normal.woff2": "/static/media/shippori-mincho-latin-ext-600-normal.c9be1f063456d3e6c7c2.woff2",
-    "index.html": "/index.html",
     "static/media/shippori-mincho-latin-ext-700-normal.woff2": "/static/media/shippori-mincho-latin-ext-700-normal.147cd96aab7ac6248937.woff2",
     "static/media/shippori-mincho-latin-ext-400-normal.woff2": "/static/media/shippori-mincho-latin-ext-400-normal.0d39407cf0dbe0d366c6.woff2",
     "static/media/shippori-mincho-58-400-normal.woff2": "/static/media/shippori-mincho-58-400-normal.41eb6dbaf3f9c34f7704.woff2",
@@ -1235,11 +1241,11 @@
     "static/media/shippori-mincho-55-800-normal.woff2": "/static/media/shippori-mincho-55-800-normal.e00d485c28edced3d7ec.woff2",
     "static/media/shippori-mincho-55-400-normal.woff2": "/static/media/shippori-mincho-55-400-normal.ea7ba4861a2d644315b6.woff2",
     "static/media/shippori-mincho-55-600-normal.woff2": "/static/media/shippori-mincho-55-600-normal.005378fcc7b95801b6e8.woff2",
-    "main.7d187515.css.map": "/static/css/main.7d187515.css.map",
-    "main.84e5d09e.js.map": "/static/js/main.84e5d09e.js.map"
+    "main.0c98067d.css.map": "/static/css/main.0c98067d.css.map",
+    "main.24a93767.js.map": "/static/js/main.24a93767.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d187515.css",
-    "static/js/main.84e5d09e.js"
+    "static/css/main.0c98067d.css",
+    "static/js/main.24a93767.js"
   ]
 }

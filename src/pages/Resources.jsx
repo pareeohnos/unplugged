@@ -19,7 +19,7 @@ export default function Resources() {
         <div className="font-sans w-full h-full">
             <Nav logoColor="black" />
 
-            <main className="w-full px-12 py-12">
+            <main className="w-full px-12 py-12 max-w-[956px] mx-auto">
                 <h2 className=" mb-6">
                     <span
                         id="about"

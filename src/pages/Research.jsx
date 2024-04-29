@@ -11,7 +11,7 @@ export default function Research() {
     const navigate = useNavigate()
 
     return (
-        <div className="font-sans w-full h-full">
+        <div className="font-sans w-full h-full ">
             <div
                 style={{
                     backgroundImage: `url(${kidPhotoOcean})`,
@@ -24,7 +24,7 @@ export default function Research() {
                     <Nav logoColor="black" />
                 </div>
             </div>
-            <main className="w-full px-12 pt-12 pb-12">
+            <main className="w-full px-12 pt-12 pb-12 max-w-[956px] mx-auto">
                 <div>
                     <h2 className="font-proxima text-[32px] text-[#FF6D6D]">
                         Research
