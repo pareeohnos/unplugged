@@ -23,7 +23,7 @@ export default function Nav() {
           </div>
         </div>
 
-        {/* <ul className="nav__list">
+        <ul className="nav__list">
             <li>
               <a className="nav__link" href="/">
                 <Typography sx={{ fontSize: 14, mr: "1rem" }}>Home</Typography>
@@ -65,7 +65,7 @@ export default function Nav() {
                 SIGN THE PLEDGE
               </Fab>
             </li>
-          </ul> */}
+          </ul>
       </div>
     </div>
   );
