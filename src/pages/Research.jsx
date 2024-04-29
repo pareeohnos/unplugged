@@ -3,6 +3,7 @@ import { Fab, Typography } from '@mui/material'
 import React, { useState, useEffect } from 'react'
 import Nav from '../components/Nav/Nav.tsx'
 import { useNavigate } from 'react-router-dom'
+import kidPhotoOcean from '../assets/images/5.png'
 
 import Footer from '../components/Footer/Footer.tsx'
 
@@ -13,15 +14,14 @@ export default function Research() {
         <div className="font-sans w-full h-full">
             <div
                 style={{
-                    backgroundImage:
-                        'url("https://images.squarespace-cdn.com/content/v1/58938b9fbebafb25099e8c5b/1713208193748-DYE5TQV9JLD5AG94S1HO/W8_BannerImagesupdatedcottoncandy_1.jpg")',
+                    backgroundImage: `url(${kidPhotoOcean})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: '25% 60%',
+                    backgroundPosition: '0% 0%',
                 }}
                 className="h-[335px] w-full"
             >
                 <div className="bg-[rgba(255,255,255,.7)]">
-                    <Nav />
+                    <Nav logoColor="black" />
                 </div>
             </div>
             <main className="w-full px-12 pt-12 pb-12">

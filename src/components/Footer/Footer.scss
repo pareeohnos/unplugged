@@ -1,59 +1,59 @@
-@use "../../styles/globals.scss" as *;
+@use '../../styles/globals.scss' as *;
 
 .footer {
-  background-color: $infoColor;
-  color: white;
-  font-family: $font-primary;
-
-  &__container {
-    margin: 0 auto;
-    width: 100%;
-    // display: flex;
-    max-width: 750px;
-    padding: 4rem 25px;
-  }
-  &__left-col {
-    // width: 30%;
-  }
-  &__logo {
-    margin-bottom: 1rem;
-    font-family: $font-secondary;
-    font-size: 2.25rem;
-  }
-  &__copy {
-    margin-bottom: 1rem;
-    padding-right: 1rem;
+    background-color: $infoColor;
+    color: white;
     font-family: $font-primary;
-  }
-  &__social-links {
-    list-style: none;
-  }
-  &__social-link {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
+
+    &__container {
+        margin: 0 auto;
+        width: 100%;
+        // display: flex;
+        max-width: 750px;
+        padding: 4rem 25px;
+    }
+    &__left-col {
+        // width: 30%;
+    }
+    &__logo {
+        margin-bottom: 1rem;
+        font-family: $font-secondary;
+        font-size: 2.25rem;
+    }
+    &__copy {
+        margin-bottom: 1rem;
+        padding-right: 1rem;
+        font-family: $font-primary;
+    }
+    &__social-links {
+        list-style: none;
+    }
+    &__social-link {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 }
 
 .footer__right-col {
-  background-color: #384c56;
-  padding: 2rem 1rem;
-  display: flex;
-  justify-content: space-around;
+    background-color: #384c56;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer__subtitle {
-  font-family: $font-main;
-  margin-bottom: 1.2rem;
+    font-family: $font-main;
+    margin-bottom: 1.2rem;
 }
 .footer__list {
-  list-style: none;
+    list-style: none;
 
-  & > li {
-    margin-bottom: 1rem;
-  }
+    & > li {
+        margin-bottom: 1rem;
+    }
 }
 .footer__contact-link {
-  display: block;
-  margin-bottom: 0.75rem;
-  text-decoration: none;
-  color: white;
+    display: block;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+    color: white;
 }

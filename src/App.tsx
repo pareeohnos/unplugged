@@ -5,7 +5,7 @@ import theme from './styles/theme.tsx'
 import React from 'react'
 import Home from './pages/Home/Home.tsx'
 import Pledge from './pages/Pledge/Pledge.tsx'
-import About from './pages/About.jsx'
+import Resources from './pages/Resources.jsx'
 import Research from './pages/Research.jsx'
 import Ambassadors from './pages/Ambassadors.jsx'
 import FAQs from './pages/FAQs.jsx'
@@ -17,7 +17,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/pledge" element={<Pledge />} />
-                    <Route path="/about" element={<About />} />
+                    <Route path="/resources" element={<Resources />} />
                     <Route path="/research" element={<Research />} />
                     <Route path="/ambassadors" element={<Ambassadors />} />
                     <Route path="/faqs" element={<FAQs />} />

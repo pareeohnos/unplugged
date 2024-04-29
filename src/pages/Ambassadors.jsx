@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Nav from '../components/Nav/Nav.tsx'
 import { useNavigate } from 'react-router-dom'
 import gracePhoto from '../assets/images/grace.JPG'
+import parentGuidePhoto from '../assets/images/4.png'
 import josettePhoto from '../assets/images/josette_calleja.jpg'
 import Footer from '../components/Footer/Footer.tsx'
 
@@ -14,14 +15,13 @@ export default function Ambassadors() {
         <div className="font-sans w-full h-full">
             <div
                 style={{
-                    backgroundImage:
-                        'url("https://images.squarespace-cdn.com/content/v1/58938b9fbebafb25099e8c5b/1713208193748-DYE5TQV9JLD5AG94S1HO/W8_BannerImagesupdatedcottoncandy_1.jpg")',
+                    backgroundImage: `url(${parentGuidePhoto})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: '25% 60%',
+                    backgroundPosition: '25% 100%',
                 }}
                 className="h-[335px] w-full"
             >
-                <div className="bg-[rgba(255,255,255,.7)]">
+                <div className="bg-[rgba(255,255,255,.40)]">
                     <Nav />
                 </div>
             </div>

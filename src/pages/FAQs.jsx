@@ -11,7 +11,7 @@ export default function FAQs() {
 
     return (
         <div className="font-sans w-full h-full">
-            <Nav />
+            <Nav logoColor="black" />
             <section className="w-full px-12 pt-12 pb-12">
                 <h1 className="font-mincho text-[32px] text-[#2e4049] text-center">
                     Frequently Asked Questions
