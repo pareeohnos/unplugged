@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0add17aa.css",
-    "main.js": "/static/js/main.216308de.js",
+    "main.js": "/static/js/main.7b79f3ef.js",
     "static/media/josette_calleja.jpg": "/static/media/josette_calleja.a886cf2157e8821b8d3d.jpg",
     "static/media/pexels-thirdman-8926648.jpg": "/static/media/pexels-thirdman-8926648.2197569896f933960414.jpg",
     "static/media/teens_2.jpeg": "/static/media/teens_2.3d5f529eead07aefb52a.jpeg",
@@ -1245,10 +1245,10 @@
     "static/media/shippori-mincho-55-400-normal.woff2": "/static/media/shippori-mincho-55-400-normal.ea7ba4861a2d644315b6.woff2",
     "static/media/shippori-mincho-55-600-normal.woff2": "/static/media/shippori-mincho-55-600-normal.005378fcc7b95801b6e8.woff2",
     "main.0add17aa.css.map": "/static/css/main.0add17aa.css.map",
-    "main.216308de.js.map": "/static/js/main.216308de.js.map"
+    "main.7b79f3ef.js.map": "/static/js/main.7b79f3ef.js.map"
   },
   "entrypoints": [
     "static/css/main.0add17aa.css",
-    "static/js/main.216308de.js"
+    "static/js/main.7b79f3ef.js"
   ]
 }

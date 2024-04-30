@@ -50,7 +50,7 @@ export default function Pledge() {
     async function postGuardian() {
         try {
             const response = await axios.post(
-                'https://unplugged-api.fly.dev/guardians/',
+                'https://api.unpluggedcanada.com/guardians/',
                 guardianData
             )
             if (response.data) {
@@ -69,17 +69,17 @@ export default function Pledge() {
 
             childrenData.map(async (ChildData) => {
                 const child = await axios.post(
-                    `https://unplugged-api.fly.dev/guardians/${GuardianID}/children/`,
+                    `https://api.unpluggedcanada.com/guardians/${GuardianID}/children/`,
                     ChildData
                 )
                 console.log('x: ', child.data)
 
                 const pledge = await axios.post(
-                    `https://unplugged-api.fly.dev/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
+                    `https://api.unpluggedcanada.com/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
                 )
 
                 const signature = await axios.post(
-                    `https://unplugged-api.fly.dev/guardians/${GuardianID}/signatures/`,
+                    `https://api.unpluggedcanada.com/guardians/${GuardianID}/signatures/`,
                     {
                         child_id: child.data.id,
                         pledge_id: pledge.data.id,
@@ -88,7 +88,7 @@ export default function Pledge() {
                 console.log(signature)
             })
             await axios.post(
-                `https://unplugged-api.fly.dev/email_confirmation?name=${
+                `https://api.unpluggedcanada.com/email_confirmation?name=${
                     guardianData.first_name + ' ' + guardianData.last_name
                 }&email=${guardianData.email}`
             )
@@ -96,7 +96,7 @@ export default function Pledge() {
         } catch (error) {
             console.log(error)
             axios.delete(
-                'https://unplugged-api.fly.dev/guardians/' + guardianData.id
+                'https://api.unpluggedcanada.com/guardians/' + guardianData.id
             )
         }
     }

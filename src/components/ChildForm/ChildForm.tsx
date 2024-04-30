@@ -20,7 +20,7 @@ export default function ChildForm({
 
     async function fetchSchools(event: any) {
         const response = await axios.get(
-            'https://unplugged-api.fly.dev/schools/search/',
+            'https://api.unpluggedcanada.com/schools/search/',
             {
                 params: { partial_name: event.target.value },
             }
