@@ -5,6 +5,7 @@ import Nav from '../components/Nav/Nav.tsx'
 import { useNavigate } from 'react-router-dom'
 import gracePhoto from '../assets/images/grace.JPG'
 import parentGuidePhoto from '../assets/images/4.png'
+import jennyKidPhoto from '../assets/images/3.png'
 import josettePhoto from '../assets/images/josette_calleja.jpg'
 import Footer from '../components/Footer/Footer.tsx'
 
@@ -29,47 +30,73 @@ export default function Ambassadors() {
                 <h2 className="font-proxima text-[36px] text-[#FF6D6D] mb-8">
                     Ambassadors
                 </h2>
+                <div className="max-w-[956px]">
+                    <div
+                        style={{
+                            background: `url(${jennyKidPhoto})`,
+                            backgroundPosition: '100% 50%',
+                        }}
+                        className="w-[242px] h-[242px] overflow-hidden mb-10 rounded-full mx-auto"
+                    ></div>
 
-                <div class="w-full max-w-[956px] gap-4">
-                    <div>
-                        <div
-                            style={{
-                                background: `url(${josettePhoto})`,
-                                backgroundSize: '315%',
-                                backgroundPosition: ' 60% 18%',
-                            }}
-                            className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto"
-                        ></div>
-                        <h3 className="text-2xl font-medium mb-4">
-                            Josette Calleja
-                        </h3>
+                    <h3 className="font-mincho text-2xl  text-[#2E4049] font-bold mb-4 ">
+                        Jenny Perez
+                    </h3>
+
+                    <div className="w-full mb-12">
                         <p className="text-lg leading-relaxed mb-4">
-                            I am Josette Calleja, a parent coach, a passionate
-                            executive, and wellness specialist. I am a strong
-                            supporter of Unplugged because I believe our
-                            children need a childhood filled with meaningful
-                            connections, outdoor adventures and genuine
-                            interactions. The things a cell phone cannot
-                            provide. In my practise, I often see children become
-                            so absorbed in screens, potentially hindering their
-                            development and connection to the world around them.
+                            Thank you so much for being here and reading this!
+                            I’m Jenny – a mother and an entrepreneur who has
+                            been passionate about the impact of online
+                            technologies on children’s minds for over a decade.
+                        </p>
+
+                        <p className="text-lg leading-relaxed mb-4">
+                            I’ve travelled to 75 countries, lived in developing
+                            countries, and have called Canada my home for 22
+                            years. Alongside this I have spent 15 years
+                            watching, listening, and talking with young people
+                            almost every day. As I have worked to learn from
+                            different cultures, perspectives, and practices,
+                            I’ve maintained an openness and curiosity about the
+                            world that has helped me to define my values and
+                            recognize what truly matters most.
+                        </p>
+
+                        <p className="text-lg leading-relaxed mb-4">
+                            One of the things I feel most nostalgic about is the
+                            days where we really connected with each other
+                            without phones or screens. I know that these
+                            technologies are here to stay, and they serve
+                            important purposes. However, it is undeniable that
+                            they are overused, and they are introduced too
+                            early, and this has caused untold harm to young
+                            people. I’ve researched the effects of smartphones
+                            on developing brains (check out our research page),
+                            and this fueled my desire to found Unplugged.
+                        </p>
+
+                        <p className="text-lg leading-relaxed mb-4">
+                            I want my daughter, and all our children, to enjoy
+                            childhood. I want them to be happy – isn’t that the
+                            most important thing? I want them to live full lives
+                            and to be mentally, socially, and emotionally
+                            resilient. When I think about our everyday life, I
+                            simply want to enjoy a meal together, feel like a
+                            family, and talk to each other. Reducing screen time
+                            and delaying the introduction of smartphones
+                            supports all these things.
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
-                            Research shows that spending time outdoors and
-                            engaging in real-world interactions significantly
-                            contributes to a child’s wellbeing, self esteem and
-                            overall development. Keeping our kids off the phone
-                            at this critical age will provide the opportunity to
-                            connect with nature, nurture their curiosity and
-                            build authentic relationships offline. Please join
-                            us in taking a stand for a cell phone-free childhood
-                            so our kids embrace a lifestyle that values genuine
-                            connections, imagination and healthy development.
-                            Let’s together make a difference in shaping a
-                            healthier future for the next generation.
+                            Doing things differently is possible. I have managed
+                            to do this so far with my beautiful nine-year-old
+                            daughter, but I know that if we do it together as a
+                            community, it will be even easier.
                         </p>
                     </div>
+                </div>
 
+                <div class="w-full max-w-[956px] grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div>
                         <div
                             style={{
@@ -77,9 +104,9 @@ export default function Ambassadors() {
                                 backgroundSize: '100%',
                                 backgroundPosition: ' 55% 60%',
                             }}
-                            className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto mt-16"
+                            className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto "
                         ></div>
-                        <h3 className="text-2xl font-medium mb-4">
+                        <h3 className="font-mincho text-2xl  text-[#2E4049] font-bold mb-4">
                             Dr. Grace Yu | MDCM FRCPC Pediatrics
                         </h3>
                         <p className="text-lg leading-relaxed mb-4">
@@ -127,6 +154,44 @@ export default function Ambassadors() {
                             Residency Training Committee for over 10 years and
                             was Assistant Program Director for the Pediatric
                             Residents for one year.
+                        </p>
+                    </div>
+                    <div>
+                        <div
+                            style={{
+                                background: `url(${josettePhoto})`,
+                                backgroundSize: '315%',
+                                backgroundPosition: ' 60% 18%',
+                            }}
+                            className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto"
+                        ></div>
+                        <h3 className="font-mincho text-2xl  text-[#2E4049] font-bold mb-4">
+                            Josette Calleja
+                        </h3>
+                        <p className="text-lg leading-relaxed mb-4">
+                            I am Josette Calleja, a parent coach, a passionate
+                            executive, and wellness specialist. I am a strong
+                            supporter of Unplugged because I believe our
+                            children need a childhood filled with meaningful
+                            connections, outdoor adventures and genuine
+                            interactions. The things a cell phone cannot
+                            provide. In my practise, I often see children become
+                            so absorbed in screens, potentially hindering their
+                            development and connection to the world around them.
+                        </p>
+                        <p className="text-lg leading-relaxed mb-4">
+                            Research shows that spending time outdoors and
+                            engaging in real-world interactions significantly
+                            contributes to a child’s wellbeing, self esteem and
+                            overall development. Keeping our kids off the phone
+                            at this critical age will provide the opportunity to
+                            connect with nature, nurture their curiosity and
+                            build authentic relationships offline. Please join
+                            us in taking a stand for a cell phone-free childhood
+                            so our kids embrace a lifestyle that values genuine
+                            connections, imagination and healthy development.
+                            Let’s together make a difference in shaping a
+                            healthier future for the next generation.
                         </p>
                     </div>
                 </div>
