@@ -1,20 +1,56 @@
 import React from 'react'
 
 import './Nav.scss'
-import { Fab, Typography } from '@mui/material'
+import { Button, Fab, Typography } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 // import logoHorizontal_black from "../../assets/images/logoHorizontal_black.png";
 // import logo from '../../assets/images/logo.png'
 import logoWhite from '../../assets/images/Unplugged-Logo-Stacked-W.svg'
 import logoBlack from '../../assets/images/Unplugged-Logo-Stacked.svg'
-//  <div className="absolute right-8 top-4">
-//                     <img className="h-28 " src={logo} alt="" />
-//                 </div>
+
+import MenuIcon from '@mui/icons-material/Menu'
+import Box from '@mui/material/Box'
+import Drawer from '@mui/material/Drawer'
+import ListItemButton from '@mui/material/ListItemButton'
+import ListItemIcon from '@mui/material/ListItemIcon'
+import ListItemText from '@mui/material/ListItemText'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+
 export default function Nav({ logoColor = 'white' }) {
     const navigate = useNavigate()
+
+    const [open, setOpen] = React.useState(false)
+
+    const toggleDrawer = (newOpen: boolean) => () => {
+        setOpen(newOpen)
+    }
+    const DrawerList = (
+        <Box
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={toggleDrawer(false)}
+        >
+            <List>
+                {['Research', 'Ambassadors', 'Resources', 'Faqs'].map(
+                    (text, index) => (
+                        <ListItem key={text} disablePadding>
+                            <ListItemButton>
+                                <ListItemText
+                                    primary={text}
+                                    onClick={() => navigate('/' + text)}
+                                />
+                            </ListItemButton>
+                        </ListItem>
+                    )
+                )}
+            </List>
+        </Box>
+    )
+
     return (
         <div className="w-full max-w-[956px] mx-auto">
-            <div className="flex flex-col md:flex-row px-12 items-center md:justify-between">
+            <div className="relative flex  md:flex-row px-12 items-center justify-between">
                 <div className="">
                     {/* <Typography variant="poster" sx={{ fontSize: 32 }}>
             Unplugged
@@ -22,14 +58,29 @@ export default function Nav({ logoColor = 'white' }) {
                     <div className="py-2">
                         <img
                             src={logoColor === 'white' ? logoWhite : logoBlack}
-                            className="max-h-[90px] text-black cursor-pointer"
+                            className="min-h-[90px] min-w-[90px] max-h-[90px] max-w-[90px]text-black cursor-pointer"
                             alt="logo"
                             onClick={() => navigate('/')}
                         />
                     </div>
                 </div>
-
-                <ul className="flex items-center wrap">
+                <div className="md:hidden">
+                    <Button
+                        variant="contained"
+                        className=""
+                        onClick={toggleDrawer(true)}
+                    >
+                        <MenuIcon />
+                    </Button>
+                </div>
+                <Drawer
+                    open={open}
+                    onClose={toggleDrawer(false)}
+                    anchor="right"
+                >
+                    {DrawerList}
+                </Drawer>
+                <ul className="hidden md:flex items-center wrap">
                     <li>
                         <a
                             className="nav__link cursor-pointer"

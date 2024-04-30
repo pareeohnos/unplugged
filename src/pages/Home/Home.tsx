@@ -50,7 +50,7 @@ export default function Home() {
                 </div> */}
                 <div className="p-8 flex flex items-center justify-center flex-col">
                     <div>
-                        <h1 className="text-white text-[40px] font-mincho md:px-[80px] md:text-[80px] ">
+                        <h1 className="text-white text-[40px] font-mincho md:px-[80px] md:text-[80px] max-w-[956px] mx-auto ">
                             Say Yes To Waiting For Smartphones
                         </h1>
                     </div>
@@ -63,7 +63,7 @@ export default function Home() {
                         >
                             SIGN THE PLEDGE
                         </Fab>
-                        <a href="#about">
+                        <a href="#about" className="inline-block mt-4">
                             <Fab variant="extended" sx={{ ml: '1rem' }}>
                                 LEARN MORE
                             </Fab>
@@ -72,7 +72,7 @@ export default function Home() {
                 </div>
             </header>
 
-            <section className="about-us w-full p-12 text-lg leading-relaxed ">
+            <section className="about-us w-full p-12 text-lg leading-relaxed max-w-[956px] mx-auto ">
                 <h2 className=" mb-6">
                     <span
                         id="about"
