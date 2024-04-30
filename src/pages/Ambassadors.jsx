@@ -39,7 +39,7 @@ export default function Ambassadors() {
                         className="w-[242px] h-[242px] overflow-hidden mb-10 rounded-full mx-auto"
                     ></div>
 
-                    <h3 className="font-mincho text-2xl  text-[#2E4049] font-bold mb-4 ">
+                    <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4 ">
                         Jenny Perez
                     </h3>
 
@@ -49,6 +49,16 @@ export default function Ambassadors() {
                             I’m Jenny – a mother and an entrepreneur who has
                             been passionate about the impact of online
                             technologies on children’s minds for over a decade.
+                            After encountering Brooke Shannon’s{' '}
+                            <a
+                                href="https://www.waituntil8th.org/"
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                target="_blank"
+                            >
+                                Wait Until 8th
+                            </a>{' '}
+                            campaign which is active in the United States, I was
+                            inspired to start a similar movement here in Canada.
                         </p>
 
                         <p className="text-lg leading-relaxed mb-4">
@@ -56,7 +66,7 @@ export default function Ambassadors() {
                             countries, and have called Canada my home for 22
                             years. Alongside this I have spent 15 years
                             watching, listening, and talking with young people
-                            almost every day. As I have worked to learn from
+                            nearly every day. As I have worked to learn from
                             different cultures, perspectives, and practices,
                             I’ve maintained an openness and curiosity about the
                             world that has helped me to define my values and
@@ -64,18 +74,18 @@ export default function Ambassadors() {
                         </p>
 
                         <p className="text-lg leading-relaxed mb-4">
-                            One of the things I feel most nostalgic about is the
-                            days where we really connected with each other
+                            One of the things I feel most nostalgic about are
+                            the days where we really connected with each other
                             without phones or screens. I know that these
                             technologies are here to stay, and they serve
-                            important purposes. However, it is undeniable that
-                            they are overused, and they are introduced too
-                            early, and this has caused untold harm to young
-                            people. I’ve researched the effects of smartphones
-                            on developing brains (check out our research page),
-                            and this fueled my desire to found Unplugged.
+                            important purposes in our lives. However, it is
+                            undeniable that they are overused and that they are
+                            introduced too early, and this has caused untold
+                            harm to young people. I’ve continued to learn about
+                            the effects of smartphones on developing brains
+                            (check out our research page), and this has fueled
+                            my desire to found Unplugged.
                         </p>
-
                         <p className="text-lg leading-relaxed mb-4">
                             I want my daughter, and all our children, to enjoy
                             childhood. I want them to be happy – isn’t that the
@@ -106,7 +116,7 @@ export default function Ambassadors() {
                             }}
                             className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto "
                         ></div>
-                        <h3 className="font-mincho text-2xl  text-[#2E4049] font-bold mb-4">
+                        <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
                             Dr. Grace Yu | MDCM FRCPC Pediatrics
                         </h3>
                         <p className="text-lg leading-relaxed mb-4">
@@ -147,10 +157,10 @@ export default function Ambassadors() {
                             I enjoy teaching pediatric and family medicine
                             residents, and medical students at the hospital. I
                             am a Clinical Assistant Professor in the UBC
-                            Department of Pediatrics. I have been the recipient
+                            Department of Pediatrics and have been the recipient
                             of awards for Family Centered Care and Community
                             Pediatrician of the Year from the UBC Department of
-                            the Pediatrics. I was a member of the Pediatric
+                            the Pediatrics. I was also a member of the Pediatric
                             Residency Training Committee for over 10 years and
                             was Assistant Program Director for the Pediatric
                             Residents for one year.
@@ -165,7 +175,7 @@ export default function Ambassadors() {
                             }}
                             className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto"
                         ></div>
-                        <h3 className="font-mincho text-2xl  text-[#2E4049] font-bold mb-4">
+                        <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
                             Josette Calleja
                         </h3>
                         <p className="text-lg leading-relaxed mb-4">

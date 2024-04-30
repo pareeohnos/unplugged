@@ -47,7 +47,7 @@ export default function Pledge() {
         ])
     }
 
-    window.scrollTo(0, 0)
+    // window.scrollTo(0, 0)
 
     async function postGuardian() {
         try {

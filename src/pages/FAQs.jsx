@@ -13,7 +13,7 @@ export default function FAQs() {
         <div className="font-sans w-full h-full">
             <Nav logoColor="black" />
             <section className="w-full px-12 pt-12 pb-12">
-                <h1 className="font-mincho text-[32px] text-[#2e4049] text-center">
+                <h1 className=" text-[32px] text-[#2e4049] text-center">
                     Frequently Asked Questions
                 </h1>
 
@@ -71,19 +71,7 @@ export default function FAQs() {
                             phone, or for as long.
                         </p>
                     </li>
-                    <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
-                            WHY ARE iPADS DIFFERENT?
-                        </p>
-                        <p className="text-lg leading-relaxed mb-4">
-                            No one walks around with an iPad in their pocket
-                            like a smartphone. The smartphone is essentially a
-                            mini-computer in your child's hands all day every
-                            day, whereas an iPad is more often used within the
-                            home or for travel. It’s not used as often as a
-                            phone, or for as long.
-                        </p>
-                    </li>
+
                     <li className="mb-12">
                         <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
                             HOW ELSE CAN MY KID STAY CONNECTED WITH OTHER KIDS?

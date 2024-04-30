@@ -30,7 +30,7 @@ export default function Resources() {
                 </h2>
 
                 <div className="w-full text-lg leading-relaxed mb-10">
-                    <h3 className="font-mincho text-center text-[32px] text-[#2E4049] font-bold mb-12 mt-6 tracking-wider">
+                    <h3 className=" text-center text-[32px] text-[#2E4049] font-bold mb-12 mt-6 tracking-wider">
                         Getting the Unplugged pledge in your community ...
                     </h3>
 
@@ -78,20 +78,20 @@ export default function Resources() {
                         </p>
                         <p className="mb-5">
                             Once the pledge is active, we will send you a group
-                            email to let you know who else is on board and that
-                            the pledge has started! We will share their names
-                            and emails. Your information is not shared outside
-                            of this group.
+                            email to let you know that the pledge has started
+                            and other families from your children’s grade are
+                            committed!
                         </p>
                         <p>
                             {' '}
-                            As more families join an active pledge, we will
-                            update your group.
+                            As more families join an active pledge and the size
+                            of your group increases, we will provide updates on
+                            this growth.
                         </p>
                     </div>
 
                     <div className="mb-12">
-                        <h4 className="font-mincho text-center mb-5 tracking-wide font-bold text-2xl text-[#539c99]">
+                        <h4 className=" text-center mb-5 tracking-wide font-bold text-2xl text-[#539c99]">
                             SPREAD THE PLEDGE
                         </h4>
                         <p className="mb-5">
@@ -146,42 +146,42 @@ export default function Resources() {
                     </div>
 
                     <div className="mb-12">
-                        <h4 className="font-mincho text-center mb-5 tracking-wide font-bold text-2xl text-[#539c99]">
+                        <h4 className=" text-center mb-5 tracking-wide font-bold text-2xl text-[#539c99]">
                             COMMUNITY EVENS
                         </h4>
-                        <p>
-                            Parents in your community might have questions or
-                            concerns they need to voice before they can commit
-                            to taking the pledge. Or they might just prefer
-                            face-to-face conversations! Unplugged is planning to
-                            host a speaker event with Brooke Shannon, Founder of{' '}
-                            <a
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                                target="_blank"
-                                href="https://www.waituntil8th.org/"
-                            >
-                                Wait until 8th
-                            </a>{' '}
-                            in the USA, which was the inspiration for Unplugged
-                            here in Canada. Stay tuned! If you can’t get to this
-                            event, we are happy to schedule some time to
-                            customize a call for you or your PAC so together we
-                            can spread this important initiative. Just{' '}
-                            <a
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                                href="mailto:info@unpluggedcanada.ca"
-                            >
-                                get in touch!
-                            </a>
-                        </p>
+                        Parents in your community might have questions or
+                        concerns they need to voice before they can commit to
+                        taking the pledge. Or they might just prefer
+                        face-to-face conversations! Unplugged is planning to
+                        host a speaker event in Vancouver with Brooke Shannon,
+                        Founder of{' '}
+                        <a
+                            className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                            target="_blank"
+                            href="https://www.waituntil8th.org/"
+                        >
+                            Wait until 8th
+                        </a>{' '}
+                        , which was the inspiration for Unplugged here in
+                        Canada. Stay tuned! If you can’t get to this event, we
+                        are happy to schedule some time to customize a call for
+                        you or your PAC so together we can spread this important
+                        initiative. Just{' '}
+                        <a
+                            className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                            href="mailto:info@unpluggedcanada.ca"
+                        >
+                            get in touch!
+                        </a>
+                        <p></p>
                     </div>
                     <div className="mb-12">
-                        <h4 className="font-mincho text-center mb-5 tracking-wide font-bold text-2xl text-[#539c99]">
+                        <h4 className=" text-center mb-5 tracking-wide font-bold text-2xl text-[#539c99]">
                             SHARE WITH YOUR SOCIAL CIRCLES
                         </h4>
                         <p>
-                            Commuicate the good news today about the Unplugged
-                            pledge with your family and friends by sharing it in
+                            Communicate the good news today about the Unplugged
+                            pledge with your family and friends by sharing it on
                             your preferred platform. Be sure to tag Unplugged in
                             your post!
                         </p>

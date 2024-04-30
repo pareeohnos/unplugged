@@ -6,8 +6,10 @@ import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-
+import { useNavigate } from 'react-router-dom'
 export default function Footer() {
+    const navigate = useNavigate()
+
     return (
         <footer className="footer">
             <div className="footer__container">
@@ -68,26 +70,61 @@ export default function Footer() {
                     <div className="flex justify-around w-full mt-4 max-w-[860px]">
                         <div className="hidden min-[450px]:block footer__content-col mr-7">
                             <ul className="footer__list">
-                                <li>Resources</li>
-                                <li>FAQs</li>
-                                <li>Research</li>
-                                <li>Ambassadors</li>
+                                <li>
+                                    <a
+                                        href="/"
+                                        onClick={() => navigate('/Resources')}
+                                    >
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/Resources"
+                                        onClick={() => navigate('/Resources')}
+                                    >
+                                        Resources
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/FAQs"
+                                        onClick={() => navigate('/FAQs')}
+                                    >
+                                        FAQs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/Research"
+                                        onClick={() => navigate('/Research')}
+                                    >
+                                        Research
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/Ambassadors"
+                                        onClick={() => navigate('/Ambassadors')}
+                                    >
+                                        Ambassadors
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div className="footer__content-col">
-                            <h3 className="footer__subtitle">Contact</h3>
+                            <h3 className="footer__subtitle font-bold">
+                                Contact
+                            </h3>
                             <p className="footer__copy">
-                                1030 West Georgia St <br />
+                                1900-1030 West Georgia St <br />
                                 Vancouver, BC V6E 2Y3
                             </p>
                             <a
                                 className="footer__contact-link"
-                                href="mailto:support@unplugged.com"
+                                href="mailto:info@unpluggedcanada.com"
                             >
-                                info@unplugged.ca
-                            </a>
-                            <a className="footer__contact-link">
-                                +1 (800)-UNPLUGGED
+                                info@unpluggedcanada.com
                             </a>
                         </div>
                     </div>

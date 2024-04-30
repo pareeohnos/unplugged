@@ -4,8 +4,11 @@ import React, { useState, useEffect } from 'react'
 import Nav from '../components/Nav/Nav.tsx'
 import { useNavigate } from 'react-router-dom'
 import kidPhotoOcean from '../assets/images/5.png'
+import anxiousBook from '../assets/images/Anxious Generation 1.jpg'
+import anxiousInfographic from '../assets/images/Anxious Generation 2.png'
 
 import Footer from '../components/Footer/Footer.tsx'
+import InsertLinkIcon from '@mui/icons-material/InsertLink'
 
 export default function Research() {
     const navigate = useNavigate()
@@ -36,51 +39,81 @@ export default function Research() {
                                 target={'_blank'}
                                 href="https://www.freetheanxiousgeneration.com/research/the-evidence"
                             >
-                                <h3 className="font-mincho  text-[24px] text-[#2E4049] font-bold mb-4 mt-6">
-                                    The Anxious Generation - Jonathan Haidt
+                                <h3 className=" underline text-[24px] text-[#2E4049] font-bold mb-4 mt-6">
+                                    The Anxious Generation - Jonathan Haidt{' '}
+                                    <i>
+                                        <InsertLinkIcon />
+                                    </i>
                                 </h3>
                             </a>
-                            <p className="mb-4">
-                                In The Anxious Generation, social psychologist
-                                Jonathan Haidt lays out the facts about the
-                                epidemic of teen mental illness that hit many
-                                countries at the same time. He then investigates
-                                the nature of childhood, including why children
-                                need play and independent exploration to mature
-                                into competent, thriving adults. Haidt shows how
-                                the *play-based childhood" began to decline in
-                                the 1980s, and how it was finally wiped out by
-                                the arrival of the "phone-based childhood" in
-                                the early 2010s.
-                            </p>
-                            <p className="mb-4">
-                                He presents more than a dozen mechanisms by
-                                which this "great rewiring of childhood" has
-                                interfered with children's social and
-                                neurological development, covering everything
-                                from sleep deprivation to attention
-                                fragmentation, addiction, loneliness, social
-                                contagion, social comparison, and perfectionism.
-                            </p>
-                            <p>
-                                He explains why social media damages girls more
-                                than boys and why boys have been withdrawing
-                                from the real world into the virtual world, with
-                                disastrous consequences for themselves, their
-                                families, and their societies.
-                            </p>
+                            <div className="flex w-full">
+                                <div className="w-[100%]">
+                                    <p className="mb-4">
+                                        In The Anxious Generation, social
+                                        psychologist Jonathan Haidt lays out the
+                                        facts about the epidemic of teen mental
+                                        illness that hit many countries at the
+                                        same time. He then investigates the
+                                        nature of childhood, including why
+                                        children need play and independent
+                                        exploration to mature into competent,
+                                        thriving adults. Haidt shows how the
+                                        *play-based childhood" began to decline
+                                        in the 1980s, and how it was finally
+                                        wiped out by the arrival of the
+                                        "phone-based childhood" in the early
+                                        2010s.
+                                    </p>
+                                    <p className="mb-4">
+                                        He presents more than a dozen mechanisms
+                                        by which this "great rewiring of
+                                        childhood" has interfered with
+                                        children's social and neurological
+                                        development, covering everything from
+                                        sleep deprivation to attention
+                                        fragmentation, addiction, loneliness,
+                                        social contagion, social comparison, and
+                                        perfectionism.
+                                    </p>
+                                    <p>
+                                        He explains why social media damages
+                                        girls more than boys and why boys have
+                                        been withdrawing from the real world
+                                        into the virtual world, with disastrous
+                                        consequences for themselves, their
+                                        families, and their societies.
+                                    </p>
+                                </div>
+                                <div className="hidden md:inline-block ml-8">
+                                    <img
+                                        className="w-[200px] h-auto"
+                                        src={anxiousBook}
+                                        alt="The Anxious Generation Book Cover"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="mt-8 mb-12">
+                                <img
+                                    src={anxiousInfographic}
+                                    alt="The anxious Generation Inphographic"
+                                />
+                            </div>
                         </li>
                         <li>
                             <a
                                 target={'_blank'}
                                 href="https://www.waituntil8th.org/blog/2022/5/20/psychiatrist-warns-parents-about-smartphones"
                             >
-                                <h3 className="font-mincho  text-[24px] text-[#2E4049] font-bold mb-4 mt-6">
+                                <h3 className=" underline text-[24px] text-[#2E4049] font-bold mb-4 mt-6">
                                     Psychiatrist Warns Parents about Smartphones
-                                    - Dr. Adriana Stacey
+                                    - Dr. Adriana Stacey{' '}
+                                    <i>
+                                        <InsertLinkIcon />
+                                    </i>
                                 </h3>
                             </a>
-                            <p className="mb-4 max-w-[70ch] mx-auto">
+                            <p className="mb-4 max-w-[70ch]">
                                 <em>
                                     "The list of issues caused by smartphone is
                                     honestly too expansive to discuss at length
@@ -117,9 +150,12 @@ export default function Research() {
                                 target={'_blank'}
                                 href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8204720/#:~:text=Results%3A%20Comorbidity,and%20education%20professionals."
                             >
-                                <h3 className="font-mincho  text-[24px] text-[#2E4049] font-bold mb-4 mt-6">
+                                <h3 className=" underline text-[24px] text-[#2E4049] font-bold mb-4 mt-6">
                                     Excessive Smartphone Use in Young Adults -
-                                    Yehuda Wacks [National Institute of Health]
+                                    Yehuda Wacks [National Institute of Health]{' '}
+                                    <i>
+                                        <InsertLinkIcon />
+                                    </i>
                                 </h3>
                             </a>
 
@@ -163,9 +199,9 @@ export default function Research() {
                     </h2>
 
                     <ul>
-                        <li className="flex mb-4">
+                        <li className="flex flex-col md:flex-row mb-4">
                             <img
-                                className="w-[200px] h-[300px] object-cover  mr-8 "
+                                className="w-[200px] h-[300px] object-cover  mr-8 mb-4"
                                 src="https://images.squarespace-cdn.com/content/v1/58938b9fbebafb25099e8c5b/1516246787819-COOL1QXJTFXNKMB4H5QZ/Be+the+Parent+Please.jpg?format=1500w"
                                 alt="Be the Parent Please Book Cover"
                             />
@@ -206,10 +242,51 @@ export default function Research() {
                                 </p>
                             </div>
                         </li>
-
-                        <li className="flex mb-4">
+                        <li className="flex flex-col md:flex-row mb-4">
                             <img
-                                className="w-[200px] h-[300px] object-cover  mr-8 "
+                                className="w-[200px] h-[300px] object-cover  mr-8 mb-4"
+                                src="https://m.media-amazon.com/images/I/71PGou+7PyL._SL1200_.jpg"
+                                alt="I-minds Book Cover"
+                            />
+                            <div className="text-lg leading-relaxed mb-10">
+                                <p className="mb-4">
+                                    <a
+                                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                        target="_blank"
+                                        href="https://www.amazon.com/gp/product/1599474824/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1599474824&linkCode=as2&tag=waituntil8th-20&linkId=19b80cbcf8271fcc0de3b07102b9a7b0"
+                                    >
+                                        i-Minds: How Cell Phones, Computers,
+                                        Gaming, and Social Media are Changing
+                                        our Brains, our Behavior, and the
+                                        Evolution of our Species
+                                    </a>{' '}
+                                    . i-Minds is an exploration of modern
+                                    culture and the place i-technologies (e.g.,
+                                    computers, cell phones, gaming devices) have
+                                    in our world. Weaving through the hard and
+                                    soft sciences, including history, research,
+                                    and popular literature; media and industry
+                                    hype; sociology and social psychology;
+                                    personal observations and tales from over 20
+                                    years of clinical practice and research, Dr.
+                                    Mari Swingle explores the influence of
+                                    i-technology on children and families,
+                                    friends and lovers, work and learning,
+                                    development and brain function as influenced
+                                    by our ever changing world and the
+                                    technologies within. In this exploration,
+                                    Dr. Mari paints a picture of change, giving
+                                    food for thought on what we should embrace
+                                    and accept, what we should unequivocally
+                                    reject, and many aspects of the digital era
+                                    that are timely to debate.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li className="flex flex-col md:flex-row mb-4">
+                            <img
+                                className="w-[200px] h-[300px] object-cover  mr-8 mb-4"
                                 src="https://images.squarespace-cdn.com/content/v1/58938b9fbebafb25099e8c5b/1516299770251-ZY5ONR87CN4IWPMXCWEK/Wired+Child+.jpg?format=300w"
                                 alt="Be the Parent Please Book Cover"
                             />
@@ -250,9 +327,10 @@ export default function Research() {
                                 </p>
                             </div>
                         </li>
-                        <li className="flex mb-4">
+
+                        <li className="flex flex-col md:flex-row mb-4">
                             <img
-                                className="w-[200px] h-[300px] object-cover  mr-8 "
+                                className="w-[200px] h-[300px] object-cover  mr-8 mb-4"
                                 src="https://images.squarespace-cdn.com/content/v1/58938b9fbebafb25099e8c5b/1517325922554-R5SSWZZIWTF92BGWZL8G/iGenCover+copy+2.jpg?format=1500w"
                                 alt="Be the Parent Please Book Cover"
                             />
@@ -291,9 +369,9 @@ export default function Research() {
                             </div>
                         </li>
 
-                        <li className="flex mb-4">
+                        <li className="flex flex-col md:flex-row mb-4">
                             <img
-                                className="w-[200px] h-[300px] object-cover  mr-8 "
+                                className="w-[200px] h-[300px] object-cover  mr-8 mb-4"
                                 src="https://images.squarespace-cdn.com/content/v1/58938b9fbebafb25099e8c5b/1517155236683-3BKQ0XIDZH6YYO1RYKXO/big+disconnect.jpg?format=1500w"
                                 alt="Be the Parent Please Book Cover"
                             />
