@@ -32,18 +32,22 @@ export default function Nav({ logoColor = 'white' }) {
             onClick={toggleDrawer(false)}
         >
             <List>
-                {['Research', 'Ambassadors', 'Resources', 'Faqs'].map(
-                    (text, index) => (
-                        <ListItem key={text} disablePadding>
-                            <ListItemButton>
-                                <ListItemText
-                                    primary={text}
-                                    onClick={() => navigate('/' + text)}
-                                />
-                            </ListItemButton>
-                        </ListItem>
-                    )
-                )}
+                {[
+                    'Research',
+                    'Ambassadors',
+                    'Resources',
+                    'Faqs',
+                    'Government',
+                ].map((text, index) => (
+                    <ListItem key={text} disablePadding>
+                        <ListItemButton>
+                            <ListItemText
+                                primary={text}
+                                onClick={() => navigate('/' + text)}
+                            />
+                        </ListItemButton>
+                    </ListItem>
+                ))}
             </List>
         </Box>
     )
@@ -128,6 +132,16 @@ export default function Nav({ logoColor = 'white' }) {
                         >
                             <Typography sx={{ fontSize: 16, mr: '1rem' }}>
                                 FAQs
+                            </Typography>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="nav__link cursor-pointer"
+                            onClick={() => navigate('/government')}
+                        >
+                            <Typography sx={{ fontSize: 16, mr: '1rem' }}>
+                                Government Efforts
                             </Typography>
                         </a>
                     </li>

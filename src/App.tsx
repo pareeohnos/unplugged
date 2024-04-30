@@ -9,6 +9,7 @@ import Resources from './pages/Resources.jsx'
 import Research from './pages/Research.jsx'
 import Ambassadors from './pages/Ambassadors.jsx'
 import FAQs from './pages/FAQs.jsx'
+import Government from './pages/Government.jsx'
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                     <Route path="/research" element={<Research />} />
                     <Route path="/ambassadors" element={<Ambassadors />} />
                     <Route path="/faqs" element={<FAQs />} />
+                    <Route path="/government" element={<Government />} />
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>

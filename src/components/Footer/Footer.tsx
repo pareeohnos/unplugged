@@ -72,15 +72,15 @@ export default function Footer() {
                             <ul className="footer__list">
                                 <li>
                                     <a
-                                        href="/"
-                                        onClick={() => navigate('/Resources')}
+                                        className="cursor-pointer"
+                                        onClick={() => navigate('/')}
                                     >
                                         Home
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        href="/Resources"
+                                        className="cursor-pointer"
                                         onClick={() => navigate('/Resources')}
                                     >
                                         Resources
@@ -88,7 +88,7 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <a
-                                        href="/FAQs"
+                                        className="cursor-pointer"
                                         onClick={() => navigate('/FAQs')}
                                     >
                                         FAQs
@@ -96,7 +96,7 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <a
-                                        href="/Research"
+                                        className="cursor-pointer"
                                         onClick={() => navigate('/Research')}
                                     >
                                         Research
@@ -104,10 +104,18 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <a
-                                        href="/Ambassadors"
+                                        className="cursor-pointer"
                                         onClick={() => navigate('/Ambassadors')}
                                     >
                                         Ambassadors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="cursor-pointer"
+                                        onClick={() => navigate('/government')}
+                                    >
+                                        Government Efforts
                                     </a>
                                 </li>
                             </ul>

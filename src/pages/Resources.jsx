@@ -48,13 +48,12 @@ export default function Resources() {
                             </span>
                             ,{' '}
                             <a
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                                target="_blank"
-                                href="https://www.amazon.com/gp/product/1599474824/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1599474824&linkCode=as2&tag=waituntil8th-20&linkId=19b80cbcf8271fcc0de3b07102b9a7b0"
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline cursor-pointer"
+                                onClick={() => navigate('/pledge')}
                             >
                                 sign
                             </a>{' '}
-                            the pledge .
+                            the pledge.
                         </p>
                         <p className="mb-5">
                             <span className="text-[#ff6d6d] font-bold tracking-widest">
@@ -147,7 +146,7 @@ export default function Resources() {
 
                     <div className="mb-12">
                         <h4 className=" text-center mb-5 tracking-wide font-bold text-2xl text-[#539c99]">
-                            COMMUNITY EVENS
+                            COMMUNITY EVENTS
                         </h4>
                         Parents in your community might have questions or
                         concerns they need to voice before they can commit to
@@ -169,7 +168,7 @@ export default function Resources() {
                         initiative. Just{' '}
                         <a
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                            href="mailto:info@unpluggedcanada.ca"
+                            href="mailto:info@unpluggedcanada.com"
                         >
                             get in touch!
                         </a>
