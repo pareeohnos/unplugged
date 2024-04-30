@@ -93,33 +93,33 @@ export default function Pledge() {
     async function submitPledge() {
         try {
             setLoading(true)
-            // const GuardianID = await postGuardian()
+            const GuardianID = await postGuardian()
 
-            // childrenData.map(async (ChildData) => {
-            //     const child = await axios.post(
-            //         `https://api.unpluggedcanada.org/guardians/${GuardianID}/children/`,
-            //         ChildData
-            //     )
-            //     console.log('x: ', child.data)
+            childrenData.map(async (ChildData) => {
+                const child = await axios.post(
+                    `https://api.unpluggedcanada.org/guardians/${GuardianID}/children/`,
+                    ChildData
+                )
+                console.log('x: ', child.data)
 
-            //     const pledge = await axios.post(
-            //         `https://api.unpluggedcanada.org/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
-            //     )
+                const pledge = await axios.post(
+                    `https://api.unpluggedcanada.org/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
+                )
 
-            //     const signature = await axios.post(
-            //         `https://api.unpluggedcanada.org/guardians/${GuardianID}/signatures/`,
-            //         {
-            //             child_id: child.data.id,
-            //             pledge_id: pledge.data.id,
-            //         }
-            //     )
-            //     console.log(signature)
-            // })
-            // await axios.post(
-            //     `https://api.unpluggedcanada.org/email_confirmation?name=${
-            //         guardianData.first_name + ' ' + guardianData.last_name
-            //     }&email=${guardianData.email}`
-            // )
+                const signature = await axios.post(
+                    `https://api.unpluggedcanada.org/guardians/${GuardianID}/signatures/`,
+                    {
+                        child_id: child.data.id,
+                        pledge_id: pledge.data.id,
+                    }
+                )
+                console.log(signature)
+            })
+            await axios.post(
+                `https://api.unpluggedcanada.org/email_confirmation?name=${
+                    guardianData.first_name + ' ' + guardianData.last_name
+                }&email=${guardianData.email}`
+            )
         } catch (error) {
             console.log(error)
             axios.delete(
