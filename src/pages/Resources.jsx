@@ -31,7 +31,7 @@ export default function Resources() {
 
                 <div className="w-full text-lg leading-relaxed mb-10">
                     <h3 className=" text-center text-[32px] text-[#2E4049] font-bold mb-12 mt-6 tracking-wider">
-                        Getting the Unplugged pledge in your community ...
+                        Getting the Unplugged pledge in your community...
                     </h3>
 
                     <div className="mb-12">

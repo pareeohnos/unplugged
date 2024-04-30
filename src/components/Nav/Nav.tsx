@@ -84,6 +84,16 @@ export default function Nav({ logoColor = 'white' }) {
                     <li>
                         <a
                             className="nav__link cursor-pointer"
+                            onClick={() => navigate('/')}
+                        >
+                            <Typography sx={{ fontSize: 16, mr: '1rem' }}>
+                                Home
+                            </Typography>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="nav__link cursor-pointer"
                             onClick={() => navigate('/research')}
                         >
                             <Typography sx={{ fontSize: 16, mr: '1rem' }}>
@@ -116,7 +126,7 @@ export default function Nav({ logoColor = 'white' }) {
                             className="nav__link cursor-pointer"
                             onClick={() => navigate('/faqs')}
                         >
-                            <Typography sx={{ fontSize: 16, mr: '2rem' }}>
+                            <Typography sx={{ fontSize: 16, mr: '1rem' }}>
                                 FAQs
                             </Typography>
                         </a>

@@ -9,6 +9,8 @@ import jennyKidPhoto from '../assets/images/3.png'
 import josettePhoto from '../assets/images/josette_calleja.jpg'
 import Footer from '../components/Footer/Footer.tsx'
 
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+
 export default function Ambassadors() {
     const navigate = useNavigate()
 
@@ -39,9 +41,18 @@ export default function Ambassadors() {
                         className="w-[242px] h-[242px] overflow-hidden mb-10 rounded-full mx-auto"
                     ></div>
 
-                    <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4 ">
-                        Jenny Perez
-                    </h3>
+                    <a
+                        href="https://www.linkedin.com/in/perezmckenzie/"
+                        target="_blank"
+                    >
+                        <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
+                            Jenny Perez{' '}
+                            <LinkedInIcon
+                                // fontSize="large"
+                                sx={{ color: '#2E4049' }}
+                            />
+                        </h3>
+                    </a>
 
                     <div className="w-full mb-12">
                         <p className="text-lg leading-relaxed mb-4">
@@ -116,9 +127,18 @@ export default function Ambassadors() {
                             }}
                             className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto "
                         ></div>
-                        <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
-                            Dr. Grace Yu | MDCM FRCPC Pediatrics
-                        </h3>
+                        <a
+                            href="https://www.linkedin.com/in/grace-yu-b71baa186/?originalSubdomain=ca"
+                            target="_blank"
+                        >
+                            <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
+                                Dr. Grace Yu | MDCM FRCPC Pediatrics{' '}
+                                <LinkedInIcon
+                                    // fontSize="large"
+                                    sx={{ color: '#2E4049' }}
+                                />
+                            </h3>
+                        </a>
                         <p className="text-lg leading-relaxed mb-4">
                             I fully support the Unplugged Canada initiative. I
                             have been a practicing pediatrician in Vancouver, BC
@@ -175,9 +195,20 @@ export default function Ambassadors() {
                             }}
                             className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto"
                         ></div>
-                        <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
-                            Josette Calleja
-                        </h3>
+
+                        <a
+                            href="https://www.linkedin.com/in/josette-calleja-14589410/?originalSubdomain=ca"
+                            target="_blank"
+                        >
+                            <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
+                                Josette Calleja{' '}
+                                <LinkedInIcon
+                                    // fontSize="large"
+                                    sx={{ color: '#2E4049' }}
+                                />
+                            </h3>
+                        </a>
+
                         <p className="text-lg leading-relaxed mb-4">
                             I am Josette Calleja, a parent coach, a passionate
                             executive, and wellness specialist. I am a strong
