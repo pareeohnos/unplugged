@@ -47,7 +47,7 @@ export default function NewSchool({
         setAddingNewSchool(false)
         try {
             const response = await axios.post(
-                `https://api.unpluggedcanada.org/schools/`,
+                `https://unplugged-api.fly.dev/schools/`,
                 {
                     id: uuidv4().substring(0, 20),
                     name: nameValue,
