@@ -26,8 +26,8 @@ export default function Pledge() {
             const timer = setInterval(() => {
                 setProgress((prevProgress) => {
                     if (prevProgress >= 100) {
-                        // navigate('/')
-                        // window.location.reload()
+                        navigate('/')
+                        window.location.reload()
                         return 0
                     } else return prevProgress + 10
                 })
@@ -89,7 +89,7 @@ export default function Pledge() {
             return
         }
     }
-
+    //
     async function submitPledge() {
         try {
             setLoading(true)
