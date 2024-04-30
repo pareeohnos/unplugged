@@ -191,6 +191,55 @@ export default function Pledge() {
                     />
                 )}
             </form>
+
+            <div className="w-full p-12  max-w-[956px] mx-auto">
+                <div>
+                    <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4 ">
+                        How To Sign The Pledge?
+                    </h3>
+                    <ol className="list-decimal pl-6">
+                        <li className="mb-6">
+                            To sign the pledge, your child must at least be in
+                            kindergarten. (For now!) We are working on including
+                            those in pre-K or non-standard education systems.
+                        </li>
+                        <li className="mb-6">
+                            Please sign up your children younger than 14. To add
+                            another child to a pledge form, simply select “add
+                            another child” on the form.
+                        </li>
+                        <li className="mb-6">
+                            Since pledges are organized by school, it is very
+                            important to correctly identify your child’s school
+                            in our database when filling out the pledge form. To
+                            find your child’s school in our database, type one
+                            or two key words from the school name and hit the
+                            magnifier icon on the form. Avoid words such as
+                            “the,” “elementary,” “middle,” “junior,” and
+                            “school.”
+                        </li>
+                        <li className="mb-6">
+                            If you cannot find your child’s current school or
+                            next school, there is a place on the form to enter
+                            the school’s name. Please be as specific as possible
+                            here and avoid any acronyms. Please try to enter the
+                            school’s name as it appears officially.
+                        </li>
+                        <li className="mb-6">
+                            On the pledge form, we ask for your child’s current
+                            school and next school. Please enter the current
+                            school your child attends and please list the next
+                            school your child will attend, which might be an
+                            upper elementary school, intermediate school, junior
+                            high school, middle school or high school.
+                        </li>
+                        <li className="mb-6">
+                            Unplugged is only taking pledges from Canada at the
+                            moment.
+                        </li>
+                    </ol>
+                </div>
+            </div>
             <Footer />
         </div>
     )
