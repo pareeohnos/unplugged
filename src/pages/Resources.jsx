@@ -185,19 +185,6 @@ export default function Resources() {
                             your post!
                         </p>
                         <ul className=" flex my-8 justify-center">
-                            <li className="">
-                                <a
-                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Funpluggedcanada.com%2F"
-                                    target="_blank"
-                                >
-                                    <Fab sx={{ mr: 1.5 }}>
-                                        <InstagramIcon
-                                            fontSize="large"
-                                            sx={{ color: '#539c99' }}
-                                        />
-                                    </Fab>
-                                </a>
-                            </li>
                             <li>
                                 <a
                                     href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Funpluggedcanada.com%2F"

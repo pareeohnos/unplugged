@@ -63,7 +63,10 @@ export default function Home() {
                         >
                             SIGN THE PLEDGE
                         </Fab>
-                        <a href="#about" className="inline-block mt-4">
+                        <a
+                            onClick={() => navigate('/research')}
+                            className="inline-block mt-4"
+                        >
                             <Fab variant="extended" sx={{ ml: '1rem' }}>
                                 LEARN MORE
                             </Fab>
@@ -134,7 +137,8 @@ export default function Home() {
                 <div>
                     <div>
                         <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4 ">
-                            How To Sign The Pledge?
+                            “Why should I sign the pledge? Collective effort
+                            helps everyone succeed and shift the culture.”
                         </h3>
                         <ol className="list-decimal pl-6">
                             <li className="mb-6">

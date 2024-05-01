@@ -192,8 +192,7 @@ export default function Research() {
 
                 <div>
                     <h2 className="font-proxima text-[32px] text-[#FF6D6D] text-center my-12">
-                        Would you like to learn more on the issue? Here are some
-                        great books to get you started.
+                        Would you like to learn more? Here are some great books.
                     </h2>
 
                     <ul>
@@ -381,7 +380,7 @@ export default function Research() {
                                         target="_blank"
                                         href="https://www.amazon.com/gp/product/0062082434/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0062082434&linkCode=as2&tag=waituntil8th-20&linkId=0e7a057ca1d87c93d4bedf84d484b374"
                                     >
-                                        The Big Disconnect
+                                        The Big Disconnect{' '}
                                     </a>
                                     In The Big Disconnect, clinical psychologist
                                     Catherine Steiner-Adair takes an in-depth

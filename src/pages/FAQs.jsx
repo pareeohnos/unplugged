@@ -227,7 +227,7 @@ export default function FAQs() {
                             <a
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 target="_blank"
-                                href="https://unpluggedcanada.com/"
+                                href="https://unpluggedcanada.com/#/pledge"
                             >
                                 sign the pledge
                             </a>{' '}
@@ -264,14 +264,14 @@ export default function FAQs() {
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 href="https://unpluggedcanada.com/faqs"
                             >
-                                SIGN UP SHEET
+                                sign up sheet
                             </a>{' '}
                             o gather pledges at your school. After you gather
                             the pledges, you will need to enter them online{' '}
                             <a
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 target="_blank"
-                                href="https://unpluggedcanada.com/pledge/"
+                                href="https://unpluggedcanada.com/#/pledge/"
                             >
                                 here
                             </a>{' '}

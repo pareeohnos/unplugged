@@ -127,13 +127,10 @@ export default function Ambassadors() {
                             }}
                             className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto "
                         ></div>
-                        <a
-                            href="https://www.linkedin.com/in/grace-yu-b71baa186/?originalSubdomain=ca"
-                            target="_blank"
-                        >
+                        <a href="https://citypedspecialty.com/" target="_blank">
                             <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
                                 Dr. Grace Yu | MDCM FRCPC Pediatrics{' '}
-                                <LinkedInIcon
+                                <InsertLinkIcon
                                     // fontSize="large"
                                     sx={{ color: '#2E4049' }}
                                 />

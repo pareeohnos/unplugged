@@ -24,7 +24,7 @@ export default function Footer() {
                             />
                         </div>
 
-                        <ul className="footer__social-links flex mb-8 ">
+                        {/* <ul className="footer__social-links flex mb-8 ">
                             <li>
                                 <Fab
                                     className="footer__social-link"
@@ -65,7 +65,7 @@ export default function Footer() {
                                     <LinkedInIcon />
                                 </Fab>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
                     <div className="flex justify-around w-full mt-4 max-w-[860px]">
                         <div className="hidden min-[450px]:block footer__content-col mr-7">
