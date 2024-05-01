@@ -134,6 +134,17 @@ export default function Resources() {
                                 Ask your school’s principal if they can
                                 advertise Unplugged in their bulletins.
                             </li>
+                            <li className="mb-4">
+                                Click{' '}
+                                <a
+                                    className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                    target="_blank"
+                                    href="https://github.com/felixreynoso/unplugged/raw/main/src/assets/Unplugged-Flyer-single.pdf"
+                                >
+                                    here
+                                </a>{' '}
+                                for our flyer!”
+                            </li>
                         </ol>
                         <p className="mb-5">
                             If you can’t get momentum with the school
