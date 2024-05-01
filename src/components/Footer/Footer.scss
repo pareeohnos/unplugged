@@ -3,7 +3,6 @@
 .footer {
     background-color: $infoColor;
     color: white;
-    font-family: $font-primary;
 
     &__container {
         margin: 0 auto;
@@ -17,13 +16,12 @@
     }
     &__logo {
         margin-bottom: 1rem;
-        font-family: $font-secondary;
+
         font-size: 2.25rem;
     }
     &__copy {
         margin-bottom: 1rem;
         padding-right: 1rem;
-        font-family: $font-primary;
     }
     &__social-links {
         list-style: none;
@@ -41,7 +39,6 @@
 }
 
 .footer__subtitle {
-    font-family: $font-main;
     margin-bottom: 1.2rem;
 }
 .footer__list {

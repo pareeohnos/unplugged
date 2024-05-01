@@ -11,7 +11,7 @@ export default function Footer() {
     const navigate = useNavigate()
 
     return (
-        <footer className="footer">
+        <footer className="footer font-mincho">
             <div className="footer__container">
                 <div className="flex flex-col items-center md:items-start md:items-between md:flex-row ">
                     <div className="  md:max-w-80 mr-4 ">
