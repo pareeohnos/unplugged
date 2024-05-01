@@ -16,7 +16,7 @@ export default function Government() {
     const navigate = useNavigate()
 
     return (
-        <div className="font-sans w-full h-full">
+        <div className="font-sans w-full h-full  text-lg leading-relaxed ">
             <Nav logoColor="black" />
 
             <main className="w-full px-12 py-12 max-w-[956px] mx-auto">
@@ -40,7 +40,7 @@ export default function Government() {
                                 <h2 className="font-proxima text-[32px] text-[#FF6D6D] ">
                                     British Columbia
                                 </h2>
-                                <p>
+                                <p className=" text-lg leading-relaxed ">
                                     <a
                                         className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                         target="_blank"

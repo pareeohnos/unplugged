@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from '@mui/material/styles'
 import theme from './styles/theme.tsx'
 import React from 'react'
@@ -14,7 +14,7 @@ import Government from './pages/Government.jsx'
 function App() {
     return (
         <ThemeProvider theme={theme}>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/pledge" element={<Pledge />} />
@@ -24,7 +24,7 @@ function App() {
                     <Route path="/faqs" element={<FAQs />} />
                     <Route path="/government" element={<Government />} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </ThemeProvider>
     )
 }
