@@ -24,21 +24,20 @@ export default function FAQs() {
                             MATTER THAT MUCH?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
-                            Many experts from child psychologists to internet
+                            Many experts, from child psychologists to internet
                             safety leaders – and even technology executives –
                             agree that it is best to wait until at least 14
                             before exposing children to smartphones. Social
                             media and apps are designed to encourage addictive
                             behaviors and studies show that using screens for
-                            several hours a day can impair children’s cognitive
-                            capacity, language ability, and quality of sleep,
-                            and may even thin the cortex of their brain.
-                            Constant stimulation from addictive apps, along with
-                            exposure to harmful social interactions that
-                            children’s developing minds are not ready for, can
-                            cause cortisol to rise and has led to an explosion
-                            of anxiety and depression in adolescents. Find out
-                            more here
+                            several hours a day can impair children’s
+                            cognitive[1] and language abilities[2], quality of
+                            sleep[3], and may even thin the cortex of their
+                            brain.[2] Constant stimulation from addictive apps,
+                            along with exposure to harmful social interactions
+                            that children’s developing minds are not ready for,
+                            can cause cortisol to rise and has led to an
+                            explosion of anxiety and depression in adolescents.
                         </p>
                     </li>
                     <li className="mb-12">
@@ -49,13 +48,14 @@ export default function FAQs() {
                         <p className="text-lg leading-relaxed mb-4">
                             After careful consideration, some families have
                             decided to allow their children to connect with
-                            peers via texting and Facetime on a stripped down
-                            iPad kept at home. This can be a nice, slow “on
-                            ramp” where they connect socially with their friends
-                            online but in a safe space. Everything can be
-                            removed on the iPad except iMessage and FaceTime (no
-                            App Store, games, internet browser, etc). This way
-                            they can easily get by without a smartphone.
+                            peers via texting and Facetime on a stripped-down
+                            iPad kept at home. This can be a nice, slow
+                            “on-ramp” where they connect socially with their
+                            friends online, but also in a safe space. Everything
+                            can be removed on the iPad except iMessage and
+                            FaceTime (no App Store, games, internet browser,
+                            etc). This way they can easily get by without
+                            needing a fully connected smartphone.
                         </p>
                     </li>
                     <li className="mb-12">
@@ -64,11 +64,11 @@ export default function FAQs() {
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
                             No one walks around with an iPad in their pocket
-                            like a smartphone. The smartphone is essentially a
-                            mini-computer in your child's hands all day every
-                            day, whereas an iPad is more often used within the
-                            home or for travel. It’s not used as often as a
-                            phone, or for as long.
+                            like a smartphone. The smartphone is a mini-computer
+                            in your child's hands all day every day, whereas an
+                            iPad is more often used within the home or for
+                            travel. It’s not used as often as a phone, or for as
+                            long.
                         </p>
                     </li>
 
@@ -77,15 +77,14 @@ export default function FAQs() {
                             HOW ELSE CAN MY KID STAY CONNECTED WITH OTHER KIDS?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
-                            An old school approach is not bad! My sister has
+                            An old-school approach is not bad! My sister has
                             used a landline phone at home for a few years, and I
-                            found it super cute when my daughter called her
+                            have found it super cute when my daughter calls her
                             cousins and grandpa on the landline! My family
                             followed this great idea and have secured a Fongo
-                            phone (link here Felix please). The cost is only a
-                            few dollars a month, and we are hoping our
-                            daughter’s close friends and other families will do
-                            it too.
+                            phone. The cost is only a few dollars a month, and
+                            we are hoping our daughter’s close friends and other
+                            families will do it too.
                         </p>
                     </li>
                     <li className="mb-12">
@@ -114,9 +113,8 @@ export default function FAQs() {
                             calls and texts without access to the internet or
                             online apps, or a two-way calling watch. The basic
                             phone avoids many of the distractions and dangers of
-                            the smartphone. We have a list of (@Felix Reynoso
-                            could you please help me with some suggestions in
-                            Canada here?)
+                            the smartphone. Most major carriers offer flip
+                            phones or other basic phones as low-cost options.
                         </p>
                     </li>
                     <li className="mb-12">
@@ -141,7 +139,7 @@ export default function FAQs() {
                                 Check out this guide
                             </a>{' '}
                             from Protect Young Eyes if you are considering an
-                            Apple Watch.
+                            Apple Watch or something similar.
                         </p>
                     </li>
                     <li className="mb-12">
@@ -150,7 +148,7 @@ export default function FAQs() {
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
                             No! It is never too late to change your mind as a
-                            parent.  Please share with your child that many
+                            parent. Please share with your child that many
                             families in their grade have decided that it is
                             better to wait to have a smartphone until at least
                             age 14. You can discuss with your child the many
@@ -185,12 +183,10 @@ export default function FAQs() {
                             least age 14, as long as at least five families from
                             your child’s grade and school also sign the pledge.
                             As soon as five families have signed, you will be
-                            notified that the pledge is in effect and we will
-                            let you know who else has made the pledge so that
-                            you can connect with each other! We will not share
-                            your information with any third party outside of our
-                            organization and your personal information will not
-                            be made public on this site.
+                            notified that the pledge is in effect! We will not
+                            share your information with any third party outside
+                            of our organization and your personal information
+                            will not be made public.
                         </p>
                     </li>
                     <li className="mb-12">
@@ -198,12 +194,18 @@ export default function FAQs() {
                             WHAT HAPPENS AS SOON AS I SIGN THE PLEDGE?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
-                            You will receive an email from Unplugged in one to
-                            two business days with tips and suggestions on how
-                            to rally other parents from your child's school to
-                            sign the pledge. If you do not receive an email
+                            You will receive an email from Unplugged within one
+                            to two business days with tips and suggestions on
+                            how to rally other parents from your child's school
+                            to sign the pledge. If you do not receive an email
                             after a couple of days, please notify us via email
-                            at info@unplugged.ca
+                            at at{' '}
+                            <a
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                href="mailto:info@unpluggedcanada.com"
+                            >
+                                info@unpluggedcanada.com
+                            </a>
                         </p>
                     </li>
                     <li className="mb-12">
@@ -211,11 +213,9 @@ export default function FAQs() {
                             IS MY PLEDGE ANONYMOUS?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
-                            The pledge is anonymous until five or more parents
-                            from your child’s grade and school sign, and then it
-                            becomes active. At this point, you will know the
-                            other families who are on board and they will know
-                            that you have signed up too.
+                            The pledge is anonymous, but we encourage discussion
+                            as a way to overcome the social reservations you may
+                            have. Together, we can help our children!
                         </p>
                     </li>
                     <li className="mb-12">
@@ -262,11 +262,11 @@ export default function FAQs() {
                             Yes! You may use this{' '}
                             <a
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                                href="#"
+                                href="https://unpluggedcanada.com/faqs"
                             >
                                 SIGN UP SHEET
                             </a>{' '}
-                            to gather pledges at your school. After you gather
+                            o gather pledges at your school. After you gather
                             the pledges, you will need to enter them online{' '}
                             <a
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
@@ -298,6 +298,52 @@ export default function FAQs() {
                         </p>
                     </li>
                 </ul>
+
+                <div className="w-full text-sm">
+                    <p>
+                        [1]{' '}
+                        <em>
+                            The Mere Presence of Your Smartphone Reduces Brain
+                            Power, Study Shows. June 16, 2017{' '}
+                            <a
+                                className="text-blue-600"
+                                target="_blank"
+                                href="https://news.utexas.edu/2017/06/26/the-mere-presence-of-your-smartphone-reduces-brain-power/"
+                            >
+                                UTNews
+                            </a>
+                        </em>{' '}
+                    </p>
+                    <p>
+                        [2]{' '}
+                        <em>
+                            Groundbreaking study examines effects of screen time
+                            on kids. December 9, 2018,{' '}
+                            <a
+                                className="text-blue-600"
+                                target="_blank"
+                                href="https://www.cbsnews.com/news/groundbreaking-study-examines-effects-of-screen-time-on-kids-60-minutes/"
+                            >
+                                CBS News
+                            </a>
+                        </em>{' '}
+                    </p>
+                    <p>
+                        [3]{' '}
+                        <em>
+                            Smartphones damaging children’s sleep and
+                            development, should stay out of the bedroom, study
+                            finds. November 12, 2016,{' '}
+                            <a
+                                className="text-blue-600"
+                                target="_blank"
+                                href="https://www.news.com.au/technology/smartphones-damaging-childrens-sleep-and-development-should-stay-out-of-the-bedroom-study-finds/news-story/55228f3ce745f536d5628150230d3cdf"
+                            >
+                                News.com
+                            </a>
+                        </em>{' '}
+                    </p>
+                </div>
             </section>
             <Footer />
         </div>

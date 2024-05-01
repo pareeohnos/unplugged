@@ -200,8 +200,7 @@ export default function Pledge() {
                     <ol className="list-decimal pl-6">
                         <li className="mb-6">
                             To sign the pledge, your child must at least be in
-                            kindergarten. (For now!) We are working on including
-                            those in pre-K or non-standard education systems.
+                            kindergarten (for now!)
                         </li>
                         <li className="mb-6">
                             Please sign up your children younger than 14. To add

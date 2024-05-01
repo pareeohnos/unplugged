@@ -47,18 +47,25 @@ export default function Research() {
                                 </h3>
                             </a>
                             <div className="flex w-full">
+                                <div className="hidden md:inline-block w-[200px] h-[300px] object-cover  mr-8 mb-4">
+                                    <img
+                                        className="object-cover"
+                                        src={anxiousBook}
+                                        alt="The Anxious Generation Book Cover"
+                                    />
+                                </div>
                                 <div className="w-[100%]">
                                     <p className="mb-4">
                                         In The Anxious Generation, social
                                         psychologist Jonathan Haidt lays out the
                                         facts about the epidemic of teen mental
-                                        illness that hit many countries at the
-                                        same time. He then investigates the
+                                        illness that has hit many countries at
+                                        the same time. He then investigates the
                                         nature of childhood, including why
                                         children need play and independent
                                         exploration to mature into competent,
                                         thriving adults. Haidt shows how the
-                                        *play-based childhood" began to decline
+                                        “play-based childhood" began to decline
                                         in the 1980s, and how it was finally
                                         wiped out by the arrival of the
                                         "phone-based childhood" in the early
@@ -84,16 +91,9 @@ export default function Research() {
                                         families, and their societies.
                                     </p>
                                 </div>
-                                <div className="hidden md:inline-block ml-8">
-                                    <img
-                                        className="w-[200px] h-auto"
-                                        src={anxiousBook}
-                                        alt="The Anxious Generation Book Cover"
-                                    />
-                                </div>
                             </div>
 
-                            <div className="mt-8 mb-12">
+                            <div className="mt-8 mb-12 mx-auto max-w-[650px]">
                                 <img
                                     src={anxiousInfographic}
                                     alt="The anxious Generation Inphographic"
@@ -131,18 +131,18 @@ export default function Research() {
                                 </em>
                             </p>
                             <p>
-                                Dr. Stacey is a general psychiatrist. Her work
-                                is mostly concentrated with teens and college
-                                students. She has a specific interest in how
-                                smartphones affect the mental health of
-                                children. Dr. Stacey’s insights in regard to
-                                technology use have been featured in
-                                the Washington Post and on the Today Show. Dr.
-                                Stacey has a Bachelor of Science in Biology from
-                                the University of Alabama and an M.D. from the
-                                University of Arkansas for Medical Sciences. She
-                                completed her psychiatry training at the
-                                University of Wisconsin.
+                                Dr. Stacey is a general psychiatrist whose work
+                                concentrates on teens and college students. She
+                                has a specific interest in how smartphones
+                                affect the mental health of children. Dr.
+                                Stacey’s insights in regard to technology use
+                                have been featured in the Washington Post and on
+                                the Today Show. Dr. Stacey has a Bachelor of
+                                Science in Biology from the University of
+                                Alabama and an M.D. from the University of
+                                Arkansas for Medical Sciences. She completed her
+                                psychiatry training at the University of
+                                Wisconsin.
                             </p>
                         </li>
                         <li>
@@ -166,27 +166,25 @@ export default function Research() {
                                 negative effects of such use in children and
                                 adolescents. Recent reviews have argued that the
                                 evidence supporting excessive smartphone use as
-                                an addictive behavior is scarce. In particular,
-                                Billieux have argued that there is insufficient
-                                evidence for behavioral and neurobiological
-                                similarities between excessive smartphone use
-                                other types of addictive behaviors.
-                            </p>
-                            <p>
-                                Panova and Carbonell also argued that there is
-                                insufficient evidence to support for the
-                                diagnosis of smartphone addiction and finally
-                                Montag have argued that excessive smartphone use
-                                is a form of Internet Use Disorder. The
-                                smartphones are being used for various purposes
-                                such as gaming, Social Network Services,
-                                watching video clips. Therefore, excessive use
-                                of smartphones may have difference
-                                characteristics according to the type of
-                                smartphone use. This present paper will review
+                                an addictive behavior is scarce. Smartphones are
+                                being used for various purposes such as gaming,
+                                Social Network Services, and watching video
+                                clips. Therefore, excessive use of smartphones
+                                may have different characteristics according to
+                                the type of smartphone use. This paper reviews
                                 the existing evidence on excessive smartphone
                                 use, and it will discuss its similarities with
                                 and differences from Internet addiction.
+                            </p>
+                            <p>
+                                The excessive use of the smartphone has been
+                                associated with impaired cognitive functions and
+                                mental health problems. There are unique
+                                findings on the association between using
+                                smartphones, need of constant stimulation,
+                                deficits in everyday cognitive functioning and
+                                brain changes which should send alarm signals to
+                                clinicians and educators in the modern world.
                             </p>
                         </li>
                     </ul>
@@ -299,11 +297,11 @@ export default function Research() {
                                     >
                                         Wired Child
                                     </a>{' '}
-                                    is a practical guide to building your
-                                    child’s bond with family and fostering
-                                    school success amid the allure of digital
-                                    screens. Kids’ obsessive use of video games,
-                                    social media, and texting is eclipsing their
+                                    a practical guide to building your child’s
+                                    bond with family and fostering school
+                                    success amid the allure of digital screens.
+                                    Kids’ obsessive use of video games, social
+                                    media, and texting is eclipsing their
                                     connections with family and school—the two
                                     most important contributors to their
                                     well-being. The result: a generation of kids
@@ -340,7 +338,7 @@ export default function Research() {
                                     <a
                                         className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                         target="_blank"
-                                        href="https://www.amazon.com/gp/product/1501151983/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1501151983&linkCode=as2&tag=waituntil8th-20&linkId=187802b9865270cd812e9f6c0cd84729"
+                                        href="https://www.amazon.ca/i-Minds-Constant-Connectivity-Rewiring-Brains-dp-0865719012/dp/0865719012/ref=dp_ob_title_bk"
                                     >
                                         iGen: Why Today’s Super-Connected Kids
                                         Are Growing Up Less Rebellious, More
@@ -385,7 +383,7 @@ export default function Research() {
                                     >
                                         The Big Disconnect
                                     </a>
-                                    In the Big Disconnect, clinical psychologist
+                                    In The Big Disconnect, clinical psychologist
                                     Catherine Steiner-Adair takes an in-depth
                                     look at how the Internet and the digital
                                     revolution are profoundly changing childhood

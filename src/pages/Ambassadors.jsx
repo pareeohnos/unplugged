@@ -8,7 +8,7 @@ import parentGuidePhoto from '../assets/images/4.png'
 import jennyKidPhoto from '../assets/images/3.png'
 import josettePhoto from '../assets/images/josette_calleja.jpg'
 import Footer from '../components/Footer/Footer.tsx'
-
+import InsertLinkIcon from '@mui/icons-material/InsertLink'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 
 export default function Ambassadors() {
@@ -117,7 +117,7 @@ export default function Ambassadors() {
                     </div>
                 </div>
 
-                <div class="w-full max-w-[956px] grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="w-full max-w-[956px] grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div>
                         <div
                             style={{
@@ -196,13 +196,10 @@ export default function Ambassadors() {
                             className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto"
                         ></div>
 
-                        <a
-                            href="https://www.linkedin.com/in/josette-calleja-14589410/?originalSubdomain=ca"
-                            target="_blank"
-                        >
+                        <a href="https://callejacoaching.com/" target="_blank">
                             <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
                                 Josette Calleja{' '}
-                                <LinkedInIcon
+                                <InsertLinkIcon
                                     // fontSize="large"
                                     sx={{ color: '#2E4049' }}
                                 />
