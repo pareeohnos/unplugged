@@ -53,8 +53,8 @@ export default function Nav({ logoColor = 'white' }) {
     )
 
     return (
-        <div className="w-full max-w-[956px] mx-auto">
-            <div className="relative flex  md:flex-row px-12 items-center justify-between">
+        <div className="w-full mx-auto">
+            <div className="relative flex md:flex-row px-12 items-center justify-between">
                 <div className="">
                     {/* <Typography variant="poster" sx={{ fontSize: 32 }}>
             Unplugged
@@ -84,7 +84,7 @@ export default function Nav({ logoColor = 'white' }) {
                 >
                     {DrawerList}
                 </Drawer>
-                <ul className="hidden md:flex items-center wrap">
+                <ul className="hidden md:flex flex-1 items-center wrap justify-center">
                     <li>
                         <a
                             className="nav__link cursor-pointer"
@@ -145,18 +145,18 @@ export default function Nav({ logoColor = 'white' }) {
                             </Typography>
                         </a>
                     </li>
-
-                    <li>
-                        <Fab
-                            color="primary"
-                            variant="extended"
-                            style={{ color: 'white', minWidth: '164px' }}
-                            onClick={() => navigate('/pledge')}
-                        >
-                            SIGN THE PLEDGE
-                        </Fab>
-                    </li>
                 </ul>
+
+                <div className="hidden md:block">
+                    <Fab
+                        color="primary"
+                        variant="extended"
+                        style={{ color: 'white', minWidth: '164px' }}
+                        onClick={() => navigate('/pledge')}
+                    >
+                        SIGN THE PLEDGE
+                    </Fab>
+                </div>
             </div>
         </div>
     )

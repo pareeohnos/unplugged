@@ -48,10 +48,10 @@ export default function Home() {
                 {/* <div className="absolute right-8 top-4">
                     <img className="h-28 " src={logo} alt="" />
                 </div> */}
-                <div className="p-8 flex flex items-center justify-center flex-col">
+                <div className="p-8 flex items-center justify-center flex-col">
                     <div>
-                        <h1 className="text-white text-[40px]  md:px-[80px] md:text-[80px] max-w-[956px] mx-auto ">
-                            Say Yes To Waiting For Smartphones
+                        <h1 className="text-center font-title text-white text-[40px]  md:px-[80px] md:text-[80px] max-w-[956px] mx-auto ">
+                            Say yes to waiting for smartphones
                         </h1>
                     </div>
                     <div className="hero__buttons">
@@ -75,20 +75,20 @@ export default function Home() {
                 </div>
             </header>
 
-            <section className="about-us w-full p-12 text-lg leading-relaxed max-w-[956px] mx-auto ">
-                <h2 className=" mb-6">
+            <section className="about-us w-full px-12 py-24 text-lg leading-relaxed max-w-[956px] mx-auto ">
+                <h2 className="mb-6">
                     <span
                         id="about"
-                        className="font-proxima text-[32px] text-[#FF6D6D]"
+                        className="font-sans font-bold uppercase text-[#FF6D6D]"
                     >
                         About Us
                     </span>
                 </h2>
 
                 {/* Mission  */}
-                <div>
-                    <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4 ">
-                        Mission
+                <div className="mb-12">
+                    <h3 className="font-title text-4xl text-[#2E4049] font-bold mb-4 ">
+                        Our mission
                     </h3>
                     <div>
                         <p className="text-lg leading-relaxed mb-4">
@@ -101,7 +101,7 @@ export default function Home() {
                             of nature, empathy, and authentic connection take
                             center stage.
                         </p>
-                        <p className="text-lg leading-relaxed mb-10">
+                        <p className="text-lg leading-relaxed">
                             As a community that puts our children’s mental,
                             social, and emotional wellbeing first, we can
                             together shift the culture away from the known harms
@@ -117,11 +117,11 @@ export default function Home() {
 
                 {/* Vision  */}
                 <div>
-                    <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4 ">
-                        Vision
+                    <h3 className="font-title text-4xl text-[#2E4049] font-bold mb-4 ">
+                        Our vision
                     </h3>
                     <div>
-                        <p className="text-lg leading-relaxed mb-10">
+                        <p className="text-lg leading-relaxed">
                             We aim to implement small lifestyle shifts that
                             reduce and delay screen time to nurture healthy and
                             happy children who are protected from the harms of
@@ -133,12 +133,19 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
+            </section>
 
+            <section className="w-full bg-[#2e4049] leading-relaxed p-8">
+                <div className="w-full p-12 text-lg leading-relaxed max-w-[956px] mx-auto ">
+                    <p className="text-white font-title text-4xl text-center leading-relaxed">Why should I sign the pledge? Collective effort helps everyone succeed and shift the culture.</p>
+                </div>
+            </section>
+
+            <section className="about-us w-full px-12 py-24 text-lg leading-relaxed max-w-[956px] mx-auto">
                 <div>
                     <div>
-                        <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4 ">
-                            “Why should I sign the pledge? Collective effort
-                            helps everyone succeed and shift the culture.”
+                        <h3 className="font-title text-4xl  text-[#2E4049] font-bold mb-8">
+                            Some things you need to know
                         </h3>
                         <ol className="list-decimal pl-6">
                             <li className="mb-6">

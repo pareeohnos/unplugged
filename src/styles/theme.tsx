@@ -47,8 +47,8 @@ const theme = createTheme(responsiveFontSizes(baseTheme), {
         },
     },
     typography: {
-        fontFamily: ['sans-serif'],
-        h1: { fontFamily: 'sans-serif' },
+        fontFamily: ['Source Sans 3', 'sans-serif'],
+        h1: { fontFamily: ['Source Sans 3', 'sans-serif'] },
         h2: { fontFamily: 'sans-serif' },
         h3: { fontFamily: 'sans-serif' },
         h4: { fontFamily: 'sans-serif' },

@@ -19,6 +19,7 @@
   display: flex;
   margin: -3rem $destopContainerMargin 0 $destopContainerMargin;
 }
+
 .info-box {
   width: 33.333%;
   padding: 0 2rem;
@@ -30,17 +31,19 @@
     display: inline-block;
     margin-bottom: 1rem !important;
   }
+
   &__copy {
     margin-bottom: 1rem !important;
   }
-  &__button {
-  }
+
+  &__button {}
+
   &__link {
     color: $lightGray;
   }
 }
-.box-wrapper {
-}
+
+.box-wrapper {}
 
 .info-box--1 {
   padding-top: 3rem;
@@ -55,13 +58,12 @@
   background-color: $infoColor;
   color: $lightGray;
 }
+
 .info-box--3 {
   align-items: center;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(255, 107, 107, 0.6),
-      rgba(255, 107, 107, 0.6)
-    ),
+      rgba(255, 107, 107, 0.6)),
     url("../../assets/images/pexels-cottonbro-studio-6593913.jpg");
   background-size: cover;
   background-position: center;
@@ -70,7 +72,9 @@
 // about-us
 
 $totalMargin: $destopContainerMargin * 2;
+
 .about-us {
+
   //   background-color: red;
   &__container {
     margin: 0 $destopContainerMargin;
@@ -85,25 +89,45 @@ $totalMargin: $destopContainerMargin * 2;
   font-family: $font-secondary;
   color: $primaryColor;
 }
+
 .people__title {
   font-family: $font-main;
   color: $infoColor;
   margin-bottom: 1rem;
 }
+
 .people__copy {
   font-family: $font-primary;
   margin-bottom: 1rem;
   line-height: 1.75;
 }
+
 .goals__title {
   color: $infoColor;
   font-family: $font-main;
   margin-bottom: 1rem;
 }
+
 .goals__list {
   color: $lightBlack;
 }
+
 .goals__goal {
   font-family: $font-primary;
   margin-bottom: 1rem;
+}
+
+blockquote {
+  &:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // text-align: center;
+  }
 }

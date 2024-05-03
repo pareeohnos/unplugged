@@ -131,11 +131,19 @@ export default function Pledge() {
     return (
         <div>
             <Nav logoColor="black" />
-            <div className="w-full p-12 font-mincho max-w-[956px] mx-auto">
+            <div className="w-full p-12 font-sans text-lg max-w-[956px] mx-auto">
                 <div>
-                    <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4 ">
+                    <h1 className="mb-6">
+                        <span
+                            id="about"
+                            className="font-sans font-bold uppercase text-[#FF6D6D]"
+                        >
+                            Sign the pledge
+                        </span>
+                    </h1>
+                    <h2 className="font-title font-bold text-4xl text-[#2e4049] mb-16">
                         How To Sign The Pledge?
-                    </h3>
+                    </h2>
                     <ol className="list-decimal pl-6">
                         <li className="mb-6">
                             To sign the pledge, your child must at least be in
@@ -178,7 +186,7 @@ export default function Pledge() {
                     </ol>
                 </div>
             </div>
-            <form className="form">
+            <form className="form pb-24">
                 <h1 className="form__title text-[32px] text-[#2e4049]">
                     Unplugged Canada Pledge
                 </h1>

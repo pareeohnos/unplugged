@@ -20,69 +20,69 @@ export default function Resources() {
             <Nav logoColor="black" />
 
             <main className="w-full px-12 py-12 max-w-[956px] mx-auto">
-                <h2 className=" mb-6">
+                <h2 className="mb-6">
                     <span
                         id="about"
-                        className="font-proxima text-[32px] text-[#FF6D6D]"
+                        className="font-sans font-bold uppercase text-[#FF6D6D]"
                     >
                         Resources
                     </span>
                 </h2>
 
                 <div className="w-full text-lg leading-relaxed mb-10">
-                    <h3 className=" text-center text-[32px] text-[#2E4049] font-bold mb-12 mt-6 tracking-wider">
+                    <h3 className="font-title text-4xl text-[#2E4049] font-bold mb-6 mt-6">
                         Getting the Unplugged pledge in your community...
                     </h3>
 
                     <div className="mb-12">
-                        <p className="mb-5 text-xl">
-                            <em>
-                                {' '}
-                                You can be the catalyst for change in your
-                                community!
-                            </em>
+                        <p className="mb-6">
+                            You can be the catalyst for change in your
+                            community!
                         </p>
-                        <p className="mb-5">
-                            <span className="text-[#ff6d6d] font-bold tracking-widest">
-                                First
-                            </span>
-                            ,{' '}
-                            <a
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline cursor-pointer"
-                                onClick={() => navigate('/pledge')}
-                            >
-                                sign
-                            </a>{' '}
-                            the pledge.
-                        </p>
-                        <p className="mb-5">
-                            <span className="text-[#ff6d6d] font-bold tracking-widest">
-                                Next
-                            </span>
-                            , we will send you a welcome email from Unplugged.
-                        </p>
-                        <p className="mb-5">
-                            <span className="text-[#ff6d6d] font-bold tracking-widest">
-                                Then
-                            </span>
-                            , all you have to do is wait (and spread the word if
-                            you like – see below!).
-                        </p>
-                        <p className="mb-5">
+
+                        <ul className="list-disc mb-12 pl-6">
+                            <li className="mb-4">
+                                <span className="text-[#ff6d6d] font-bold tracking-widest">
+                                    First
+                                </span>
+                                ,{' '}
+                                <a
+                                    className="font-medium text-blue-600 dark:text-blue-500 hover:underline cursor-pointer"
+                                    onClick={() => navigate('/pledge')}
+                                >
+                                    sign
+                                </a>{' '}
+                                the pledge.
+                            </li>
+                            <li className="mb-4">
+                                <span className="text-[#ff6d6d] font-bold tracking-widest">
+                                    Next
+                                </span>
+                                , we will send you a welcome email from
+                                Unplugged.
+                            </li>
+                            <li className="mb-4">
+                                <span className="text-[#ff6d6d] font-bold tracking-widest">
+                                    Then
+                                </span>
+                                , all you have to do is wait (and spread the
+                                word if you like – see below!).
+                            </li>
+                        </ul>
+                        <p className="mb-6">
                             Once five parents have signed up from your child’s
                             school and grade, your pledge becomes{' '}
                             <em>active!</em> This means you have all committed
                             to wait until your children are 14 years old before
                             giving them smartphones.
                         </p>
-                        <p className="mb-5">
+                        <p className="mb-6">
                             Once the pledge is active, we will send you a group
                             email to let you know that the pledge has started
                             and other families from your children’s grade are
                             committed!
                         </p>
                         <p>
-                            {' '}
                             As more families join an active pledge and the size
                             of your group increases, we will provide updates on
                             this growth.
@@ -90,20 +90,20 @@ export default function Resources() {
                     </div>
 
                     <div className="mb-12">
-                        <h4 className=" text-center mb-5 tracking-wide font-bold text-2xl text-[#539c99]">
-                            SPREAD THE PLEDGE
+                        <h4 className="font-title mb-6 font-bold text-4xl text-[#2E4049]">
+                            Spread the pledge
                         </h4>
-                        <p className="mb-5">
+                        <p className="mb-8">
                             Help us spread this important message of Unplugged
                             in your school community. Your voice is important in
                             fueling momentum at your school and beyond. Here are
                             some simple ways to help:
                         </p>
 
-                        <h4 className="mb-5 tracking-wide font-medium text-2xl text-[#FF6D6D]">
-                            START SMALL
+                        <h4 className="mb-6 uppercase tracking-wide font-bold text-[#FF6D6D]">
+                            Start small
                         </h4>
-                        <p className="mb-5">
+                        <p className="mb-8">
                             Grab a friend or two and ask if they have heard
                             about Unplugged. Share with them why you have signed
                             it and ask if they might be interested in helping
@@ -112,13 +112,13 @@ export default function Resources() {
                             more.
                         </p>
 
-                        <h4 className="mb-5 tracking-wide font-medium text-2xl text-[#FF6D6D]">
-                            SPREAD THE WORD
+                        <h4 className="mb-6 uppercase font-bold text-[#FF6D6D]">
+                            Spread the word
                         </h4>
-                        <p className="mb-5">
+                        <p className="mb-8">
                             Here are a few possible communication channels:
                         </p>
-                        <ol className="list-disc pl-5 max-w-[50ch]">
+                        <ul className="list-disc pl-6 max-w-[70ch] mb-8">
                             <li className="mb-4">
                                 Email or group chats are likely the most
                                 effective way to contact most parents from your
@@ -135,18 +135,17 @@ export default function Resources() {
                                 advertise Unplugged in their bulletins.
                             </li>
                             <li className="mb-4">
-                                Click{' '}
                                 <a
                                     className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                     target="_blank"
                                     href="https://github.com/felixreynoso/unplugged/raw/main/src/assets/Unplugged-Flyer-single.pdf"
                                 >
-                                    here
+                                    Click here
                                 </a>{' '}
                                 for our flyer!”
                             </li>
-                        </ol>
-                        <p className="mb-5">
+                        </ul>
+                        <p className="mb-6">
                             If you can’t get momentum with the school
                             administration, start within your own circles! Of
                             course, not everyone you contact will be moved to
@@ -156,8 +155,8 @@ export default function Resources() {
                     </div>
 
                     <div className="mb-12">
-                        <h4 className=" text-center mb-5 tracking-wide font-bold text-2xl text-[#539c99]">
-                            COMMUNITY EVENTS
+                        <h4 className="font-title mb-6 font-bold text-4xl text-[#2E4049]">
+                            Community events
                         </h4>
                         Parents in your community might have questions or
                         concerns they need to voice before they can commit to
@@ -186,8 +185,8 @@ export default function Resources() {
                         <p></p>
                     </div>
                     <div className="mb-12">
-                        <h4 className=" text-center mb-5 tracking-wide font-bold text-2xl text-[#539c99]">
-                            SHARE WITH YOUR SOCIAL CIRCLES
+                        <h4 className="font-title mb-6 font-bold text-4xl text-[#2E4049]">
+                            Share with your social circles
                         </h4>
                         <p>
                             Communicate the good news today about the Unplugged

@@ -11,17 +11,47 @@ export default function Footer() {
     const navigate = useNavigate()
 
     return (
-        <footer className="footer font-mincho">
+        <footer className="footer font-sans text-sm px-12">
             <div className="footer__container">
                 <div className="flex flex-col items-center md:items-start md:items-between md:flex-row ">
-                    <div className="  md:max-w-80 mr-4 ">
+                    <div className="flex-1 mr-4 ">
                         {/* <h2 className="footer__logo">Unplugged</h2> */}
                         <div className="-ml-2">
                             <img
                                 src={logoHorizontal}
                                 alt="logo"
-                                className="max-h-[75px]"
+                                className="max-h-[50px]"
                             />
+                        </div>
+
+                        <div className="hidden md:block w-full text-xs text-[#f2f2f2] mt-5 pr-24">
+                            <h3 className="font-bold mt-8 mb-2">
+                                PRIVACY POLICY
+                            </h3>
+                            <p className="mb-4">
+                                The security of your personal information is a priority
+                                to our organization. We seek to protect this information
+                                by maintaining electronic security measures and
+                                safeguards designed to protect personal information
+                                within our organization. When you enter the information
+                                on the pledge form, it is stored in our pledge data
+                                management system through Sales Force known in the
+                                industry for its security.
+                            </p>
+                            <p>
+                                We are the sole owners of the information collected on
+                                this site. We will not sell or rent this information to
+                                anyone. We will not share your information with any
+                                third party outside of our organization. Your
+                                information will not be made public on this website. If
+                                your child’s pledge does become active (5 or more
+                                pledges for your child’s grade), Unplugged will notify
+                                you. You will receive via email a list of families from
+                                your child’s grade that are willing to delay the use of
+                                smartphones, along with each other’s names and emails to
+                                connect you with each other. This helps you to support
+                                one another!
+                            </p>
                         </div>
 
                         {/* <ul className="footer__social-links flex mb-8 ">
@@ -67,7 +97,7 @@ export default function Footer() {
                             </li>
                         </ul> */}
                     </div>
-                    <div className="flex justify-around w-full mt-4 max-w-[860px]">
+                    <div className="flex mt-4 justify-end gap-x-24">
                         <div className="hidden min-[450px]:block footer__content-col mr-7">
                             <ul className="footer__list">
                                 <li>
@@ -136,35 +166,36 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
-                </div>
-                <div className="w-full text-center text-sm text-[#f2f2f2] italic mt-5">
-                    <h3 className="text-base mb-2 not-italic">
-                        PRIVACY POLICY
-                    </h3>
-                    <p className="mb-4">
-                        The security of your personal information is a priority
-                        to our organization. We seek to protect this information
-                        by maintaining electronic security measures and
-                        safeguards designed to protect personal information
-                        within our organization. When you enter the information
-                        on the pledge form, it is stored in our pledge data
-                        management system through Sales Force known in the
-                        industry for its security.
-                    </p>
-                    <p>
-                        We are the sole owners of the information collected on
-                        this site. We will not sell or rent this information to
-                        anyone. We will not share your information with any
-                        third party outside of our organization. Your
-                        information will not be made public on this website. If
-                        your child’s pledge does become active (5 or more
-                        pledges for your child’s grade), Unplugged will notify
-                        you. You will receive via email a list of families from
-                        your child’s grade that are willing to delay the use of
-                        smartphones, along with each other’s names and emails to
-                        connect you with each other. This helps you to support
-                        one another!
-                    </p>
+
+                    <div className="md:hidden w-full text-xs text-[#f2f2f2] mt-5">
+                        <h3 className="font-bold mt-8 mb-2">
+                            PRIVACY POLICY
+                        </h3>
+                        <p className="mb-4">
+                            The security of your personal information is a priority
+                            to our organization. We seek to protect this information
+                            by maintaining electronic security measures and
+                            safeguards designed to protect personal information
+                            within our organization. When you enter the information
+                            on the pledge form, it is stored in our pledge data
+                            management system through Sales Force known in the
+                            industry for its security.
+                        </p>
+                        <p>
+                            We are the sole owners of the information collected on
+                            this site. We will not sell or rent this information to
+                            anyone. We will not share your information with any
+                            third party outside of our organization. Your
+                            information will not be made public on this website. If
+                            your child’s pledge does become active (5 or more
+                            pledges for your child’s grade), Unplugged will notify
+                            you. You will receive via email a list of families from
+                            your child’s grade that are willing to delay the use of
+                            smartphones, along with each other’s names and emails to
+                            connect you with each other. This helps you to support
+                            one another!
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>

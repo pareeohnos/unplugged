@@ -14,7 +14,7 @@ export default function Research() {
     const navigate = useNavigate()
 
     return (
-        <div className="font-sans w-full h-full ">
+        <div className="text-lg font-sans w-full h-full ">
             <div
                 style={{
                     backgroundImage: `url(${kidPhotoOcean})`,
@@ -29,17 +29,17 @@ export default function Research() {
             </div>
             <main className="w-full px-12 pt-12 pb-12 max-w-[956px] mx-auto">
                 <div>
-                    <h2 className="font-proxima text-[32px] text-[#FF6D6D]">
+                    <h2 className="font-sans font-bold uppercase text-[#FF6D6D]">
                         Research
                     </h2>
 
-                    <ul>
+                    <ul className="space-y-12">
                         <li>
                             <a
                                 target={'_blank'}
                                 href="https://www.freetheanxiousgeneration.com/research/the-evidence"
                             >
-                                <h3 className=" underline text-[24px] text-[#2E4049] font-bold mb-4 mt-6">
+                                <h3 className="font-title underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
                                     The Anxious Generation - Jonathan Haidt{' '}
                                     <i>
                                         <InsertLinkIcon />
@@ -105,7 +105,7 @@ export default function Research() {
                                 target={'_blank'}
                                 href="https://www.waituntil8th.org/blog/2022/5/20/psychiatrist-warns-parents-about-smartphones"
                             >
-                                <h3 className=" underline text-[24px] text-[#2E4049] font-bold mb-4 mt-6">
+                                <h3 className="font-title underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
                                     Psychiatrist Warns Parents about Smartphones
                                     - Dr. Adriana Stacey{' '}
                                     <i>
@@ -113,23 +113,20 @@ export default function Research() {
                                     </i>
                                 </h3>
                             </a>
-                            <p className="mb-4 max-w-[70ch]">
-                                <em>
-                                    "The list of issues caused by smartphone is
-                                    honestly too expansive to discuss at length
-                                    in this article - depression, anxiety,
-                                    isolation, increased ADHD symptoms,
-                                    inauthenticity, cyberbullying, social
-                                    pressure, insomnia, the inability to get
-                                    away from non-family influence - the list
-                                    goes on. Some scientists are even beginning
-                                    to see a link between suicidal thoughts and
-                                    smartphone usage. These effects do not go
-                                    away when your child turns 12. Or 14. Or 16.
-                                    Or probably even 18. After all the brain is
-                                    not fully mature until around age 25."{' '}
-                                </em>
-                            </p>
+                            <blockquote className="max-w-[70ch] border-l-4 border-gray-100 pl-4 ml-8 my-12">
+                                The list of issues caused by smartphone is
+                                honestly too expansive to discuss at length in
+                                this article - depression, anxiety, isolation,
+                                increased ADHD symptoms, inauthenticity,
+                                cyberbullying, social pressure, insomnia, the
+                                inability to get away from non-family influence
+                                - the list goes on. Some scientists are even
+                                beginning to see a link between suicidal
+                                thoughts and smartphone usage. These effects do
+                                not go away when your child turns 12. Or 14. Or
+                                16. Or probably even 18. After all the brain is
+                                not fully mature until around age 25.
+                            </blockquote>
                             <p>
                                 Dr. Stacey is a general psychiatrist whose work
                                 concentrates on teens and college students. She
@@ -150,7 +147,7 @@ export default function Research() {
                                 target={'_blank'}
                                 href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8204720/#:~:text=Results%3A%20Comorbidity,and%20education%20professionals."
                             >
-                                <h3 className=" underline text-[24px] text-[#2E4049] font-bold mb-4 mt-6">
+                                <h3 className="font-title underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
                                     Excessive Smartphone Use in Young Adults -
                                     Yehuda Wacks [National Institute of Health]{' '}
                                     <i>
@@ -191,7 +188,7 @@ export default function Research() {
                 </div>
 
                 <div>
-                    <h2 className="font-proxima text-[32px] text-[#FF6D6D] text-center my-12">
+                    <h2 className="font-sans uppercase text-[#FF6D6D] font-bold my-12">
                         Would you like to learn more? Here are some great books.
                     </h2>
 

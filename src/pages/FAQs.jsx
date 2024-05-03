@@ -10,16 +10,24 @@ export default function FAQs() {
     const navigate = useNavigate()
 
     return (
-        <div className="font-sans w-full h-full">
+        <div className="font-sans w-full h-full text-lg">
             <Nav logoColor="black" />
-            <section className="w-full px-12 pt-12 pb-12">
-                <h1 className=" text-[32px] text-[#2e4049] text-center">
-                    Frequently Asked Questions
+            <section className="w-full px-12 py-12 max-w-[956px] mx-auto">
+                <h1 className="mb-6">
+                    <span
+                        id="about"
+                        className="font-sans font-bold uppercase text-[#FF6D6D]"
+                    >
+                        FAQ
+                    </span>
                 </h1>
+                <h2 className="font-title font-bold text-4xl text-[#2e4049]">
+                    Here's what you need to know
+                </h2>
 
                 <ul className="w-full max-w-[956px] mx-auto text-[#2e4049] my-16">
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             WHY WAIT UNTIL AGE 14 FOR A SMARTPHONE? DOES IT
                             MATTER THAT MUCH?
                         </p>
@@ -30,18 +38,19 @@ export default function FAQs() {
                             before exposing children to smartphones. Social
                             media and apps are designed to encourage addictive
                             behaviors and studies show that using screens for
-                            several hours a day can impair children’s
-                            cognitive[1] and language abilities[2], quality of
-                            sleep[3], and may even thin the cortex of their
-                            brain.[2] Constant stimulation from addictive apps,
-                            along with exposure to harmful social interactions
-                            that children’s developing minds are not ready for,
-                            can cause cortisol to rise and has led to an
-                            explosion of anxiety and depression in adolescents.
+                            several hours a day can impair children’s cognitive
+                            <sup>[1]</sup> and language abilities<sup>[2]</sup>,
+                            quality of sleep<sup>[3]</sup>, and may even thin
+                            the cortex of their brain.<sup>[2]</sup> Constant
+                            stimulation from addictive apps, along with exposure
+                            to harmful social interactions that children’s
+                            developing minds are not ready for, can cause
+                            cortisol to rise and has led to an explosion of
+                            anxiety and depression in adolescents.
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             I WANT MY CHILD TO HAVE A WAY TO CONNECT WITH THEIR
                             FRIENDS OUTSIDE OF SCHOOL. WHAT SHOULD I DO?
                         </p>
@@ -59,7 +68,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             WHY ARE iPADS DIFFERENT?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
@@ -73,7 +82,7 @@ export default function FAQs() {
                     </li>
 
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             HOW ELSE CAN MY KID STAY CONNECTED WITH OTHER KIDS?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
@@ -88,7 +97,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             WHAT ABOUT WHEN MY CHILD GETS TO MIDDLE SCHOOL? IT
                             IS SO BIG THERE!
                         </p>
@@ -104,7 +113,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             ISN’T IT SAFER TO HAVE A SMARTPHONE? WHAT IF I NEED
                             TO CONTACT MY CHILD?
                         </p>
@@ -118,7 +127,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             CAN I GET MY CHILD A SMARTWATCH AND STILL SIGN THE
                             PLEDGE?
                         </p>
@@ -143,7 +152,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             MY CHILD ALREADY HAS A SMARTPHONE. IS IT TOO LATE?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
@@ -157,7 +166,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             MY CHILD'S SIBLING GOT A SMARTPHONE WHEN THEY WERE
                             YOUNGER. HOW DO I SWITCH GEARS WITH THIS CHILD?
                         </p>
@@ -172,7 +181,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             HOW DOES THE PLEDGE WORK?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
@@ -190,7 +199,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             WHAT HAPPENS AS SOON AS I SIGN THE PLEDGE?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
@@ -209,7 +218,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             IS MY PLEDGE ANONYMOUS?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
@@ -219,7 +228,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             HOW DO I BRING THE PLEDGE TO MY SCHOOL?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
@@ -238,7 +247,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             DO YOU HAVE ANY OTHER RESOURCES I COULD SHARE?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
@@ -254,7 +263,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             DO YOU HAVE A SIGN UP SHEET I COULD USE TO GATHER
                             SIGNATURES INSTEAD?
                         </p>
@@ -280,7 +289,7 @@ export default function FAQs() {
                         </p>
                     </li>
                     <li className="mb-12">
-                        <p className="mb-8 tracking-wide font-medium text-2xl text-[#FF6D6D]">
+                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             IS THE PLEDGE ONLY IN CANADA?
                         </p>
                         <p className="text-lg leading-relaxed mb-4">
