@@ -15,7 +15,7 @@ export default function Ambassadors() {
     const navigate = useNavigate()
 
     return (
-        <div className="font-sans w-full h-full">
+        <div className="text-lg font-sans w-full h-full">
             <div
                 style={{
                     backgroundImage: `url(${parentGuidePhoto})`,
@@ -29,7 +29,7 @@ export default function Ambassadors() {
                 </div>
             </div>
             <main className="w-full px-12 pt-12 pb-12 max-w-[956px] mx-auto">
-                <h2 className="font-proxima text-[36px] text-[#FF6D6D] mb-8">
+                <h2 className="font-sans font-bold uppercase text-[#FF6D6D]">
                     Ambassadors
                 </h2>
                 <div className="max-w-[956px]">

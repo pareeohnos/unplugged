@@ -4,13 +4,13 @@
   //   border: 1px solid red;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem 25px 5rem;
   display: flex;
   font-family: $font-main;
-  padding: 25px;
   max-width: 35rem;
   flex-direction: column;
   align-items: center;
+
   &__title {
     width: 100%;
     border-top: 1px solid $infoColor;
@@ -19,12 +19,14 @@
     margin-bottom: 1rem;
     color: $infoColor;
   }
+
   &__fields {
     width: inherit;
     // justify-content: flex-start;
     display: flex;
     flex-direction: column;
   }
+
   &__stepper {
     width: 3.25rem;
     height: 1rem;
@@ -36,20 +38,24 @@
     align-items: center;
     margin-bottom: 1rem;
   }
+
   &__step-orb {
     height: 0.8rem;
     width: 0.8rem;
     border-radius: 100%;
     background-color: rgba(255, 255, 255, 0.45);
   }
+
   &__step-orb--SELECTED {
     background-color: rgba(255, 255, 255, 0.9);
   }
+
   &__subtitle {
     font-family: $font-main;
     color: $infoColor;
     margin-bottom: 1.5rem;
   }
+
   &__input-label {
     display: inline-block;
     font-family: $font-main;
@@ -58,6 +64,7 @@
     font-size: 18px;
     color: $infoColor;
   }
+
   &__input-field {
     font-family: $font-primary;
     width: 100%;
@@ -68,6 +75,7 @@
     color: black;
     margin-top: 0.25rem;
   }
+
   &__button {
     width: 100%;
     display: flex;
