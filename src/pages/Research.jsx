@@ -407,6 +407,112 @@ export default function Research() {
                         </li>
                     </ul>
                 </div>
+                <div>
+                    <h2 className="font-sans uppercase text-[#FF6D6D] font-bold mt-12 mb-6">
+                        Relevant Studies:
+                    </h2>
+                    <p className="mb-4">
+                        Websites that offer Canadian Research and statistics
+                        include:
+                    </p>
+                    <ul className="list-disc pl-5">
+                        <li>
+                            <a
+                                target="_blank"
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                href="https://mediasmarts.ca/research-and-evaluation"
+                            >
+                                Media Smarts
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                href="https://ctrl-f.ca/en/the-evidence/"
+                            >
+                                CTRL-F
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                href="https://www.protectchildren.ca/en/resources-research/#resources"
+                            >
+                                Canadian Centre for Child Protection{' '}
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p className="my-4">
+                        Websites that offer Canadian Research and statistics
+                        include:
+                    </p>
+                    <ul className="list-disc pl-5">
+                        <li>
+                            <a
+                                target="_blank"
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                href="https://ncpcr.gov.in/uploads/165650458362bc410794e02_effect1.PDF"
+                            >
+                                Effects (Physical, Behavioural and
+                                Psycho-social) of using Mobile Phones and other
+                                Devices with Internet Accessibility by Children
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4735240"
+                            >
+                                Smartphone Bans, Student Outcome and Mental
+                                Health
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                href="https://www.cmaj.ca/content/192/6/E136.short"
+                            >
+                                Smartphones, social media use and youth mental
+                                health
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                href="https://pubmed.ncbi.nlm.nih.gov/31193561/"
+                            >
+                                Social Media Use and Adolescent Mental Health:
+                                Findings From the UK Millennium Cohort Study
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                href="https://www.pewresearch.org/internet/2022/08/10/teens-social-media-and-technology-2022/"
+                            >
+                                Teens, Social Media and Technology 2022
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                                href="https://www.hhs.gov/about/news/2023/05/23/surgeon-general-issues-new-advisory-about-effects-social-media-use-has-youth-mental-health.html"
+                            >
+                                Surgeon General Issues New Advisory About
+                                Effects Social Media Use Has on Youth Mental
+                                Health
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </main>
 
             <Footer />

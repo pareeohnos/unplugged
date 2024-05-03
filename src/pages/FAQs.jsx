@@ -262,32 +262,7 @@ export default function FAQs() {
                             for many materials you may share in your community.
                         </p>
                     </li>
-                    <li className="mb-12">
-                        <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
-                            DO YOU HAVE A SIGN UP SHEET I COULD USE TO GATHER
-                            SIGNATURES INSTEAD?
-                        </p>
-                        <p className="text-lg leading-relaxed mb-4">
-                            Yes! You may use this{' '}
-                            <a
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                                href="https://unpluggedcanada.com/faqs"
-                            >
-                                sign up sheet
-                            </a>{' '}
-                            o gather pledges at your school. After you gather
-                            the pledges, you will need to enter them online{' '}
-                            <a
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                                target="_blank"
-                                href="https://unpluggedcanada.com/#/pledge/"
-                            >
-                                here
-                            </a>{' '}
-                            so each pledge will be officially registered with
-                            Unplugged.
-                        </p>
-                    </li>
+
                     <li className="mb-12">
                         <p className="mb-4 tracking-wide font-bold font-sans text-[#FF6D6D]">
                             IS THE PLEDGE ONLY IN CANADA?
