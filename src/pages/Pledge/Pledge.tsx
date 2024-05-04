@@ -115,11 +115,11 @@ export default function Pledge() {
                 )
                 console.log(signature)
             })
-            await axios.post(
-                `https://api.unpluggedcanada.com/email_confirmation?name=${
-                    guardianData.first_name + ' ' + guardianData.last_name
-                }&email=${guardianData.email}`
-            )
+            // await axios.post(
+            //     `https://api.unpluggedcanada.com/email_confirmation?name=${
+            //         guardianData.first_name + ' ' + guardianData.last_name
+            //     }&email=${guardianData.email}`
+            // )
         } catch (error) {
             console.log(error)
             axios.delete(
