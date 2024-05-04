@@ -33,6 +33,7 @@ export default function Nav({ logoColor = 'white' }) {
         >
             <List>
                 {[
+                    'Pledge',
                     'Research',
                     'Ambassadors',
                     'Resources',
