@@ -223,11 +223,12 @@ export default function ChildForm({
                         let childObj = childrenData[0]
                         childObj = {
                             ...childObj,
-                            next_school_id: e.target['value'],
+                            next_school_id: school['id'],
                         }
                         setChildrenData(
                             [childObj].concat(childrenData.slice(1))
                         )
+                        console.log(childObj)
                     }
                 }}
                 sx={{ marginBottom: 3 }}
