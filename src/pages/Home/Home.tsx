@@ -68,11 +68,10 @@ export default function Home() {
                     onLoad={handleImageLoad}
                     onError={() => setImageLoaded(false)}
                     alt="background"
-                    className={`absolute top-0 left-0 h-full object-cover transition-opacity duration-1000 ${imageLoaded ? 'fade-in' : 'fade-out'}`}
-                    style={{ visibility: imageLoaded ? 'visible' : 'hidden' }} // Torna a imagem visível apenas quando carregada
+                    className={`absolute top-0 left-0 h-full w-full object-cover transition-opacity duration-1000 ${imageLoaded ? 'fade-in' : 'fade-out'}`}
+                    style={{ visibility: imageLoaded ? 'visible' : 'hidden' }}
                 />
 
-                {/* Pré-carregamento da próxima imagem */}
                 {!nextImageLoaded && (
                     <img
                         src={images[(currentImageIndex + 1) % images.length]}
@@ -80,7 +79,7 @@ export default function Home() {
                         className={`absolute top-0 left-0 h-full object-cover transition-opacity duration-1000 ${nextImageLoaded ? 'fade-in' : 'fade-out'}`}
                         style={{
                             visibility: nextImageLoaded ? 'visible' : 'hidden',
-                        }} // Torna a próxima imagem visível apenas quando carregada
+                        }}
                         onLoad={() => setNextImageLoaded(true)}
                     />
                 )}
