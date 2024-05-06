@@ -29,7 +29,7 @@ export default function Government() {
                     </span>
                 </h2>
 
-                <h3 className="font-title text-4xl text-[#2E4049] font-bold mb-16 mt-6">
+                <h3 className=" text-4xl text-[#2E4049] font-bold mb-16 mt-6">
                     What are the governments of Canada doing to protect
                     children?
                 </h3>

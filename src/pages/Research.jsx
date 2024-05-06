@@ -39,7 +39,7 @@ export default function Research() {
                                 target={'_blank'}
                                 href="https://www.freetheanxiousgeneration.com/research/the-evidence"
                             >
-                                <h3 className="font-title underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
+                                <h3 className=" underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
                                     The Anxious Generation - Jonathan Haidt{' '}
                                     <i>
                                         <InsertLinkIcon />
@@ -105,7 +105,7 @@ export default function Research() {
                                 target={'_blank'}
                                 href="https://www.waituntil8th.org/blog/2022/5/20/psychiatrist-warns-parents-about-smartphones"
                             >
-                                <h3 className="font-title underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
+                                <h3 className=" underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
                                     Psychiatrist Warns Parents about Smartphones
                                     - Dr. Adriana Stacey{' '}
                                     <i>
@@ -147,7 +147,7 @@ export default function Research() {
                                 target={'_blank'}
                                 href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8204720/#:~:text=Results%3A%20Comorbidity,and%20education%20professionals."
                             >
-                                <h3 className="font-title underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
+                                <h3 className=" underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
                                     Excessive Smartphone Use in Young Adults -
                                     Yehuda Wacks [National Institute of Health]{' '}
                                     <i>

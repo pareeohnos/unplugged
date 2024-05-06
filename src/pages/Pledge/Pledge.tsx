@@ -141,7 +141,7 @@ export default function Pledge() {
                             Sign the pledge
                         </span>
                     </h1>
-                    <h2 className="font-title font-bold text-4xl text-[#2e4049] mb-16">
+                    <h2 className=" font-bold text-4xl text-[#2e4049] mb-16">
                         How To Sign The Pledge?
                     </h2>
                     <ol className="list-decimal pl-6">

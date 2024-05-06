@@ -21,7 +21,7 @@ export default function FAQs() {
                         FAQ
                     </span>
                 </h1>
-                <h2 className="font-title font-bold text-4xl text-[#2e4049]">
+                <h2 className=" font-bold text-4xl text-[#2e4049]">
                     Here's what you need to know
                 </h2>
 

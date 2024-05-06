@@ -44,7 +44,12 @@ export default function Nav() {
                             </span>
                         ))}
                     </div>
-                    <Button className="rounded-[4px]">SIGN THE PLEDGE</Button>
+                    <Button
+                        className="rounded-[4px]"
+                        onClick={() => navigate('/Pledge')}
+                    >
+                        SIGN THE PLEDGE
+                    </Button>
                 </nav>
             </header>
 
@@ -83,7 +88,10 @@ export default function Nav() {
                                     </span>
                                 ))}
                             </div>
-                            <Button className="rounded-[4px]">
+                            <Button
+                                className="rounded-[4px]"
+                                onClick={() => navigate('/Pledge')}
+                            >
                                 SIGN THE PLEDGE
                             </Button>
                         </nav>

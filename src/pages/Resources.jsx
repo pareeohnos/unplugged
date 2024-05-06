@@ -30,7 +30,7 @@ export default function Resources() {
                 </h2>
 
                 <div className="w-full text-lg leading-relaxed mb-10">
-                    <h3 className="font-title text-4xl text-[#2E4049] font-bold mb-6 mt-6">
+                    <h3 className=" text-4xl text-[#2E4049] font-bold mb-6 mt-6">
                         Getting the Unplugged pledge in your community...
                     </h3>
 
@@ -90,7 +90,7 @@ export default function Resources() {
                     </div>
 
                     <div className="mb-12">
-                        <h4 className="font-title mb-6 font-bold text-4xl text-[#2E4049]">
+                        <h4 className=" mb-6 font-bold text-4xl text-[#2E4049]">
                             Spread the pledge
                         </h4>
                         <p className="mb-8">
@@ -155,7 +155,7 @@ export default function Resources() {
                     </div>
 
                     <div className="mb-12">
-                        <h4 className="font-title mb-6 font-bold text-4xl text-[#2E4049]">
+                        <h4 className=" mb-6 font-bold text-4xl text-[#2E4049]">
                             Community events
                         </h4>
                         Parents in your community might have questions or
@@ -185,7 +185,7 @@ export default function Resources() {
                         <p></p>
                     </div>
                     <div className="mb-12">
-                        <h4 className="font-title mb-6 font-bold text-4xl text-[#2E4049]">
+                        <h4 className=" mb-6 font-bold text-4xl text-[#2E4049]">
                             Share with your social circles
                         </h4>
                         <p>
