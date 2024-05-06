@@ -1,164 +1,95 @@
 import React from 'react'
-
-import './Nav.scss'
-import { Button, Fab, Typography } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
-// import logoHorizontal_black from "../../assets/images/logoHorizontal_black.png";
-// import logo from '../../assets/images/logo.png'
-import logoWhite from '../../assets/images/Unplugged-Logo-Stacked-W.svg'
-import logoBlack from '../../assets/images/Unplugged-Logo-Stacked.svg'
+import logo from '../../assets/images/unplugged_vertical_logo.svg'
+import logoMobile from '../../assets/images/unplugged_horizontal_logo.svg'
+import { Button } from '../ui/Button.tsx'
+import {
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+} from '../ui/Sheet.tsx'
+import { Menu } from 'lucide-react'
 
-import MenuIcon from '@mui/icons-material/Menu'
-import Box from '@mui/material/Box'
-import Drawer from '@mui/material/Drawer'
-import ListItemButton from '@mui/material/ListItemButton'
-import ListItemIcon from '@mui/material/ListItemIcon'
-import ListItemText from '@mui/material/ListItemText'
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
+const paths = [
+    'Pledge',
+    'Research',
+    'Ambassadors',
+    'Resources',
+    'Faqs',
+    'Government',
+]
 
-export default function Nav({ logoColor = 'white' }) {
+export default function Nav() {
     const navigate = useNavigate()
-
-    const [open, setOpen] = React.useState(false)
-
-    const toggleDrawer = (newOpen: boolean) => () => {
-        setOpen(newOpen)
-    }
-    const DrawerList = (
-        <Box
-            sx={{ width: 250 }}
-            role="presentation"
-            onClick={toggleDrawer(false)}
-        >
-            <List>
-                {[
-                    'Pledge',
-                    'Research',
-                    'Ambassadors',
-                    'Resources',
-                    'Faqs',
-                    'Government',
-                ].map((text, index) => (
-                    <ListItem key={text} disablePadding>
-                        <ListItemButton>
-                            <ListItemText
-                                primary={text}
-                                onClick={() => navigate('/' + text)}
-                            />
-                        </ListItemButton>
-                    </ListItem>
-                ))}
-            </List>
-        </Box>
-    )
-
     return (
-        <div className="w-full mx-auto">
-            <div className="relative flex md:flex-row px-12 items-center justify-between">
-                <div className="">
-                    {/* <Typography variant="poster" sx={{ fontSize: 32 }}>
-            Unplugged
-          </Typography> */}
-                    <div className="py-2">
-                        <img
-                            src={logoColor === 'white' ? logoWhite : logoBlack}
-                            className="min-h-[90px] min-w-[90px] max-h-[90px] max-w-[90px]text-black cursor-pointer"
-                            alt="logo"
-                            onClick={() => navigate('/')}
-                        />
+        <>
+            <header className="px-20 py-[10px] bg-neutral-100 w-full hidden lg:block">
+                <nav className="flex justify-center gap-8 items-center">
+                    <img
+                        src={logo}
+                        alt="unplugged Logo"
+                        className="cursor-pointer"
+                        onClick={() => navigate('/')}
+                    />
+                    <div className="flex flex-1 items-center justify-center gap-6">
+                        {paths.map((path) => (
+                            <span
+                                className="text-neutral-600 hover:underline cursor-pointer text-base"
+                                onClick={() => navigate(`/${path}`)}
+                            >
+                                {path}
+                            </span>
+                        ))}
                     </div>
-                </div>
-                <div className="md:hidden">
-                    <Button
-                        variant="contained"
-                        className=""
-                        onClick={toggleDrawer(true)}
-                    >
-                        <MenuIcon />
-                    </Button>
-                </div>
-                <Drawer
-                    open={open}
-                    onClose={toggleDrawer(false)}
-                    anchor="right"
-                >
-                    {DrawerList}
-                </Drawer>
-                <ul className="hidden md:flex flex-1 items-center wrap justify-center">
-                    <li>
-                        <a
-                            className="nav__link cursor-pointer"
-                            onClick={() => navigate('/')}
-                        >
-                            <Typography sx={{ fontSize: 16, mr: '1rem' }}>
-                                Home
-                            </Typography>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            className="nav__link cursor-pointer"
-                            onClick={() => navigate('/research')}
-                        >
-                            <Typography sx={{ fontSize: 16, mr: '1rem' }}>
-                                Research
-                            </Typography>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            className="nav__link cursor-pointer"
-                            onClick={() => navigate('/ambassadors')}
-                        >
-                            <Typography sx={{ fontSize: 16, mr: '1rem' }}>
-                                Ambassadors
-                            </Typography>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            className="nav__link cursor-pointer"
-                            onClick={() => navigate('/resources')}
-                        >
-                            <Typography sx={{ fontSize: 16, mr: '1rem' }}>
-                                Resources
-                            </Typography>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            className="nav__link cursor-pointer"
-                            onClick={() => navigate('/faqs')}
-                        >
-                            <Typography sx={{ fontSize: 16, mr: '1rem' }}>
-                                FAQs
-                            </Typography>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            className="nav__link cursor-pointer"
-                            onClick={() => navigate('/government')}
-                        >
-                            <Typography sx={{ fontSize: 16, mr: '1rem' }}>
-                                Government Efforts
-                            </Typography>
-                        </a>
-                    </li>
-                </ul>
+                    <Button className="rounded-[4px]">SIGN THE PLEDGE</Button>
+                </nav>
+            </header>
 
-                <div className="hidden md:block">
-                    <Fab
-                        color="primary"
-                        variant="extended"
-                        style={{ color: 'white', minWidth: '164px' }}
-                        onClick={() => navigate('/pledge')}
-                    >
-                        SIGN THE PLEDGE
-                    </Fab>
-                </div>
-            </div>
-        </div>
+            <header className="flex justify-between px-4 py-[10px] bg-neutral-100 lg:hidden">
+                <img
+                    src={logoMobile}
+                    alt="unplugged Logo"
+                    className="cursor-pointer"
+                    onClick={() => navigate('/')}
+                />
+
+                <Sheet>
+                    <SheetTrigger>
+                        <Menu size={24} />
+                    </SheetTrigger>
+                    <SheetContent className="px-6 flex flex-col gap-6 overflow-auto bg-slate-100">
+                        <SheetHeader className="flex flex-row ">
+                            <SheetTitle>
+                                <img
+                                    src={logo}
+                                    alt="unplugged Logo"
+                                    className="cursor-pointer"
+                                    onClick={() => navigate('/')}
+                                />
+                            </SheetTitle>
+                        </SheetHeader>
+
+                        <nav className="flex flex-col gap-5 pt-5">
+                            <div className="flex flex-col gap-5">
+                                {paths.map((path) => (
+                                    <span
+                                        className="text-neutral-600 hover:underline border-b cursor-pointer text-base"
+                                        onClick={() => navigate(`/${path}`)}
+                                    >
+                                        {path}
+                                    </span>
+                                ))}
+                            </div>
+                            <Button className="rounded-[4px]">
+                                SIGN THE PLEDGE
+                            </Button>
+                        </nav>
+                    </SheetContent>
+                </Sheet>
+            </header>
+        </>
     )
 }
