@@ -161,8 +161,8 @@ export default function Home() {
             </div>
 
             <section className="lg:px-44 px-4 lg:py-16 py-8 flex flex-col gap-6 bg-neutral-100">
-                <h2 className="text-gray-800 text-center text-xl lg:text-center lg:text-[44px] font-bold leading-[24px] ">
-                    About us
+                <h2 className="text-red-500 text-center lg:text-left text-lg font-bold leading-[24px] ">
+                    Welcome
                 </h2>
 
                 <h3 className="text-gray-700 text-center lg:text-left font-bold text-2xl lg:text-[32px]">
