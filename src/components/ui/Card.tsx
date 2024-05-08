@@ -25,7 +25,7 @@ export type CardProps = {
 
 export function Card({ description, icon, title }: CardProps) {
     return (
-        <div className="flex flex-col w-full rounded-[8px] shadow-md gap-[10px] h-fit md:h-[226px] bg-slate-100 py-5 px-8">
+        <div className="flex flex-col w-full rounded-[8px] shadow-md gap-[10px] h-fit md:h-[300px] bg-slate-100 py-5 px-8">
             <div className="flex gap-5 items-center">
                 <img src={IconMap[icon]} alt={'Icon'} />
                 <span className="text-neutral-800 text-[20px] font-semibold">
