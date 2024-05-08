@@ -161,8 +161,8 @@ export default function Home() {
             </div>
 
             <section className="lg:px-44 px-4 lg:py-16 py-8 flex flex-col gap-6 bg-neutral-100">
-                <h2 className="text-red-500 text-center lg:text-left text-lg font-bold leading-[24px] ">
-                    ABOUT US
+                <h2 className="text-gray-800 text-center text-xl lg:text-center lg:text-[44px] font-bold leading-[24px] ">
+                    About us
                 </h2>
 
                 <h3 className="text-gray-700 text-center lg:text-left font-bold text-2xl lg:text-[32px]">
@@ -238,12 +238,7 @@ export default function Home() {
                     How excess screen exposure can impact children
                 </h2>
                 <div className="md:grid md:place-items-center">
-                    <div className="max-w-[1120px] flex flex-col md:grid md:grid-cols-2 gap-5 md:place-items-center">
-                        <Card
-                            icon={IconType.EYES}
-                            title="Vision Problems"
-                            description="Staring at screens for extended periods can strain eyes, leading to myopia (nearsightedness), eye fatigue, and dry eyes. Encourage children to take breaks and engage in outdoor activities to protect their vision."
-                        />
+                    <div className="max-w-[1120px] flex flex-col md:grid md:grid-cols-3 gap-5 md:place-items-center">
                         <Card
                             icon={IconType.HEAD}
                             title="Impaired Cognitive Development"
