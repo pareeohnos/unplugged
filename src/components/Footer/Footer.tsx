@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
-                <div className="flex flex-col gap-5">
+                <div className="flex justify-center flex-col gap-5">
                     <div className="flex flex-wrap gap-4">
                         {paths.map((path) => (
                             <span

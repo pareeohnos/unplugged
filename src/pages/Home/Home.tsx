@@ -169,33 +169,29 @@ export default function Home() {
                     Our mission
                 </h3>
 
-                <ol className="list-disc pl-5">
-                    <li>Reduce screen time and delay phone introduction</li>
-                    <li>Foster emotional well-being in children</li>
-                    <li>
-                        Promote real-life connections and nature exploration
-                    </li>
-                </ol>
-
-                <h3 className="text-gray-700 font-bold text-center lg:text-left text-2xl lg:text-[32px]">
-                    How We Help
-                </h3>
-                <ol className="list-disc pl-5">
-                    <li>
-                        Implement small lifestyle changes for healthier
-                        technology habits
-                    </li>
-                    <li>
-                        Guide families towards a more balanced and nourishing
-                        life
-                    </li>
-                </ol>
+                <p className="text-base lg:text-xl text-neutral-700 font-normal leading-7">
+                    Our mission is to unplug smart phones, rekindle real-life
+                    connections, and guide our children towards a life filled
+                    with the warmth of human relationships and the beauty of the
+                    natural world. Together, we can create a more balanced and
+                    nourishing world for our children where the values of
+                    nature, empathy, and authentic connection take center stage.
+                    <br /> <br />
+                    As a community that puts our children’s mental, social, and
+                    emotional wellbeing first, we can together shift the culture
+                    away from the known harms of addictive online technologies.
+                    By simply minimizing screen time and delaying the
+                    introduction of cell phones until adolescence, we can
+                    reverse the deep harms that we’ve seen from their overuse
+                    and profoundly improve young people’s wellbeing. It’s time
+                    to act, and it’s simple to start.
+                </p>
 
                 <h3 className="text-gray-700 font-bold text-center lg:text-left text-2xl lg:text-[32px]">
                     Our vision
                 </h3>
 
-                <span>
+                <p className="text-base lg:text-xl text-neutral-700 font-normal leading-7">
                     We aim to implement small lifestyle shifts that reduce and
                     delay screen time to nurture healthy and happy children who
                     are protected from the harms of addictive online behaviours.
@@ -203,7 +199,7 @@ export default function Home() {
                     they rediscover the joy of in-person connections and find
                     wellness in their natural surroundings, experiencing an
                     improved quality of life.
-                </span>
+                </p>
             </section>
 
             <section className="w-full relative bg-gray-700 py-8 lg:py-16 flex items-center justify-center leading-relaxed px-4 lg:px-20">
