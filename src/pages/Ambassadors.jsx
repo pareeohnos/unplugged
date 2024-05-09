@@ -10,7 +10,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 
 export default function Ambassadors() {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col bg-neutral-100">
             <Nav />
             <div className="flex items-center relative justify-center w-full h-[240px] lg:h-[300px]">
                 <h2 className="text-2xl lg:text-[40px] z-20 font-bold uppercase text-neutral-100">
@@ -22,7 +22,7 @@ export default function Ambassadors() {
                     alt="Blue stones wallpaper"
                 />
             </div>
-            <main className="w-full px-4 py-5 lg:px-[180px] bg-neutral-100 lg:py-10 max-w-[1440px] mx-auto">
+            <main className="w-full px-4 py-5 lg:px-[180px]  lg:py-10 max-w-[1440px] mx-auto">
                 <div className="w-full py-5 flex flex-col gap-10">
                     <div className="relative h-[240px] mx-auto w-[240px] rounded-full overflow-hidden">
                         <img
