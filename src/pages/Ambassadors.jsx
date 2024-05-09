@@ -1,18 +1,14 @@
 import React from 'react'
 import Nav from '../components/Nav/Nav.tsx'
-import { useNavigate } from 'react-router-dom'
 import gracePhoto from '../assets/images/grace.JPG'
 import ambassadorsHeroImage from '../assets/images/ambassadors.jpeg'
 import jennyPhoto from '../assets/images/JennyLinkedinProfileAvatar.png'
 import josettePhoto from '../assets/images/JosetteAvatar.png'
 
 import Footer from '../components/Footer/Footer.tsx'
-import InsertLinkIcon from '@mui/icons-material/InsertLink'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 
 export default function Ambassadors() {
-    const navigate = useNavigate()
-
     return (
         <div className="flex flex-col">
             <Nav />
@@ -26,7 +22,7 @@ export default function Ambassadors() {
                     alt="Blue stones wallpaper"
                 />
             </div>
-            <main className="w-full px-4 py-5 lg:px-[180px] lg:py-10 max-w-[1440px] mx-auto">
+            <main className="w-full px-4 py-5 lg:px-[180px] bg-neutral-100 lg:py-10 max-w-[1440px] mx-auto">
                 <div className="w-full py-5 flex flex-col gap-10">
                     <div className="relative h-[240px] mx-auto w-[240px] rounded-full overflow-hidden">
                         <img
