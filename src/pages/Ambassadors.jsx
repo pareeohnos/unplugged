@@ -1,12 +1,11 @@
-// import Fab from "@mui/material/Fab/Fab";
-import { Fab, Typography } from '@mui/material'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Nav from '../components/Nav/Nav.tsx'
 import { useNavigate } from 'react-router-dom'
 import gracePhoto from '../assets/images/grace.JPG'
-import parentGuidePhoto from '../assets/images/4.png'
-import jennyKidPhoto from '../assets/images/3.png'
-import josettePhoto from '../assets/images/josette_calleja.jpg'
+import ambassadorsHeroImage from '../assets/images/ambassadors.jpeg'
+import jennyPhoto from '../assets/images/JennyLinkedinProfileAvatar.png'
+import josettePhoto from '../assets/images/JosetteAvatar.png'
+
 import Footer from '../components/Footer/Footer.tsx'
 import InsertLinkIcon from '@mui/icons-material/InsertLink'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
@@ -15,128 +14,122 @@ export default function Ambassadors() {
     const navigate = useNavigate()
 
     return (
-        <div className="text-lg font-sans w-full h-full">
-            <div
-                style={{
-                    backgroundImage: `url(${parentGuidePhoto})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: '25% 100%',
-                }}
-                className="h-[335px] w-full"
-            >
-                <div className="bg-[rgba(255,255,255,.40)]">
-                    <Nav />
-                </div>
-            </div>
-            <main className="w-full px-12 pt-12 pb-12 max-w-[956px] mx-auto">
-                <h2 className="font-sans font-bold uppercase text-[#FF6D6D]">
+        <div className="flex flex-col">
+            <Nav />
+            <div className="flex items-center relative justify-center w-full h-[240px] lg:h-[300px]">
+                <h2 className="text-2xl lg:text-[40px] z-20 font-bold uppercase text-neutral-100">
                     Ambassadors
                 </h2>
-                <div className="max-w-[956px]">
-                    <div
-                        style={{
-                            background: `url(${jennyKidPhoto})`,
-                            backgroundPosition: '100% 50%',
-                        }}
-                        className="w-[242px] h-[242px] overflow-hidden mb-10 rounded-full mx-auto"
-                    ></div>
+                <img
+                    src={ambassadorsHeroImage}
+                    className="w-full h-full object-cover absolute top-0 right-0"
+                    alt="Blue stones wallpaper"
+                />
+            </div>
+            <main className="w-full px-4 py-5 lg:px-[180px] lg:py-10 max-w-[1440px] mx-auto">
+                <div className="w-full py-5 flex flex-col gap-10">
+                    <div className="relative h-[240px] mx-auto w-[240px] rounded-full overflow-hidden">
+                        <img
+                            src={jennyPhoto}
+                            alt="Jenny Perez"
+                            className="absolute top-0 right-0 w-full h-full"
+                        />
+                    </div>
 
                     <a
                         href="https://www.linkedin.com/in/perezmckenzie/"
                         target="_blank"
+                        rel="noreferrer"
                     >
-                        <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
-                            Jenny Perez{' '}
+                        <div className="flex gap-[10px]">
+                            <h3 className=" text-2xl hover:underline  text-blue-600 font-bold">
+                                Jenny Perez{' '}
+                            </h3>
                             <LinkedInIcon
                                 // fontSize="large"
-                                sx={{ color: '#2E4049' }}
+                                sx={{ color: '#2563EB' }}
                             />
-                        </h3>
+                        </div>
                     </a>
 
-                    <div className="w-full mb-12">
-                        <p className="text-lg leading-relaxed mb-4">
-                            Thank you so much for being here and reading this!
-                            I’m Jenny – a mother and an entrepreneur who has
-                            been passionate about the impact of online
-                            technologies on children’s minds for over a decade.
-                            After encountering Brooke Shannon’s{' '}
-                            <a
-                                href="https://www.waituntil8th.org/"
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                                target="_blank"
-                            >
-                                Wait Until 8th
-                            </a>{' '}
-                            campaign which is active in the United States, I was
-                            inspired to start a similar movement here in Canada.
-                        </p>
+                    <p className="text-xl leading-relaxed text-neutral-700">
+                        Thank you so much for being here and reading this! I’m
+                        Jenny – a mother and an entrepreneur who has been
+                        passionate about the impact of online technologies on
+                        children’s minds for over a decade. After encountering
+                        Brooke Shannon’s{' '}
+                        <a
+                            href="https://www.waituntil8th.org/"
+                            className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Wait Until 8th
+                        </a>{' '}
+                        campaign which is active in the United States, I was
+                        inspired to start a similar movement here in Canada.
+                    </p>
 
-                        <p className="text-lg leading-relaxed mb-4">
-                            I’ve travelled to 75 countries, lived in developing
-                            countries, and have called Canada my home for 22
-                            years. Alongside this I have spent 15 years
-                            watching, listening, and talking with young people
-                            nearly every day. As I have worked to learn from
-                            different cultures, perspectives, and practices,
-                            I’ve maintained an openness and curiosity about the
-                            world that has helped me to define my values and
-                            recognize what truly matters most.
-                        </p>
+                    <p className="text-xl leading-relaxed text-neutral-700">
+                        I’ve travelled to 75 countries, lived in developing
+                        countries, and have called Canada my home for 22 years.
+                        Alongside this I have spent 15 years watching,
+                        listening, and talking with young people nearly every
+                        day. As I have worked to learn from different cultures,
+                        perspectives, and practices, I’ve maintained an openness
+                        and curiosity about the world that has helped me to
+                        define my values and recognize what truly matters most.
+                    </p>
 
-                        <p className="text-lg leading-relaxed mb-4">
-                            One of the things I feel most nostalgic about are
-                            the days where we really connected with each other
-                            without phones or screens. I know that these
-                            technologies are here to stay, and they serve
-                            important purposes in our lives. However, it is
-                            undeniable that they are overused and that they are
-                            introduced too early, and this has caused untold
-                            harm to young people. I’ve continued to learn about
-                            the effects of smartphones on developing brains
-                            (check out our research page), and this has fueled
-                            my desire to found Unplugged.
-                        </p>
-                        <p className="text-lg leading-relaxed mb-4">
-                            I want my daughter, and all our children, to enjoy
-                            childhood. I want them to be happy – isn’t that the
-                            most important thing? I want them to live full lives
-                            and to be mentally, socially, and emotionally
-                            resilient. When I think about our everyday life, I
-                            simply want to enjoy a meal together, feel like a
-                            family, and talk to each other. Reducing screen time
-                            and delaying the introduction of smartphones
-                            supports all these things.
-                        </p>
-                        <p className="text-lg leading-relaxed mb-4">
-                            Doing things differently is possible. I have managed
-                            to do this so far with my beautiful nine-year-old
-                            daughter, but I know that if we do it together as a
-                            community, it will be even easier.
-                        </p>
-                    </div>
+                    <p className="text-xl leading-relaxed text-neutral-700">
+                        One of the things I feel most nostalgic about are the
+                        days where we really connected with each other without
+                        phones or screens. I know that these technologies are
+                        here to stay, and they serve important purposes in our
+                        lives. However, it is undeniable that they are overused
+                        and that they are introduced too early, and this has
+                        caused untold harm to young people. I’ve continued to
+                        learn about the effects of smartphones on developing
+                        brains (check out our research page), and this has
+                        fueled my desire to found Unplugged.
+                    </p>
+                    <p className="text-xl leading-relaxed text-neutral-700">
+                        I want my daughter, and all our children, to enjoy
+                        childhood. I want them to be happy – isn’t that the most
+                        important thing? I want them to live full lives and to
+                        be mentally, socially, and emotionally resilient. When I
+                        think about our everyday life, I simply want to enjoy a
+                        meal together, feel like a family, and talk to each
+                        other. Reducing screen time and delaying the
+                        introduction of smartphones supports all these things.
+                    </p>
+                    <p className="text-xl leading-relaxed text-neutral-700">
+                        Doing things differently is possible. I have managed to
+                        do this so far with my beautiful nine-year-old daughter,
+                        but I know that if we do it together as a community, it
+                        will be even easier.
+                    </p>
                 </div>
 
-                <div className="w-full max-w-[956px] grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div>
-                        <div
-                            style={{
-                                background: `url(${gracePhoto})`,
-                                backgroundSize: '100%',
-                                backgroundPosition: ' 55% 60%',
-                            }}
-                            className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto "
-                        ></div>
-                        <a href="https://citypedspecialty.com/" target="_blank">
-                            <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
-                                Dr. Grace Yu | MDCM FRCPC Pediatrics{' '}
-                                <InsertLinkIcon
-                                    // fontSize="large"
-                                    sx={{ color: '#2E4049' }}
-                                />
+                <div className="flex flex-col py-5 gap-5 lg:grid lg:grid-cols-2">
+                    <section className="flex flex-col gap-6">
+                        <div className="relative h-[240px] shadow-md mx-auto w-[240px] rounded-full overflow-hidden">
+                            <img
+                                src={gracePhoto}
+                                alt="Jenny Perez"
+                                className="absolute top-0 right-0 w-full h-full"
+                            />
+                        </div>
+                        <a
+                            href="https://citypedspecialty.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <h3 className=" text-2xl hover:underline lg:text-center text-blue-600 font-bold">
+                                Dr. Grace Yu | MDCM FRCPC Pediatrics
                             </h3>
                         </a>
-                        <p className="text-lg leading-relaxed mb-4">
+                        <p className="text-xl leading-relaxed text-neutral-700">
                             I fully support the Unplugged Canada initiative. I
                             have been a practicing pediatrician in Vancouver, BC
                             for almost 25 years. For the past 5-10 years, not a
@@ -149,14 +142,14 @@ export default function Ambassadors() {
                             kids while they are on screen. The more screen time
                             kids have, the more they want.
                         </p>
-                        <p className="text-lg leading-relaxed mb-4">
+                        <p className="text-xl leading-relaxed text-neutral-700">
                             We know that youth are experiencing increased mental
                             health challenges including anxiety, depression,
                             emotional dysregulation, ADHD, and sleep challenges.
                             Constant digital stimulation increases mood swings
                             and feelings of tension and irritability.
                         </p>
-                        <p className="text-lg leading-relaxed mb-4">
+                        <p className="text-xl leading-relaxed text-neutral-700">
                             Being a child is such a short and precious time in
                             one’s life. Childhood is the chance for kids to be
                             creative, active, and interactive. People have their
@@ -165,12 +158,12 @@ export default function Ambassadors() {
                             be advocating for less screen times in schools, not
                             more!
                         </p>
-                        <p className="text-lg leading-relaxed mb-4">
+                        <p className="text-xl leading-relaxed text-neutral-700">
                             I completed my Medical Degree at McGill University.
                             I moved to Vancouver for my Pediatric Residency
                             training at BC Children’s and Women’s Hospital.
                         </p>
-                        <p className="text-lg leading-relaxed mb-4">
+                        <p className="text-xl leading-relaxed text-neutral-700">
                             I enjoy teaching pediatric and family medicine
                             residents, and medical students at the hospital. I
                             am a Clinical Assistant Professor in the UBC
@@ -182,28 +175,26 @@ export default function Ambassadors() {
                             was Assistant Program Director for the Pediatric
                             Residents for one year.
                         </p>
-                    </div>
-                    <div>
-                        <div
-                            style={{
-                                background: `url(${josettePhoto})`,
-                                backgroundSize: '315%',
-                                backgroundPosition: ' 60% 18%',
-                            }}
-                            className="w-[300px] h-[300px] rounded-full overflow-hidden mb-10 mx-auto"
-                        ></div>
+                    </section>
 
-                        <a href="https://callejacoaching.com/" target="_blank">
-                            <h3 className=" text-2xl  text-[#2E4049] font-bold mb-4">
-                                Josette Calleja{' '}
-                                <InsertLinkIcon
-                                    // fontSize="large"
-                                    sx={{ color: '#2E4049' }}
-                                />
+                    <section className="flex flex-col gap-6">
+                        <div className="relative h-[240px] mx-auto w-[240px] rounded-full overflow-hidden">
+                            <img
+                                src={josettePhoto}
+                                alt="Josette Calleja"
+                                className="absolute top-0 right-0 w-full h-full"
+                            />
+                        </div>
+                        <a
+                            href="https://callejacoaching.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <h3 className=" text-2xl lg:text-center hover:underline  text-blue-600 font-bold">
+                                Josette Calleja
                             </h3>
                         </a>
-
-                        <p className="text-lg leading-relaxed mb-4">
+                        <p className="text-xl leading-relaxed text-neutral-700">
                             I am Josette Calleja, a parent coach, a passionate
                             executive, and wellness specialist. I am a strong
                             supporter of Unplugged because I believe our
@@ -214,7 +205,7 @@ export default function Ambassadors() {
                             so absorbed in screens, potentially hindering their
                             development and connection to the world around them.
                         </p>
-                        <p className="text-lg leading-relaxed mb-4">
+                        <p className="text-xl leading-relaxed text-neutral-700">
                             Research shows that spending time outdoors and
                             engaging in real-world interactions significantly
                             contributes to a child’s wellbeing, self esteem and
@@ -228,7 +219,7 @@ export default function Ambassadors() {
                             Let’s together make a difference in shaping a
                             healthier future for the next generation.
                         </p>
-                    </div>
+                    </section>
                 </div>
             </main>
 

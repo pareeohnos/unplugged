@@ -202,7 +202,7 @@ export default function Home() {
                 </p>
             </section>
 
-            <section className="w-full relative bg-gray-700 py-8 lg:py-16 flex items-center justify-center leading-relaxed px-4 lg:px-20">
+            <section className="w-full relative bg-gray-700 py-8 lg:py-16 flex items-center justify-center overflow-hidden leading-relaxed px-4 lg:px-20">
                 <span className="text-center  text-slate-100 text-[24px] lg:text-[32px]">
                     Why should I sign the pledge?
                     <br className="hidden lg:block" /> Collective effort helps
@@ -258,7 +258,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="bg-neutral-50 py-8 lg:py-16 px-4 lg:px-20 flex flex-col gap-8">
+            <section className="bg-neutral-50 py-8 lg:py-16 px-4 lg:px-44 flex flex-col gap-8">
                 <h3 className="text-orange-500 text-[32px] font-bold leading-[40px]">
                     Some things you need to know!
                 </h3>
