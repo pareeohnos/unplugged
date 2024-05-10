@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b5083fa4.css",
-    "main.js": "/static/js/main.cd64ea18.js",
+    "main.css": "/static/css/main.c7230cd8.css",
+    "main.js": "/static/js/main.fa0354f8.js",
     "static/media/hero-carousel-2.webp": "/static/media/hero-carousel-2.05441d49170ad8499f5a.webp",
     "static/media/hero-carousel-3.webp": "/static/media/hero-carousel-3.61467d881818e7dc0582.webp",
     "static/media/hero-carousel-1.webp": "/static/media/hero-carousel-1.9ae914e6a8c901cd4dd0.webp",
@@ -1250,11 +1250,11 @@
     "static/media/shippori-mincho-55-400-normal.woff2": "/static/media/shippori-mincho-55-400-normal.ea7ba4861a2d644315b6.woff2",
     "static/media/shippori-mincho-55-600-normal.woff2": "/static/media/shippori-mincho-55-600-normal.005378fcc7b95801b6e8.woff2",
     "static/media/x-close-icon.svg": "/static/media/x-close-icon.c671323aa5fd2bd84c46b760880d7695.svg",
-    "main.b5083fa4.css.map": "/static/css/main.b5083fa4.css.map",
-    "main.cd64ea18.js.map": "/static/js/main.cd64ea18.js.map"
+    "main.c7230cd8.css.map": "/static/css/main.c7230cd8.css.map",
+    "main.fa0354f8.js.map": "/static/js/main.fa0354f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5083fa4.css",
-    "static/js/main.cd64ea18.js"
+    "static/css/main.c7230cd8.css",
+    "static/js/main.fa0354f8.js"
   ]
 }

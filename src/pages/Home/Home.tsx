@@ -324,7 +324,7 @@ export default function Home() {
                 </section>
             </div>
 
-            <div className="bg-neutral-50 flex items-center justify-center">
+            {/* <div className="bg-neutral-50 flex items-center justify-center">
                 <section className="max-w-[1440px] w-full py-8 lg:py-16 px-4 lg:px-44 flex flex-col gap-10">
                     <h2 className="text-gray-700 text-center text-bold text-[32px]">
                         Communities in action
@@ -379,7 +379,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-            </div>
+            </div> */}
 
             <Footer />
         </div>

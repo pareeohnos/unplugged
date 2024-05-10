@@ -45,7 +45,7 @@ export default function Nav() {
                         ))}
                     </div>
                     <Button
-                        className="rounded-[4px]"
+                        className="rounded-[4px] text-lg h-[51px]"
                         onClick={() => navigate('/Pledge')}
                     >
                         SIGN THE PLEDGE
