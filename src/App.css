@@ -6,6 +6,9 @@
     scroll-behavior: smooth;
 }
 @tailwind base;
+body {
+  font-family: "Inter", sans-serif;
+}
 @tailwind components;
 @tailwind utilities;
 
