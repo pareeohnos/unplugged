@@ -211,6 +211,7 @@ export default function Home() {
                 <span className="text-center  text-slate-100 text-[24px] lg:text-[30px]">
                     <strong className="text-[32px]">
                         What is the Unplugged Pledge?{' '}
+                        <br className="lg:hidden" />
                     </strong>
                     <br className="hidden lg:block" /> By signing this Pledge,
                     you are committing to not providing your child(ren) with a
