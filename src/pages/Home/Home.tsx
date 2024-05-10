@@ -106,7 +106,7 @@ export default function Home() {
 
                     <div className="flex flex-col h-full gap-3">
                         <Button
-                            className="max-w-fit"
+                            className="max-w-fit text-xl h-[51px]"
                             onClick={() => navigate('/pledge')}
                         >
                             SIGN THE PLEDGE
@@ -219,7 +219,7 @@ export default function Home() {
                 </span>
                 <br /> <br />
                 <span className="text-center  text-slate-100 text-[24px] lg:text-[30px]">
-                    <strong>Why should I sign the pledge? </strong>
+                    <strong>Why should I sign the Pledge? </strong>
                     <br className="hidden lg:block" /> Collective effort helps
                     everyone succeed and shift the culture.
                 </span>
@@ -246,7 +246,7 @@ export default function Home() {
                 />
             </section>
 
-            <div className="flex bg-neutral-50 items-center justify-center">
+            {/* <div className="flex bg-neutral-50 items-center justify-center">
                 <section className="max-w-[1440px] py-8 lg:py-16 px-4 lg:px-44 w-full flex flex-col gap-8">
                     <h3 className="text-orange-500 text-[32px] font-bold leading-[40px]">
                         Some things you need to know!
@@ -296,7 +296,7 @@ export default function Home() {
                         </li>
                     </ol>
                 </section>
-            </div>
+            </div> */}
 
             <div className="bg-neutral-200 flex items-center justify-center">
                 <section className="max-w-[1440px] py-8 lg:py-16 px-4 lg:px-20 flex flex-col gap-10">
