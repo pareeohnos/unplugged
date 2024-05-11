@@ -10,6 +10,7 @@ import Research from './pages/Research.jsx'
 import Ambassadors from './pages/Ambassadors.jsx'
 import FAQs from './pages/FAQs.jsx'
 import Government from './pages/Government.jsx'
+import Communities from './pages/Communities.tsx'
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                     <Route path="/ambassadors" element={<Ambassadors />} />
                     <Route path="/faqs" element={<FAQs />} />
                     <Route path="/government" element={<Government />} />
+                    <Route path="/communities" element={<Communities />} />
                 </Routes>
             </HashRouter>
         </ThemeProvider>

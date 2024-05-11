@@ -6,7 +6,6 @@ import { Button } from '../ui/Button.tsx'
 import {
     Sheet,
     SheetContent,
-    SheetDescription,
     SheetHeader,
     SheetTitle,
     SheetTrigger,
@@ -20,6 +19,7 @@ const paths = [
     'Resources',
     'Faqs',
     'Government',
+    'Communities',
 ]
 
 export default function Nav() {
@@ -40,7 +40,9 @@ export default function Nav() {
                                 className="text-neutral-600 hover:underline cursor-pointer text-base"
                                 onClick={() => navigate(`/${path}`)}
                             >
-                                {path}
+                                {path === 'Communities'
+                                    ? 'Communities in action'
+                                    : path}
                             </span>
                         ))}
                     </div>
@@ -84,7 +86,9 @@ export default function Nav() {
                                         className="text-neutral-600 hover:underline border-b cursor-pointer text-base"
                                         onClick={() => navigate(`/${path}`)}
                                     >
-                                        {path}
+                                        {path === 'Communities'
+                                            ? 'Communities in action'
+                                            : path}
                                     </span>
                                 ))}
                             </div>
