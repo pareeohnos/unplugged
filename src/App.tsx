@@ -8,7 +8,7 @@ import Pledge from './pages/Pledge/Pledge.tsx'
 import Resources from './pages/Resources.jsx'
 import Research from './pages/Research.jsx'
 import Ambassadors from './pages/Ambassadors.jsx'
-import FAQs from './pages/FAQs.jsx'
+import FAQs from './pages/FAQs.tsx'
 import Government from './pages/Government.jsx'
 import Communities from './pages/Communities.tsx'
 

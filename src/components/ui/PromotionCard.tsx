@@ -16,13 +16,7 @@ export function PromotionCard({
 }: PromotionCardProps) {
     return (
         <div className="flex flex-col gap-8 items-center lg:gap-5 lg:flex-row w-full">
-            <div className="relative lg:w-[300px] w-[240px] h-[140px] lg:h-[200px]    overflow-hidden">
-                <img
-                    src={pathImage}
-                    alt="Flyer"
-                    className="absolute top-0 left-0 object-center object-cover"
-                />
-            </div>
+            <img src={pathImage} alt="Flyer" className="max-w-[300px]" />
 
             <div className=" w-full">
                 <div className="flex flex-col gap-6">
@@ -50,7 +44,7 @@ export function PromotionCard({
                                 />
                             </svg>
 
-                            <span className="text-base lg:text-xl text-gray-500 font-semibold z-30">
+                            <span className="text-base lg:text-xl text-neutral-700 font-semibold z-30">
                                 {date}
                             </span>
                         </div>
@@ -67,7 +61,7 @@ export function PromotionCard({
                                     fill="#6B7280"
                                 />
                             </svg>
-                            <span className="text-base lg:text-xl text-gray-500 font-semibold">
+                            <span className="text-base lg:text-xl text-neutral-700 font-semibold">
                                 {pin}
                             </span>
                         </div>

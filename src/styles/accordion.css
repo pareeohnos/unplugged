@@ -1,0 +1,32 @@
+/* Animação de abrir o accordion */
+.accordion[data-state="open"]{
+  animation: animate-accordion-down 0.4s ease-in
+}
+
+.accordion[data-state="closed"]{
+  animation: animate-accordion-up 0.4s ease-in
+}
+
+
+@keyframes animate-accordion-down {
+  from {
+    opacity: 10%;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 10%;
+    transform: translateY(0);
+  }
+}
+
+/* Animação de fechar o accordion */
+@keyframes animate-accordion-up {
+  from {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  to {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
