@@ -139,6 +139,7 @@ export default function Resources() {
                                     className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                     target="_blank"
                                     href="https://github.com/felixreynoso/unplugged/raw/main/src/assets/Unplugged-Flyer-single.pdf"
+                                    rel="noreferrer"
                                 >
                                     Click here
                                 </a>{' '}
@@ -168,6 +169,7 @@ export default function Resources() {
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                             target="_blank"
                             href="https://www.waituntil8th.org/"
+                            rel="noreferrer"
                         >
                             Wait until 8th
                         </a>{' '}
@@ -199,6 +201,7 @@ export default function Resources() {
                                 <a
                                     href="https://www.instagram.com/unpluggedcanada/"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     <Fab sx={{ mr: 1.5 }}>
                                         <InstagramIcon
@@ -212,6 +215,7 @@ export default function Resources() {
                                 <a
                                     href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Funpluggedcanada.com%2F"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     <Fab sx={{ mr: 1.5 }}>
                                         <FacebookIcon
@@ -225,6 +229,7 @@ export default function Resources() {
                                 <a
                                     href="https://twitter.com/intent/tweet?url=https%3A%2F%2Funpluggedcanada.com%2F"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     <Fab sx={{ mr: 1.5 }}>
                                         <TwitterIcon
@@ -238,6 +243,7 @@ export default function Resources() {
                                 <a
                                     href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Funpluggedcanada.com%2F"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     <Fab sx={{ mr: 1.5 }}>
                                         <LinkedInIcon
