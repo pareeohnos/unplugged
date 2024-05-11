@@ -17,8 +17,6 @@ import './home.css'
 import Footer from '../../components/Footer/Footer.tsx'
 import { Button } from '../../components/ui/Button.tsx'
 import { Card, IconType } from '../../components/ui/Card.tsx'
-import { Blurhash } from 'react-blurhash'
-import { PromotionCard } from '../../components/ui/PromotionCard.tsx'
 
 export default function Home() {
     const navigate = useNavigate()
@@ -324,63 +322,6 @@ export default function Home() {
                     </div>
                 </section>
             </div>
-
-            {/* <div className="bg-neutral-50 flex items-center justify-center">
-                <section className="max-w-[1440px] w-full py-8 lg:py-16 px-4 lg:px-44 flex flex-col gap-10">
-                    <h2 className="text-gray-700 text-center text-bold text-[32px]">
-                        Communities in action
-                    </h2>
-                    <PromotionCard
-                        date="When: Wednesday June 5 - @ 6:60"
-                        pin="Where: Hillcrest Community School"
-                        title="Hillcrest Community School presents: Unpluggued"
-                        title2="Waiting for Smartphones"
-                        pathImage="https://s3-alpha-sig.figma.com/img/0b5c/7760/d8e6aa809d77c09810b2aeaadfae14e1?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LtUi9Mz6GTam-QeeJQJ4D--nbuX0wkgI5lgytlw7GiPWOGJauQABlfRvQz26-86wr72P4NTOzM3p~~nrI~nKFe8sNRYKeuTGcM61LhDpj0Ic9DyZaoCnMvaA0CjqcqAlgx3j3p9kylpnN6NNhwQYWskPjLVy6pd2gGz7ouv0IvLGn2zN~GgN1QYS0srExZABuaU1D715u8xjIHbOcBo8Umdcdk1io~Gw1HxTaDrvQZUz1ihMTuCi7f52BqkE709HJUpuCD33IDge4MpuAuP9wutdIExhlI5iM1SHeJlfr8RpNA4FDfTo97j8xMhKzW6jOkIPd94Az0RHtlbET1Vrzg__"
-                    />
-
-                    <div className="flex flex-col gap-8">
-                        <div className="flex flex-col gap-6">
-                            <h3 className="text-xl lg:text-2xl text-gray-700 font-semibold ">
-                                Come join us for a panel discussion to learn
-                                more about:
-                            </h3>
-
-                            <ol className="list-disc pl-5 space-y-2 font-normal text-[20px] text-gray-700">
-                                <li>
-                                    The negative effects of smartphones and
-                                    social media how to feel
-                                </li>
-                                <li>
-                                    How to feel more empowered to saying yes to
-                                    waiting for the smartphones
-                                </li>
-                                <li>Alternative options to a smartphone</li>
-                                <li>
-                                    Being part of a collective action movement
-                                    in the real world
-                                </li>
-                            </ol>
-                        </div>
-                        <div className="flex flex-col gap-6">
-                            <h3 className="text-xl lg:text-2xl text-gray-700 font-semibold ">
-                                Panelists include:
-                            </h3>
-
-                            <div className="flex flex-col gap-2">
-                                <span className="text-[20px] text-gray-700 font-normal">
-                                    Mike Stroh: Resgistred Psycholtherapist
-                                </span>
-                                <span className="text-[20px] text-gray-700 font-normal">
-                                    Katy Albert: MEd, BCBA
-                                </span>
-                                <span className="text-[20px] text-gray-700 font-normal">
-                                    Jonathan Tilly: Grade 6 Hillcrest teacher
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div> */}
 
             <Footer />
         </div>
