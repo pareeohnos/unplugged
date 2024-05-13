@@ -104,7 +104,7 @@ export default function Home() {
 
                     <div className="flex flex-col h-full gap-3">
                         <Button
-                            className="max-w-fit text-xl"
+                            className="max-w-fit w-fit text-xl"
                             onClick={() => navigate('/pledge')}
                         >
                             SIGN THE PLEDGE
@@ -123,7 +123,7 @@ export default function Home() {
             {/* COMPONENT FOR MOBILE SCREEN */}
 
             <div
-                className="lg:hidden px-4 py-6 flex flex-col gap-[30px] rounded-[8px] w-full"
+                className="lg:hidden overflow-hidden px-4 py-6 flex flex-col gap-[30px] rounded-[8px] w-full"
                 style={{
                     backgroundColor: 'rgba(245, 245, 245, 0.80)',
                 }}
@@ -142,9 +142,9 @@ export default function Home() {
                     for smartphones
                 </h1>
 
-                <div className="flex flex-col h-full gap-3">
+                <div className="flex flex-col w-full h-full gap-3">
                     <Button
-                        className="w-full"
+                        className="w-full max-w-[295px] overflow-hidden"
                         onClick={() => navigate('/pledge')}
                     >
                         SIGN THE PLEDGE
