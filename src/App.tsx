@@ -11,6 +11,7 @@ import Ambassadors from './pages/Ambassadors.jsx'
 import FAQs from './pages/FAQs.tsx'
 import Government from './pages/Government.jsx'
 import Communities from './pages/Communities.tsx'
+import Privacy from './pages/Privacy.tsx'
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                     <Route path="/faqs" element={<FAQs />} />
                     <Route path="/government" element={<Government />} />
                     <Route path="/communities" element={<Communities />} />
+                    <Route path="/privacy-policy" element={<Privacy />} />
                 </Routes>
             </HashRouter>
         </ThemeProvider>

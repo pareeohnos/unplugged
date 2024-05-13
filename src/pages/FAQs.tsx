@@ -70,10 +70,7 @@ const faqs = [
         question: 'DO YOU HAVE ANY OTHER RESOURCES I COULD SHARE?',
         answer: 'Yes! Please go to our Research page for many materials you may share in your community.',
     },
-    {
-        question: 'PLEDGE PRIVACY',
-        answer: 'Your surname will be shared with the other parents who sign the Pledge, only when the Pledge becomes active. We will not share your e-mail, child’s name, or their school’s name with anyone and will never post it publicly.',
-    },
+
     {
         question: 'IS THE PLEDGE ONLY IN CANADA?',
         answer: 'Yes, the Unplugged pledge is only in Canada, but we plan to expand it to South America in the future. There is a very similar movement in the US called Wait Until 8th which is gaining traction too.',

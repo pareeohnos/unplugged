@@ -42,7 +42,10 @@ export default function Footer() {
                         ))}
                     </div>
 
-                    <span className="text-xs text-gray-100 font-semibold underline hover:cursor-pointer">
+                    <span
+                        onClick={() => navigate('/privacy-policy')}
+                        className="text-xs text-gray-100 font-semibold underline hover:cursor-pointer"
+                    >
                         PRIVACY POLICY
                     </span>
                 </div>

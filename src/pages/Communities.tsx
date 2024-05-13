@@ -2,8 +2,12 @@ import React from 'react'
 import Nav from '../components/Nav/Nav.tsx'
 import Footer from '../components/Footer/Footer.tsx'
 import hillcrestLogo from '../assets/images/hillcrestLogo.png'
+import hillcrestFlyer from '../assets/FlyerHilcrestSchool.jpg'
 import { PromotionCard } from '../components/ui/PromotionCard.tsx'
 import { Button } from '../components/ui/Button.tsx'
+import * as Dialog from '@radix-ui/react-dialog'
+import { XCircle } from 'lucide-react'
+import '../styles/dialog.css'
 
 export default function Communities() {
     return (
@@ -25,7 +29,7 @@ export default function Communities() {
                 <div className="bg-neutral-200 rounded-lg flex items-center justify-center">
                     <section className="max-w-[1440px] w-full py-8 lg:py-5 px-4 lg:px-8 flex flex-col gap-10">
                         <PromotionCard
-                            date="When: Wednesday June 5 - @ 6:60"
+                            date="When: Wednesday June 5 - @ 6:30"
                             pin="Where: Hillcrest Community School"
                             title="Hillcrest Community School presents: Unpluggued"
                             title2="Waiting for Smartphones"
@@ -92,9 +96,33 @@ export default function Communities() {
                                         </span>
                                     </div>
                                     <div className="lg:h-full lg:flex lg:items-end lg:justify-end pt-4 lg:pt-0 lg:pb-4">
-                                        <Button className="w-full lg:w-fit">
-                                            CLICK HERE TO VIEW OFFICIAL FLYER
-                                        </Button>
+                                        <Dialog.Root>
+                                            <Dialog.Trigger asChild>
+                                                <Button className="w-fit lg:w-fit h-[36px]">
+                                                    CLICK HERE TO VIEW OFFICIAL
+                                                    FLYER
+                                                </Button>
+                                            </Dialog.Trigger>
+                                            <Dialog.Portal>
+                                                <Dialog.Overlay className="DialogOverlay" />
+                                                <Dialog.Content className="DialogContent">
+                                                    <div className="h-full w-full">
+                                                        <img
+                                                            src={hillcrestFlyer}
+                                                            alt="flyer"
+                                                        />
+                                                    </div>
+                                                    <Dialog.Close asChild>
+                                                        <button
+                                                            className="IconButton"
+                                                            aria-label="Close"
+                                                        >
+                                                            <XCircle />
+                                                        </button>
+                                                    </Dialog.Close>
+                                                </Dialog.Content>
+                                            </Dialog.Portal>
+                                        </Dialog.Root>
                                     </div>
                                 </div>
                             </div>
