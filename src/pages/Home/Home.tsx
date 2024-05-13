@@ -104,7 +104,7 @@ export default function Home() {
 
                     <div className="flex flex-col h-full gap-3">
                         <Button
-                            className="max-w-fit text-xl h-[51px]"
+                            className="max-w-fit text-xl"
                             onClick={() => navigate('/pledge')}
                         >
                             SIGN THE PLEDGE
