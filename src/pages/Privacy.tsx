@@ -20,29 +20,19 @@ export default function Privacy() {
             <main className="w-full px-4 py-5 lg:px-[180px]  lg:py-16 max-w-[1440px] flex flex-col gap-5 lg:gap-10 mx-auto">
                 <span className="text-base lg:text-xl  font-normal text-neutral-700 ">
                     The security of your personal information is a priority to
-                    our organization. We seek to protect this information by
-                    maintaining electronic security measures and safeguards
-                    designed to protect personal information within our
-                    organization. When you enter the information on the pledge
-                    form, it is stored in our pledge data management system
-                    through Sales Force known in the industry for its security.
+                    our organization. Our systems use the latest security
+                    products to ensure your data is safe and secure. We do not
+                    share your data with any third party, and all data exchange
+                    over our computer networks is digitally encrypted. We also
+                    will not post the information from the pledges anywhere.
                 </span>
 
                 {/* Divider */}
                 <div className="w-full h-[1px] bg-neutral-300" />
 
                 <span className="text-base lg:text-xl  font-normal text-neutral-700 ">
-                    We are the sole owners of the information collected on this
-                    site. We will not sell or rent this information to anyone.
-                    We will not share your information with any third party
-                    outside of our organization. Your information will not be
-                    made public on this website. If your child’s pledge does
-                    become active (5 or more pledges for your child’s grade),
-                    Unplugged will notify you. You will receive via email a list
-                    of families from your child’s grade that are willing to
-                    delay the use of smartphones, along with each other’s names
-                    and emails to connect you with each other. This helps you to
-                    support one another!
+                    If you would like, you can opt out of sharing your child’s
+                    name altogether when completing the pledge.
                 </span>
 
                 {/* Divider */}

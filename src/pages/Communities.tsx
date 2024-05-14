@@ -32,7 +32,7 @@ export default function Communities() {
                             date="When: Wednesday June 5 - @ 6:30pm"
                             pin="Where: Hillcrest Community School"
                             title="Hillcrest Community School presents:"
-                            title2="Unpluggued: Waiting for Smartphones"
+                            title2="Unplugged: Waiting for Smartphones"
                             pathImage={hillcrestLogo}
                         />
 
