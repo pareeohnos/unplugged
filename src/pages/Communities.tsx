@@ -31,8 +31,8 @@ export default function Communities() {
                         <PromotionCard
                             date="When: Wednesday June 5 - @ 6:30pm"
                             pin="Where: Hillcrest Community School"
-                            title="Hillcrest Community School presents: Unpluggued:"
-                            title2="Waiting for Smartphones"
+                            title="Hillcrest Community School presents:"
+                            title2="Unpluggued: Waiting for Smartphones"
                             pathImage={hillcrestLogo}
                         />
 
