@@ -29,9 +29,9 @@ export default function Communities() {
                 <div className="bg-neutral-200 rounded-lg flex items-center justify-center">
                     <section className="max-w-[1440px] w-full py-8 lg:py-5 px-4 lg:px-8 flex flex-col gap-10">
                         <PromotionCard
-                            date="When: Wednesday June 5 - @ 6:30"
+                            date="When: Wednesday June 5 - @ 6:30pm"
                             pin="Where: Hillcrest Community School"
-                            title="Hillcrest Community School presents: Unpluggued"
+                            title="Hillcrest Community School presents: Unpluggued:"
                             title2="Waiting for Smartphones"
                             pathImage={hillcrestLogo}
                         />
