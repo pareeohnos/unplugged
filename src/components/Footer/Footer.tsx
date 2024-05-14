@@ -15,6 +15,7 @@ const paths = [
     'Resources',
     'Faqs',
     'Government',
+    'Communities',
 ]
 export default function Footer() {
     const navigate = useNavigate()
@@ -37,7 +38,9 @@ export default function Footer() {
                                 className="text-gray-100 text-sm hover:underline cursor-pointer"
                                 onClick={() => navigate(`/${path}`)}
                             >
-                                {path}
+                                {path === 'Communities'
+                                    ? 'Communities in action'
+                                    : path}
                             </span>
                         ))}
                     </div>
