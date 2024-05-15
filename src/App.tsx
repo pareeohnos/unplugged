@@ -9,7 +9,7 @@ import Resources from './pages/Resources.tsx'
 import Research from './pages/Research.jsx'
 import Ambassadors from './pages/Ambassadors.jsx'
 import FAQs from './pages/FAQs.tsx'
-import Government from './pages/Government.jsx'
+import Government from './pages/Government.tsx'
 import Communities from './pages/Communities.tsx'
 import Privacy from './pages/Privacy.tsx'
 

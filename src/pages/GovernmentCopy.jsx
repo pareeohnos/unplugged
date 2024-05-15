@@ -45,6 +45,7 @@ export default function Government() {
                                     className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                     target="_blank"
                                     href="https://news.gov.bc.ca/releases/2024PREM0004-000088"
+                                    rel="noreferrer"
                                 >
                                     {' '}
                                     The Provincial government of BC announced on
@@ -66,6 +67,7 @@ export default function Government() {
                                     className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                     target="_blank"
                                     href="https://news.ontario.ca/en/release/1004501/ontario-cracking-down-on-cellphone-use-and-banning-vaping-in-schools"
+                                    rel="noreferrer"
                                 >
                                     {' '}
                                     The Ontario government announced on April
@@ -92,6 +94,7 @@ export default function Government() {
                                     className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                     target="_blank"
                                     href="https://www.cbc.ca/news/canada/montreal/cellphone-ban-quebec-new-year-1.7069440"
+                                    rel="noreferrer"
                                 >
                                     {' '}
                                     The government in Quebec enacted a ban on

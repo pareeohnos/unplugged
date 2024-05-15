@@ -330,6 +330,54 @@ export default function FAQs() {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
+                    <div className="w-full text-sm mt-5">
+                        <p>
+                            [1]{' '}
+                            <em>
+                                The Mere Presence of Your Smartphone Reduces
+                                Brain Power, Study Shows. June 16, 2017{' '}
+                                <a
+                                    className="text-blue-600"
+                                    target="_blank"
+                                    href="https://news.utexas.edu/2017/06/26/the-mere-presence-of-your-smartphone-reduces-brain-power/"
+                                    rel="noreferrer"
+                                >
+                                    UTNews
+                                </a>
+                            </em>{' '}
+                        </p>
+                        <p>
+                            [2]{' '}
+                            <em>
+                                Groundbreaking study examines effects of screen
+                                time on kids. December 9, 2018,{' '}
+                                <a
+                                    className="text-blue-600"
+                                    target="_blank"
+                                    href="https://www.cbsnews.com/news/groundbreaking-study-examines-effects-of-screen-time-on-kids-60-minutes/"
+                                    rel="noreferrer"
+                                >
+                                    CBS News
+                                </a>
+                            </em>{' '}
+                        </p>
+                        <p>
+                            [3]{' '}
+                            <em>
+                                Smartphones damaging children’s sleep and
+                                development, should stay out of the bedroom,
+                                study finds. November 12, 2016,{' '}
+                                <a
+                                    className="text-blue-600"
+                                    target="_blank"
+                                    href="https://www.news.com.au/technology/smartphones-damaging-childrens-sleep-and-development-should-stay-out-of-the-bedroom-study-finds/news-story/55228f3ce745f536d5628150230d3cdf"
+                                    rel="noreferrer"
+                                >
+                                    News.com
+                                </a>
+                            </em>{' '}
+                        </p>
+                    </div>
                 </div>
             </main>
 
