@@ -134,7 +134,7 @@ export default function Pledge() {
             <Nav />
             <div className="flex items-center relative justify-center w-full h-[240px] lg:h-[300px]">
                 <h2 className="text-2xl lg:text-[40px] z-20 font-bold uppercase text-neutral-100">
-                    THE PLEDGE
+                    SIGN THE PLEDGE
                 </h2>
                 <img
                     src={pledgerBg}
