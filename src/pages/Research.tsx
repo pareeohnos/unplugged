@@ -38,6 +38,7 @@ export default function Research() {
                             <a
                                 target={'_blank'}
                                 href="https://www.freetheanxiousgeneration.com/research/the-evidence"
+                                rel="noreferrer"
                             >
                                 <h3 className=" underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
                                     The Anxious Generation - Jonathan Haidt{' '}
@@ -104,6 +105,7 @@ export default function Research() {
                             <a
                                 target={'_blank'}
                                 href="https://www.waituntil8th.org/blog/2022/5/20/psychiatrist-warns-parents-about-smartphones"
+                                rel="noreferrer"
                             >
                                 <h3 className=" underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
                                     Psychiatrist Warns Parents about Smartphones
@@ -146,6 +148,7 @@ export default function Research() {
                             <a
                                 target={'_blank'}
                                 href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8204720/#:~:text=Results%3A%20Comorbidity,and%20education%20professionals."
+                                rel="noreferrer"
                             >
                                 <h3 className=" underline text-4xl text-[#2E4049] font-bold mb-6 mt-6">
                                     Excessive Smartphone Use in Young Adults -
@@ -205,6 +208,7 @@ export default function Research() {
                                         className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                         target="_blank"
                                         href="https://www.amazon.com/gp/product/1599474824/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1599474824&linkCode=as2&tag=waituntil8th-20&linkId=19b80cbcf8271fcc0de3b07102b9a7b0"
+                                        rel="noreferrer"
                                     >
                                         Be the Parent, Please
                                     </a>{' '}
@@ -248,6 +252,7 @@ export default function Research() {
                                         className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                         target="_blank"
                                         href="https://www.amazon.com/gp/product/1599474824/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1599474824&linkCode=as2&tag=waituntil8th-20&linkId=19b80cbcf8271fcc0de3b07102b9a7b0"
+                                        rel="noreferrer"
                                     >
                                         i-Minds: How Cell Phones, Computers,
                                         Gaming, and Social Media are Changing
@@ -290,6 +295,7 @@ export default function Research() {
                                         className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                         target="_blank"
                                         href="https://www.amazon.com/gp/product/150321169X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=150321169X&linkCode=as2&tag=waituntil8th-20&linkId=5afe5dfc2d4637392c93872c0be7e07b"
+                                        rel="noreferrer"
                                     >
                                         Wired Child
                                     </a>{' '}
@@ -335,6 +341,7 @@ export default function Research() {
                                         className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                         target="_blank"
                                         href="https://www.amazon.ca/i-Minds-Constant-Connectivity-Rewiring-Brains-dp-0865719012/dp/0865719012/ref=dp_ob_title_bk"
+                                        rel="noreferrer"
                                     >
                                         iGen: Why Today’s Super-Connected Kids
                                         Are Growing Up Less Rebellious, More
@@ -376,6 +383,7 @@ export default function Research() {
                                         className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                         target="_blank"
                                         href="https://www.amazon.com/gp/product/0062082434/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0062082434&linkCode=as2&tag=waituntil8th-20&linkId=0e7a057ca1d87c93d4bedf84d484b374"
+                                        rel="noreferrer"
                                     >
                                         The Big Disconnect{' '}
                                     </a>
@@ -421,6 +429,7 @@ export default function Research() {
                                 target="_blank"
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 href="https://mediasmarts.ca/research-and-evaluation"
+                                rel="noreferrer"
                             >
                                 Media Smarts
                             </a>
@@ -430,6 +439,7 @@ export default function Research() {
                                 target="_blank"
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 href="https://ctrl-f.ca/en/the-evidence/"
+                                rel="noreferrer"
                             >
                                 CTRL-F
                             </a>
@@ -439,6 +449,7 @@ export default function Research() {
                                 target="_blank"
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 href="https://www.protectchildren.ca/en/resources-research/#resources"
+                                rel="noreferrer"
                             >
                                 Canadian Centre for Child Protection{' '}
                             </a>
@@ -455,6 +466,7 @@ export default function Research() {
                                 target="_blank"
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 href="https://ncpcr.gov.in/uploads/165650458362bc410794e02_effect1.PDF"
+                                rel="noreferrer"
                             >
                                 Effects (Physical, Behavioural and
                                 Psycho-social) of using Mobile Phones and other
@@ -466,6 +478,7 @@ export default function Research() {
                                 target="_blank"
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4735240"
+                                rel="noreferrer"
                             >
                                 Smartphone Bans, Student Outcome and Mental
                                 Health
@@ -476,6 +489,7 @@ export default function Research() {
                                 target="_blank"
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 href="https://www.cmaj.ca/content/192/6/E136.short"
+                                rel="noreferrer"
                             >
                                 Smartphones, social media use and youth mental
                                 health
@@ -486,6 +500,7 @@ export default function Research() {
                                 target="_blank"
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 href="https://pubmed.ncbi.nlm.nih.gov/31193561/"
+                                rel="noreferrer"
                             >
                                 Social Media Use and Adolescent Mental Health:
                                 Findings From the UK Millennium Cohort Study
@@ -496,6 +511,7 @@ export default function Research() {
                                 target="_blank"
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 href="https://www.pewresearch.org/internet/2022/08/10/teens-social-media-and-technology-2022/"
+                                rel="noreferrer"
                             >
                                 Teens, Social Media and Technology 2022
                             </a>
@@ -505,6 +521,7 @@ export default function Research() {
                                 target="_blank"
                                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                 href="https://www.hhs.gov/about/news/2023/05/23/surgeon-general-issues-new-advisory-about-effects-social-media-use-has-youth-mental-health.html"
+                                rel="noreferrer"
                             >
                                 Surgeon General Issues New Advisory About
                                 Effects Social Media Use Has on Youth Mental
