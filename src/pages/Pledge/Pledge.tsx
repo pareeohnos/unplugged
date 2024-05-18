@@ -191,7 +191,7 @@ export default function Pledge() {
                             </li>
                         </ol>
 
-                        <form className="form pb-24">
+                        <form className="form">
                             <h1 className="form__title text-[32px] text-[#2e4049]">
                                 Unplugged Canada Pledge
                             </h1>
@@ -255,19 +255,20 @@ export default function Pledge() {
                                 />
                             )}
                         </form>
-
-                        <h3 className="text-gray-700 text-center text-2xl lg:text-[32px] font-bold  ">
-                            Pledge Privacy
-                        </h3>
-
-                        <span className="text-center text-base lg:text-xl font-normal text-neutral-700">
-                            Your surname will be shared with the other parents
-                            who sign the Pledge, only when the Pledge becomes
-                            active. We will not share your e-mail, child’s name,
-                            or their school’s name with anyone and will never
-                            post it publicly.
-                        </span>
                     </section>
+                </div>
+                <div className="flex flex-col gap-5">
+                    <h3 className="text-gray-700 text-center text-2xl lg:text-[32px] font-bold  ">
+                        Pledge Privacy
+                    </h3>
+
+                    <span className="text-center text-base lg:text-xl font-normal text-neutral-700">
+                        Your surname will be shared with the other parents who
+                        sign the Pledge, only when the Pledge becomes active. We
+                        will not share your e-mail, child’s name, or their
+                        school’s name with anyone and will never
+                        post it publicly.
+                    </span>
                 </div>
             </main>
 
