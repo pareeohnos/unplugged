@@ -32,21 +32,41 @@ export default function Ambassadors() {
                         />
                     </div>
 
-                    <a
-                        href="https://www.linkedin.com/in/perezmckenzie/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <div className="flex gap-[10px]">
-                            <h3 className=" text-2xl hover:underline  text-blue-600 font-bold">
-                                Jenny Perez{' '}
-                            </h3>
-                            <LinkedInIcon
-                                // fontSize="large"
-                                sx={{ color: '#2563EB' }}
-                            />
+                    <div className="flex flex-col gap-2">
+                        <a
+                            href="https://www.linkedin.com/in/perezmckenzie/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <div className="flex gap-[10px]">
+                                <h3 className=" text-2xl hover:underline  text-blue-600 font-bold">
+                                    Jenny Perez{' '}
+                                </h3>
+                                <LinkedInIcon
+                                    // fontSize="large"
+                                    sx={{ color: '#2563EB' }}
+                                />
+                            </div>
+                        </a>
+
+                        <div className="mt-2">
+                            <p className="text-sm text-gray-700">
+                                Master of Business Administration (MBA) –
+                                Richard Ivey School of Business, Canada
+                            </p>
+                            <p className="text-sm text-gray-700">
+                                Leadership Principles Certificate – Harvard
+                                Business School
+                            </p>
+                            <p className="text-sm text-gray-700">
+                                Immigration: Laws, Policies and Procedures –
+                                University of British Columbia, Canada
+                            </p>
+                            <p className="text-sm text-gray-700">
+                                Economist, University of Lima, Peru
+                            </p>
                         </div>
-                    </a>
+                    </div>
 
                     <p className="text-xl leading-relaxed text-neutral-700">
                         Thank you so much for being here and reading this! I’m
