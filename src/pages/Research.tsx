@@ -17,6 +17,9 @@ export default function Research() {
                     className="w-full h-full object-cover object-top absolute top-0 right-0"
                     alt="FAQs Wallpaper"
                 />
+                <h2 className="text-2xl lg:text-[40px] z-20 font-bold uppercase text-neutral-100">
+                    RESEARCH
+                </h2>
             </div>
             <main className="w-full px-4 py-5 lg:px-[180px]  lg:py-16 max-w-[1440px] flex flex-col gap-5 lg:gap-10 mx-auto">
                 <h3 className="text-red-500 font-bold text-lg text-center lg:text-left">
