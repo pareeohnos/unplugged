@@ -22,10 +22,6 @@ export default function Research() {
                 </h2>
             </div>
             <main className="w-full px-4 py-5 lg:px-[180px]  lg:py-16 max-w-[1440px] flex flex-col gap-5 lg:gap-10 mx-auto">
-                <h3 className="text-red-500 font-bold text-lg text-center lg:text-left">
-                    Research
-                </h3>
-
                 {/* anxious mobile */}
                 <div className="flex lg:hidden flex-col gap-10">
                     <a
