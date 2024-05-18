@@ -83,7 +83,7 @@ export default function Resources() {
                             </svg>
 
                             <span className="text-center text-neutral-800 text-xl font-semibold">
-                                We will send you welcome
+                                We will send you a welcome
                             </span>
                         </div>
 
@@ -200,7 +200,7 @@ export default function Resources() {
                         >
                             Click here
                         </a>{' '}
-                        for out flyer!
+                        for our flyer!
                     </li>
                 </ol>
 
@@ -248,13 +248,13 @@ export default function Resources() {
                 <div className="w-full h-[1px] bg-neutral-300" />
 
                 <h2 className="lg:text-[32px] text-2xl text-center lg:text-left text-gray-700 font-bold">
-                    Share with your social circles
+                    Share in your social circles
                 </h2>
 
                 <span className="text-base lg:text-xl  font-normal text-neutral-700 ">
                     Communicate the good news today about the Unplugged pledge
                     with your family and friends by sharing it on your preferred
-                    platform. Be sure to tag Unplugged in your post!
+                    platform. Be sure to tag @Unplugged in your post!
                 </span>
 
                 <div className="grid grid-cols-4 lg:flex lg:items-center lg:justify-center lg:gap-10">

@@ -84,7 +84,7 @@ export default function Communities() {
                                     <div className="flex flex-col gap-2">
                                         <span className="text-[20px] text-gray-700 font-normal">
                                             <strong>Mike Stroh</strong>:
-                                            Resgistred Psycholtherapist
+                                            Registered Psychotherapist
                                         </span>
                                         <span className="text-[20px] text-gray-700 font-normal">
                                             <strong>Katy Albert</strong>: MEd,
