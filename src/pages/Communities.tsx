@@ -3,6 +3,7 @@ import Nav from '../components/Nav/Nav.tsx'
 import Footer from '../components/Footer/Footer.tsx'
 import hillcrestLogo from '../assets/images/hillcrestLogo.png'
 import hillcrestFlyer from '../assets/FlyerHilcrestSchool.jpg'
+import communities from '../assets/images/communities.jpeg'
 import { PromotionCard } from '../components/ui/PromotionCard.tsx'
 import { Button } from '../components/ui/Button.tsx'
 import * as Dialog from '@radix-ui/react-dialog'
@@ -18,9 +19,7 @@ export default function Communities() {
                     Communities in action
                 </h2>
                 <img
-                    src={
-                        'https://s3-alpha-sig.figma.com/img/f134/425f/d2dd8eb278c6700fb2db873307cfe51c?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FKfbjy3f~JDpxlJE-vzcLEouUSni3GfuSesjMb2qV1I8lh5BbOBfF1NSAArVoNwkB1U5us0uTkJUawih0fzcq-c4PGRlxiRON5lFB5aGA4dcBHQg9zgQXs2xooBkhzW~WKfxHnZdYZQexdJE~EzQwW3ljo8oygFYS~l8-DiaWab4MGZtH9ulSyq-zhJlhpiD9evzZTFg1DvKYdlMrvaG~WOuHvEUiGCguizfL6mOo9iYczYwx~WAkgV6j--X-4er7aDL~shCn9H9DPxTu9~pp96mM3p0KL8sxBwxJDMa-JfDDj4A0y1zhCgr87ujEq5j6n27S6rzNQY0sbyZZEmkCQ__'
-                    }
+                    src={communities}
                     className="w-full h-full object-cover absolute top-0 right-0"
                     alt="Blue stones wallpaper"
                 />

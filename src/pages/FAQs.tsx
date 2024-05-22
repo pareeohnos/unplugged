@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '../components/Nav/Nav.tsx'
 import Footer from '../components/Footer/Footer.tsx'
+import faqImage from '../assets/images/FAQ.jpeg'
 import {
     Accordion,
     AccordionContent,
@@ -17,9 +18,7 @@ export default function FAQs() {
                     Here's what you need to know
                 </h2>
                 <img
-                    src={
-                        'https://s3-alpha-sig.figma.com/img/2dfc/c39f/a73ec471ba06b07159f7defd5885a3ce?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JMeyaJFsPPi1-HWzavfk5sUXtnPg8DgLMCbTaaZViNz0b8EHzB-WmFqKf0uHdsQ7E49sEDfhbF7j1arx0f-gTPSvR-Q-XTIhUOEnVnQdJsnyglfm8xq6OlnOsewUmUF8qRbgQ75DUBpd3zySKtFJzreZlvwakvYoTD8sOyoPN4XzCezNBzeg-cGghC6ZlEK5bmSK3QaxI5kTY2TseT7UNgiAGWe5DKyg2pidFnTQhghWWKrTm~5-Oh5u0zyOj-Hmr9V-C5dNAfId0Sg~Jj8JKl1M3-gZL2SjXR0vjl4qQesGKdcGyKPP7w~2kIAs-JSjsaf~dinAMFwYZZ8cDdksTw__'
-                    }
+                    src={faqImage}
                     className="w-full h-full object-cover absolute top-0 right-0"
                     alt="FAQs Wallpaper"
                 />

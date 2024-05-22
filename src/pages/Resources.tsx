@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '../components/Nav/Nav.tsx'
 import Footer from '../components/Footer/Footer.tsx'
+import resourcesBg from '../assets/images/resources.jpeg'
 import { useNavigate } from 'react-router-dom'
 
 const paragraphs = [
@@ -20,9 +21,7 @@ export default function Resources() {
                     RESOURCES
                 </h2>
                 <img
-                    src={
-                        'https://s3-alpha-sig.figma.com/img/ff0b/52d4/68113808c74ed616b78c9806b3e033be?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ULcH6b-fK8xWwtHbRIZZzZRu7pykFrpIl0SMufIRyNkU7iTLM6QNFS9~ze-GCnNgS7BeKAl0KWubP0NmQLtguEsJmHmQYwXSwQDwBCTlVp1IsTJhaMb6uwj-5e1lVHvdsxuki~10KylFOhWQA~ckCgYoAOdvLcfNLPcK9ZscCRAqMD2FeP0dkJQHjCiGeVWbdCcL2blQFoDqrPfcShsALTCjX7ohTC8yVMHx6E0kkvLurUIlt2W71b6HDwzW9shFJ7S2fSMUpVtbwWjtW1ckIqdt0pO-Cac9g7OFC7lZpZuQuwSZqMd3MrIIkKtxar-dfChTJq~Fx3EUnoKJjt89zA__'
-                    }
+                    src={resourcesBg}
                     className="w-full h-full object-cover absolute top-0 right-0"
                     alt="FAQs Wallpaper"
                 />
