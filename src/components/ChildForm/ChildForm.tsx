@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Fab } from '@mui/material'
 import TextField from '@mui/material/TextField'
 import Autocomplete from '@mui/material/Autocomplete'
-import axios from 'axios'
+import api from 'api'
 
 import NewSchoolForm from '../NewSchoolForm/NewSchoolForm'
 
@@ -19,8 +19,8 @@ export default function ChildForm({
     const [nextSchoolTmpLabel, setNextSchoolTmpLabel] = useState('')
 
     async function fetchSchools(event: any) {
-        const response = await axios.get(
-            'https://api.unpluggedcanada.com/schools/search/',
+        const response = await api.get(
+            '/schools/search/',
             {
                 params: { partial_name: event.target.value },
             }

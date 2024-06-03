@@ -3,13 +3,11 @@ import Footer from '../../components/Footer/Footer.tsx'
 import pledgerBg from '../../assets/images/pledgerBg.jpg'
 import Nav from '../../components/Nav/Nav.tsx'
 import './Pledge.scss'
-import axios from 'axios'
+import api from 'api'
 import { useNavigate } from 'react-router-dom'
 import ChildForm from '../../components/ChildForm/ChildForm.tsx'
 import GuardianForm from '../../components/GuardianForm/GuardianForm.tsx'
-import CircularProgress, {
-    CircularProgressProps,
-} from '@mui/material/CircularProgress'
+import CircularProgress, { CircularProgressProps } from '@mui/material/CircularProgress'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 
@@ -77,8 +75,8 @@ export default function Pledge() {
 
     async function postGuardian() {
         try {
-            const response = await axios.post(
-                'https://api.unpluggedcanada.com/guardians/',
+            const response = await api.post(
+                '/guardians/',
                 guardianData
             )
             if (response.data) {
@@ -97,18 +95,18 @@ export default function Pledge() {
             const GuardianID = await postGuardian()
 
             childrenData.map(async (ChildData) => {
-                const child = await axios.post(
-                    `https://api.unpluggedcanada.com/guardians/${GuardianID}/children/`,
+                const child = await api.post(
+                    `/guardians/${GuardianID}/children/`,
                     ChildData
                 )
                 console.log('x: ', child.data)
 
-                const pledge = await axios.post(
-                    `https://api.unpluggedcanada.com/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
+                const pledge = await api.post(
+                    `/pledges/${child.data.current_school_id}?grade=${child.data.grade}`
                 )
 
-                const signature = await axios.post(
-                    `https://api.unpluggedcanada.com/guardians/${GuardianID}/signatures/`,
+                const signature = await api.post(
+                    `/guardians/${GuardianID}/signatures/`,
                     {
                         child_id: child.data.id,
                         pledge_id: pledge.data.id,
@@ -116,15 +114,15 @@ export default function Pledge() {
                 )
                 console.log(signature)
             })
-            await axios.post(
-                `https://api.unpluggedcanada.com/email_confirmation?name=${
+            await api.post(
+                `/email_confirmation?name=${
                     guardianData.first_name + ' ' + guardianData.last_name
                 }&email=${guardianData.email}`
             )
         } catch (error) {
             console.log(error)
-            axios.delete(
-                'https://api.unpluggedcanada.com/guardians/' + guardianData.id
+            api.delete(
+                '/guardians/' + guardianData.id
             )
         }
     }

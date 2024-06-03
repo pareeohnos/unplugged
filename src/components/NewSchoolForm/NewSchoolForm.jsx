@@ -3,7 +3,7 @@ import { Fab } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
 import CloseIcon from '@mui/icons-material/Close'
 import CheckIcon from '@mui/icons-material/Check'
-import axios from 'axios'
+import api from 'api'
 import { v4 as uuidv4 } from 'uuid'
 
 export default function NewSchool({
@@ -46,8 +46,8 @@ export default function NewSchool({
 
         setAddingNewSchool(false)
         try {
-            const response = await axios.post(
-                `https://api.unpluggedcanada.com/schools/`,
+            const response = await api.post(
+                `/schools`,
                 {
                     id: uuidv4().substring(0, 20),
                     name: nameValue,
@@ -92,7 +92,7 @@ export default function NewSchool({
         <div>
             {/* <p className="mb-4 ">
         Can't find your Child's School? Add it here{" "}
-       
+
       </p> */}
             <div className="transition-all duration-300 ease-in-out">
                 <div className="w-full rounded-lg p-4 shadow-xl mb-6 bg-[rgba(235,235,235,.5)]">
